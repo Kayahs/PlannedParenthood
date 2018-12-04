@@ -109,3 +109,8 @@ require get_template_directory() . '/inc/extras.php';
  */
 require get_template_directory() . '/inc/post-types.php';
 require get_template_directory() . '/inc/taxonomies.php';
+
+/**
+ * Load in all the widgets
+ */
+require get_template_directory() . '/inc/location-widget/location-widget.php';

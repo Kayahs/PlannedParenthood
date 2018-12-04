@@ -103,3 +103,9 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Custom Post-types and Taxonomies
+ */
+require get_template_directory() . '/inc/post-types.php';
+require get_template_directory() . '/inc/taxonomies.php';

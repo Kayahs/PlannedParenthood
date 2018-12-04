@@ -23,7 +23,7 @@ function create_category_labels($label) {
   return $labels;
 }
 
-function create_category_labels($label) {
+function create_tag_labels($label) {
   // set up labels
   $labels = array(
     'name'              => "$label Tags",
@@ -49,9 +49,9 @@ function register_taxonomies() {
     'show_admin_column' => true
   ) );
 
-  register_taxonomy( 'programcat', 'program', array(
+  register_taxonomy( 'facttag', 'fact', array(
     'hierarchical' => true,
-    'labels' => create_labels("Program"),
+    'labels' => create_tag_labels("Fact"),
     'query_var' => true,
     'show_admin_column' => true
   ) );

@@ -113,3 +113,8 @@ require get_template_directory() . '/inc/location-widget/location-widget.php';
 require get_template_directory() . '/inc/contact-info-widget/contact-info-widget.php';
 require get_template_directory() . '/inc/social-media-btns-widget/social-media-btns-widget.php';
 require get_template_directory() . '/inc/service-advisory-widget/service-advisory-widget.php';
+/* 
+ * Custom Post-types and Taxonomies
+ */
+require get_template_directory() . '/inc/post-types.php';
+require get_template_directory() . '/inc/taxonomies.php';

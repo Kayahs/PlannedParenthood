@@ -1,40 +1,9 @@
 <?php
-/**
- * RED WordPress Widget Boilerplate
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
- *
- * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
- *
- * @package   Drop_in_Hours_Widget
- * @author    Eirian Ta <trang.ta911@gmail.com>
- * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2018 Red Academy
- *
- * @wordpress-plugin
- * Plugin Name:       Drop-in Hours Widget
- * Plugin URI:        @TODO
- * Description:       @TODO
- * Version:           1.0.0
- * Author:            Eirian Ta
- * Author URI:        @TODO
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- */
 
-// Prevent direct file access
-if ( ! defined ( 'ABSPATH' ) ) {
-	exit;
-}
-
-// TODO: change 'Widget_Name' to the name of your plugin
 class Drop_in_Hours_Widget extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
-     *
-     * Unique identifier for your widget.
+     * Drop-in Hours Widget
      *
      * @since    1.0.0
      *
@@ -57,7 +26,7 @@ class Drop_in_Hours_Widget extends WP_Widget {
 			'Drop-in Hours Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Show the drop-in hours'
 			)
 		);
 
@@ -138,8 +107,6 @@ class Drop_in_Hours_Widget extends WP_Widget {
     $instance['des'] = strip_tags( $new_instance['des'] );
 		$instance['sat'] = strip_tags( $new_instance['sat'] );
 
-		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
-
 		return $instance;
 
 	} // end widget
@@ -151,7 +118,6 @@ class Drop_in_Hours_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
@@ -165,7 +131,6 @@ class Drop_in_Hours_Widget extends WP_Widget {
 
     $des = strip_tags( $new_instance['des'] );
 		$sat = strip_tags( $new_instance['sat'] );
-		// TODO: Store the rest of values of the widget in their own variables
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -174,7 +139,6 @@ class Drop_in_Hours_Widget extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Drop_in_Hours_Widget' );
 });

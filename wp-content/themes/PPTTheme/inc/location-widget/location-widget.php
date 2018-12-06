@@ -4,9 +4,7 @@
 class Location extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
-     *
-     * Unique identifier for your widget.
+     * Location Widget
      *
      * @since    1.0.0
      *
@@ -23,13 +21,12 @@ class Location extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
 			'Location Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Show the location.'
 			)
 		);
 
@@ -110,10 +107,6 @@ class Location extends WP_Widget {
 		$instance['locLine3'] = strip_tags( $new_instance['locLine3'] );
 		$instance['note'] = strip_tags( $new_instance['note'] );
 
-
-
-		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
-
 		return $instance;
 
 	} // end widget
@@ -125,7 +118,6 @@ class Location extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
@@ -151,7 +143,6 @@ class Location extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Location' );
 });

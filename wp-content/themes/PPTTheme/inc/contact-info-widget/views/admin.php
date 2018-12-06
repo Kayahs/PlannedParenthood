@@ -24,7 +24,7 @@
    </p>
 
    <p><label for="<?php echo $this->get_field_id('note'); ?>">Note:</label>
-      <input class="widefat" id="<?php echo $this->get_field_id('note'); ?>" name="<?php echo $this->get_field_name('note'); ?>" type="text" value="<?php echo $note; ?>">
+      <textarea rows="4" class="widefat" id="<?php echo $this->get_field_id('note'); ?>" name="<?php echo $this->get_field_name('note'); ?>" type="text" value="<?php echo $note; ?>"></textarea>
    </p>
 
 

@@ -105,6 +105,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Load in all the widgets
+ * Load in all the widgets.
  */
+require get_template_directory() . '/inc/clinic-hours-widget/clinic-hours-widget.php';
+require get_template_directory() . '/inc/drop-in-hours-widget/drop-in-hours-widget.php';
 require get_template_directory() . '/inc/location-widget/location-widget.php';
+require get_template_directory() . '/inc/contact-info-widget/contact-info-widget.php';
+require get_template_directory() . '/inc/social-media-btns-widget/social-media-btns-widget.php';
+require get_template_directory() . '/inc/service-advisory-widget/service-advisory-widget.php';

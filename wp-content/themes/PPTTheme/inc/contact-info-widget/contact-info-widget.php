@@ -1,39 +1,9 @@
 <?php
-/**
- * RED WordPress Widget Boilerplate
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
- *
- * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
- *
- * @package   Contact_Info_Widget
- * @author    Eirian Ta <trang.ta911@gmail.com>
- * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2018 Red Academy
- *
- * @wordpress-plugin
- * Plugin Name:       Contact Info Widget
- * Plugin URI:        @TODO
- * Description:       @TODO
- * Version:           1.0.0
- * Author:            @TODO
- * Author URI:        @TODO
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- */
-
-// Prevent direct file access
-if ( ! defined ( 'ABSPATH' ) ) {
-	exit;
-}
 
 class Contact_Info extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
-     *
-     * Unique identifier for your widget.
+     * Contact Info Widget
      *
      * @since    1.0.0
      *
@@ -50,13 +20,12 @@ class Contact_Info extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
 			'Contact Info Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Show the contact info'
 			)
 		);
 
@@ -104,7 +73,7 @@ class Contact_Info extends WP_Widget {
 		$email = empty( $instance['email'] ) ? '' : apply_filters( 'widget_title', $instance['email'] );
 		$media = empty( $instance['media'] ) ? '' : apply_filters( 'widget_title', $instance['media'] );
 
-		$media = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
+		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
 
 		ob_start();
 
@@ -153,7 +122,6 @@ class Contact_Info extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
@@ -181,7 +149,6 @@ class Contact_Info extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Contact_Info' );
 });

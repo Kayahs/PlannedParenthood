@@ -1,15 +1,15 @@
 <?php
 
-class Clinic_Hours_Widget extends WP_Widget {
+class Service_Advisory extends WP_Widget {
 
     /**
-     * Clinic Hours Widget
+     * Contact Info Widget
      *
      * @since    1.0.0
      *
      * @var      string
      */
-    protected $widget_slug = 'clinic-hours-widget';
+    protected $widget_slug = 'service-advisory';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -22,10 +22,10 @@ class Clinic_Hours_Widget extends WP_Widget {
 
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Clinic Hours Widget',
+			'Service Advisory Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Show Clinic-hours'
+				'description' => 'Show some important notes in the Service Advisory'
 			)
 		);
 
@@ -67,12 +67,7 @@ class Clinic_Hours_Widget extends WP_Widget {
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 
-    $des = empty( $instance['des'] ) ? '' : apply_filters( 'widget_title', $instance['des'] );
-		$mon_tue_thu = empty( $instance['mon_tue_thu'] ) ? '' : apply_filters( 'widget_title', $instance['mon_tue_thu'] );
-		$wed = empty( $instance['wed'] ) ? '' : apply_filters( 'widget_title', $instance['wed'] );
-		$fri = empty( $instance['fri'] ) ? '' : apply_filters( 'widget_title', $instance['fri'] );
-
-
+		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
 
 		ob_start();
 
@@ -83,9 +78,6 @@ class Clinic_Hours_Widget extends WP_Widget {
 		}
 
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
-
-
-
 		$widget_string .= ob_get_clean();
 		$widget_string .= $after_widget;
 
@@ -105,11 +97,8 @@ class Clinic_Hours_Widget extends WP_Widget {
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
 
-    $instance['des'] = strip_tags( $new_instance['des'] );
-		$instance['mon_tue_thu'] = strip_tags( $new_instance['mon_tue_thu'] );
-		$instance['wed'] = strip_tags( $new_instance['wed'] );
-		$instance['fri'] = strip_tags( $new_instance['fri'] );
-
+		$instance['note'] = strip_tags( $new_instance['note'] );
+		
 
 		return $instance;
 
@@ -125,20 +114,15 @@ class Clinic_Hours_Widget extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => 'clinic hours',
-        'des' => '',
-				'mon_tue_thu' => '',
-				'wed' => '',
-				'fri' => '',
+				'title' => 'service advisory',
+				'note' => '',
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
 
-    $des = strip_tags( $new_instance['des'] );
-		$mon_tue_thu = strip_tags( $new_instance['mon_tue_thu'] );
-		$wed = strip_tags( $new_instance['wed'] );
-		$fri = strip_tags( $new_instance['fri'] );
+		$note = strip_tags( $new_instance['note'] );
+
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -148,8 +132,5 @@ class Clinic_Hours_Widget extends WP_Widget {
 } // end class
 
 add_action( 'widgets_init', function(){
-     register_widget( 'Clinic_Hours_Widget' );
+     register_widget( 'Service_Advisory' );
 });
-
-
-?>

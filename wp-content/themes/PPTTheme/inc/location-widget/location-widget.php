@@ -71,6 +71,7 @@ class Location extends WP_Widget {
 		$locLine1 = empty( $instance['locLine1'] ) ? '' : apply_filters( 'widget_title', $instance['locLine1'] );
 		$locLine2 = empty( $instance['locLine2'] ) ? '' : apply_filters( 'widget_title', $instance['locLine2'] );
 		$locLine3 = empty( $instance['locLine3'] ) ? '' : apply_filters( 'widget_title', $instance['locLine3'] );
+		$locLine4 = empty( $instance['locLine4'] ) ? '' : apply_filters( 'widget_title', $instance['locLine4'] );
 		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
 
 
@@ -105,6 +106,7 @@ class Location extends WP_Widget {
 		$instance['locLine1'] = strip_tags( $new_instance['locLine1'] );
 		$instance['locLine2'] = strip_tags( $new_instance['locLine2'] );
 		$instance['locLine3'] = strip_tags( $new_instance['locLine3'] );
+		$instance['locLine4'] = strip_tags( $new_instance['locLine4'] );
 		$instance['note'] = strip_tags( $new_instance['note'] );
 
 		return $instance;
@@ -130,10 +132,11 @@ class Location extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$locLine1 = strip_tags( $new_instance['locLine1'] );
-		$locLine2 = strip_tags( $new_instance['locLine2'] );
-		$locLine3 = strip_tags( $new_instance['locLine3'] );
-		$note = strip_tags( $new_instance['note'] );
+		$locLine1 = strip_tags( $instance['locLine1'] );
+		$locLine2 = strip_tags( $instance['locLine2'] );
+		$locLine3 = strip_tags( $instance['locLine3'] );
+		$locLine4 = strip_tags( $instance['locLine4'] );
+		$note = strip_tags( $instance['note'] );
 
 
 		// Display the admin form

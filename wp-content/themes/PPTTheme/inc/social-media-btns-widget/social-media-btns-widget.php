@@ -125,9 +125,9 @@ class SocialMedia extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$insta = strip_tags( $new_instance['insta'] );
-		$fb = strip_tags( $new_instance['fb'] );
-		$twi = strip_tags( $new_instance['twi'] );
+		$insta = strip_tags( $instance['insta'] );
+		$fb = strip_tags( $instance['fb'] );
+		$twi = strip_tags( $instance['twi'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );

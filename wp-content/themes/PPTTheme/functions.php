@@ -138,3 +138,13 @@ require get_template_directory() . '/inc/service-advisory-widget/service-advisor
  */
 require get_template_directory() . '/inc/post-types.php';
 require get_template_directory() . '/inc/taxonomies.php';
+
+/**
+ * Load in all the widgets
+ */
+require get_template_directory() . '/inc/location-widget/location-widget.php';
+
+/**
+ * Load in metaboxes
+ */
+require get_template_directory() . '/inc/metaboxes.php';

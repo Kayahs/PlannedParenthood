@@ -135,11 +135,11 @@ class Contact_Info extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$tel = strip_tags( $new_instance['tel'] );
-		$fax = strip_tags( $new_instance['fax'] );
-		$email = strip_tags( $new_instance['email'] );
-		$media = strip_tags( $new_instance['media'] );
-		$note = strip_tags( $new_instance['note'] );
+		$tel = strip_tags( $instance['tel'] );
+		$fax = strip_tags( $instance['fax'] );
+		$email = strip_tags( $instance['email'] );
+		$media = strip_tags( $instance['media'] );
+		$note = strip_tags( $instance['note'] );
 
 
 		// Display the admin form

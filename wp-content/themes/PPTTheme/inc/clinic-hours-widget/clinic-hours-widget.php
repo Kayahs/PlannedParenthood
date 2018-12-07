@@ -135,10 +135,10 @@ class Clinic_Hours_Widget extends WP_Widget {
 
 		$title = strip_tags( $instance['title'] );
 
-    $des = strip_tags( $new_instance['des'] );
-		$mon_tue_thu = strip_tags( $new_instance['mon_tue_thu'] );
-		$wed = strip_tags( $new_instance['wed'] );
-		$fri = strip_tags( $new_instance['fri'] );
+    $des = strip_tags( $instance['des'] );
+		$mon_tue_thu = strip_tags( $instance['mon_tue_thu'] );
+		$wed = strip_tags( $instance['wed'] );
+		$fri = strip_tags( $instance['fri'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );

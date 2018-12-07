@@ -121,7 +121,7 @@ class Service_Advisory extends WP_Widget {
 
 		$title = strip_tags( $instance['title'] );
 
-		$note = strip_tags( $new_instance['note'] );
+		$note = strip_tags( $instance['note'] );
 
 
 		// Display the admin form

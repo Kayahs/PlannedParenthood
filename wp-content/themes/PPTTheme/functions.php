@@ -64,6 +64,26 @@ function red_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+		register_sidebar( array(
+		'name' => 'Contact Page Section 1',
+		'id' => 'contact-page-section-1',
+		'description' => 'Appears in the contact page - section 1',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+		register_sidebar( array(
+		'name' => 'Contact Page Section 2',
+		'id' => 'contact-page-section-2',
+		'description' => 'Appears in the contact page - section 2',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 

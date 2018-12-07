@@ -129,8 +129,8 @@ class Drop_in_Hours_Widget extends WP_Widget {
 
 		$title = strip_tags( $instance['title'] );
 
-    $des = strip_tags( $new_instance['des'] );
-		$sat = strip_tags( $new_instance['sat'] );
+    $des = strip_tags( $instance['des'] );
+		$sat = strip_tags( $instance['sat'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );

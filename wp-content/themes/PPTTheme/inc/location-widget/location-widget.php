@@ -4,9 +4,7 @@
 class Location extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
-     *
-     * Unique identifier for your widget.
+     * Location Widget
      *
      * @since    1.0.0
      *
@@ -23,13 +21,12 @@ class Location extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
 			'Location Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Show the location.'
 			)
 		);
 
@@ -74,6 +71,7 @@ class Location extends WP_Widget {
 		$locLine1 = empty( $instance['locLine1'] ) ? '' : apply_filters( 'widget_title', $instance['locLine1'] );
 		$locLine2 = empty( $instance['locLine2'] ) ? '' : apply_filters( 'widget_title', $instance['locLine2'] );
 		$locLine3 = empty( $instance['locLine3'] ) ? '' : apply_filters( 'widget_title', $instance['locLine3'] );
+		$locLine4 = empty( $instance['locLine4'] ) ? '' : apply_filters( 'widget_title', $instance['locLine4'] );
 		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
 
 
@@ -108,11 +106,8 @@ class Location extends WP_Widget {
 		$instance['locLine1'] = strip_tags( $new_instance['locLine1'] );
 		$instance['locLine2'] = strip_tags( $new_instance['locLine2'] );
 		$instance['locLine3'] = strip_tags( $new_instance['locLine3'] );
+		$instance['locLine4'] = strip_tags( $new_instance['locLine4'] );
 		$instance['note'] = strip_tags( $new_instance['note'] );
-
-
-
-		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
 
@@ -125,7 +120,6 @@ class Location extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
@@ -138,10 +132,11 @@ class Location extends WP_Widget {
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$locLine1 = strip_tags( $new_instance['locLine1'] );
-		$locLine2 = strip_tags( $new_instance['locLine2'] );
-		$locLine3 = strip_tags( $new_instance['locLine3'] );
-		$note = strip_tags( $new_instance['note'] );
+		$locLine1 = strip_tags( $instance['locLine1'] );
+		$locLine2 = strip_tags( $instance['locLine2'] );
+		$locLine3 = strip_tags( $instance['locLine3'] );
+		$locLine4 = strip_tags( $instance['locLine4'] );
+		$note = strip_tags( $instance['note'] );
 
 
 		// Display the admin form
@@ -151,7 +146,6 @@ class Location extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Location' );
 });

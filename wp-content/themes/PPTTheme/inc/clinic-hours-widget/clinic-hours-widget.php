@@ -1,40 +1,9 @@
 <?php
-/**
- * RED WordPress Widget Boilerplate
- *
- * The RED Widget Boilerplate is an organized, maintainable boilerplate for building widgets using WordPress best practices.
- *
- * Lightly forked from the WordPress Widget Boilerplate by @tommcfarlin.
- *
- * @package   Clinic_Hours_Widget
- * @author    Eirian Ta <trang.ta911@gmail.com>
- * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2018 Red Academy
- *
- * @wordpress-plugin
- * Plugin Name:       Clinic Hours Widget
- * Plugin URI:        @TODO
- * Description:       @TODO
- * Version:           1.0.0
- * Author:            Eirian Ta
- * Author URI:        @TODO
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- */
 
-// Prevent direct file access
-if ( ! defined ( 'ABSPATH' ) ) {
-	exit;
-}
-
-// TODO: change 'Widget_Name' to the name of your plugin
 class Clinic_Hours_Widget extends WP_Widget {
 
     /**
-     * @TODO - Rename "widget-name" to the name your your widget
-     *
-     * Unique identifier for your widget.
+     * Clinic Hours Widget
      *
      * @since    1.0.0
      *
@@ -51,13 +20,12 @@ class Clinic_Hours_Widget extends WP_Widget {
 	 */
 	public function __construct() {
 
-		// TODO: update description
 		parent::__construct(
 			$this->get_widget_slug(),
 			'Clinic Hours Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Short description of the widget goes here.'
+				'description' => 'Show Clinic-hours'
 			)
 		);
 
@@ -142,7 +110,6 @@ class Clinic_Hours_Widget extends WP_Widget {
 		$instance['wed'] = strip_tags( $new_instance['wed'] );
 		$instance['fri'] = strip_tags( $new_instance['fri'] );
 
-		// TODO: Here is where you update the rest of your widget's old values with the new, incoming values
 
 		return $instance;
 
@@ -155,7 +122,6 @@ class Clinic_Hours_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 
-		// TODO: Define default values for your variables, create empty value if no default
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
@@ -169,11 +135,10 @@ class Clinic_Hours_Widget extends WP_Widget {
 
 		$title = strip_tags( $instance['title'] );
 
-    $des = strip_tags( $new_instance['des'] );
-		$mon_tue_thu = strip_tags( $new_instance['mon_tue_thu'] );
-		$wed = strip_tags( $new_instance['wed'] );
-		$fri = strip_tags( $new_instance['fri'] );
-		// TODO: Store the rest of values of the widget in their own variables
+    $des = strip_tags( $instance['des'] );
+		$mon_tue_thu = strip_tags( $instance['mon_tue_thu'] );
+		$wed = strip_tags( $instance['wed'] );
+		$fri = strip_tags( $instance['fri'] );
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -182,7 +147,6 @@ class Clinic_Hours_Widget extends WP_Widget {
 
 } // end class
 
-// TODO: Remember to change 'Widget_Name' to match the class name definition
 add_action( 'widgets_init', function(){
      register_widget( 'Clinic_Hours_Widget' );
 });

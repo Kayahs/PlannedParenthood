@@ -1,15 +1,15 @@
 <?php
 
-class SocialMedia extends WP_Widget {
+class Service_Advisory extends WP_Widget {
 
     /**
-     * Social Media Buttons Widget
+     * Contact Info Widget
      *
      * @since    1.0.0
      *
      * @var      string
      */
-    protected $widget_slug = 'social-media';
+    protected $widget_slug = 'service-advisory';
 
 	/*--------------------------------------------------*/
 	/* Constructor
@@ -22,10 +22,10 @@ class SocialMedia extends WP_Widget {
 
 		parent::__construct(
 			$this->get_widget_slug(),
-			'Social Media Widget',
+			'Service Advisory Widget',
 			array(
 				'classname'  => $this->get_widget_slug().'-class',
-				'description' => 'Show the Social media pages'
+				'description' => 'Show some important notes in the Service Advisory'
 			)
 		);
 
@@ -67,9 +67,7 @@ class SocialMedia extends WP_Widget {
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 
-		$insta = empty( $instance['insta'] ) ? '' : apply_filters( 'widget_title', $instance['insta'] );
-		$fb = empty( $instance['fb'] ) ? '' : apply_filters( 'widget_title', $instance['fb'] );
-		$twi = empty( $instance['twi'] ) ? '' : apply_filters( 'widget_title', $instance['twi'] );
+		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
 
 		ob_start();
 
@@ -98,10 +96,9 @@ class SocialMedia extends WP_Widget {
 		$instance = $old_instance;
 
 		$instance['title'] = strip_tags( $new_instance['title'] );
-		$instance['insta'] = strip_tags( $new_instance['insta'] );
-		$instance['fb'] = strip_tags( $new_instance['fb'] );
-		$instance['twi'] = strip_tags( $new_instance['twi'] );
 
+		$instance['note'] = strip_tags( $new_instance['note'] );
+		
 
 		return $instance;
 
@@ -117,17 +114,15 @@ class SocialMedia extends WP_Widget {
 		$instance = wp_parse_args(
 			(array) $instance,
 			array(
-				'title' => ' ',
-				'insta' => '',
-				'fb' => '',
-				'twi' => '',
+				'title' => 'service advisory',
+				'note' => '',
 			)
 		);
 
 		$title = strip_tags( $instance['title'] );
-		$insta = strip_tags( $instance['insta'] );
-		$fb = strip_tags( $instance['fb'] );
-		$twi = strip_tags( $instance['twi'] );
+
+		$note = strip_tags( $instance['note'] );
+
 
 		// Display the admin form
 		include( plugin_dir_path( __FILE__ ) . 'views/admin.php' );
@@ -137,5 +132,5 @@ class SocialMedia extends WP_Widget {
 } // end class
 
 add_action( 'widgets_init', function(){
-     register_widget( 'SocialMedia' );
+     register_widget( 'Service_Advisory' );
 });

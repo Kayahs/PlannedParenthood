@@ -66,6 +66,26 @@ function red_starter_widgets_init() {
 	) );
 
 		register_sidebar( array(
+		'name' => 'Banner',
+		'id' => 'banner',
+		'description' => 'Appears in the banners',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+		register_sidebar( array(
+		'name' => 'Donate Page',
+		'id' => 'donate-page',
+		'description' => 'Appears in the banners',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+		register_sidebar( array(
 		'name' => 'Contact Page Section 1',
 		'id' => 'contact-page-section-1',
 		'description' => 'Appears in the contact page - section 1',

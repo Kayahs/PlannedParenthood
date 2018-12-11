@@ -145,6 +145,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
+ * Register our sidebars and widgetized areas.
+ */
+require get_template_directory() . '/inc/widget-area.php';
+
+ /**
  * Load in all the widgets.
  */
 require get_template_directory() . '/inc/clinic-hours-widget/clinic-hours-widget.php';
@@ -153,7 +158,8 @@ require get_template_directory() . '/inc/location-widget/location-widget.php';
 require get_template_directory() . '/inc/contact-info-widget/contact-info-widget.php';
 require get_template_directory() . '/inc/social-media-btns-widget/social-media-btns-widget.php';
 require get_template_directory() . '/inc/service-advisory-widget/service-advisory-widget.php';
-/* 
+
+/** 
  * Custom Post-types and Taxonomies
  */
 require get_template_directory() . '/inc/post-types.php';

@@ -122,17 +122,27 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
+function ppt_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+  wp_enqueue_script( 'ppt-section-builder', get_template_directory_uri() . '/build/js/section-builder.min.js', array(), '1.0', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+  $script_url = get_template_directory_uri() . '/build/js/factsheet-sort.min.js';
+   wp_enqueue_script( 'jquery' );
+   wp_enqueue_script( 'red_posts', $script_url, array( 'jquery' ), false, true );
+  wp_localize_script( 'red_posts', 'red_vars', array(
+      'rest_url' => esc_url_raw( rest_url() ),
+      'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+      'post_id' => get_the_ID()
+  ) );
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'ppt_starter_scripts' );
 
 /**
  * Custom template tags for this theme.
@@ -145,6 +155,11 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
+ * Register our sidebars and widgetized areas.
+ */
+require get_template_directory() . '/inc/widget-area.php';
+
+ /**
  * Load in all the widgets.
  */
 require get_template_directory() . '/inc/clinic-hours-widget/clinic-hours-widget.php';
@@ -153,7 +168,8 @@ require get_template_directory() . '/inc/location-widget/location-widget.php';
 require get_template_directory() . '/inc/contact-info-widget/contact-info-widget.php';
 require get_template_directory() . '/inc/social-media-btns-widget/social-media-btns-widget.php';
 require get_template_directory() . '/inc/service-advisory-widget/service-advisory-widget.php';
-/* 
+
+/** 
  * Custom Post-types and Taxonomies
  */
 require get_template_directory() . '/inc/post-types.php';
@@ -163,6 +179,3 @@ require get_template_directory() . '/inc/taxonomies.php';
  * Load in metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';
-
-
-

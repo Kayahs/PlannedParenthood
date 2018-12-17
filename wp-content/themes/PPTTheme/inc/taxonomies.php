@@ -53,7 +53,8 @@ function register_taxonomies() {
     'hierarchical' => true,
     'labels' => create_tag_labels("Fact"),
     'query_var' => true,
-    'show_admin_column' => true
+    'show_admin_column' => true,
+    'show_in_rest' => true
   ) );
 }
 add_action( 'init', 'register_taxonomies' );

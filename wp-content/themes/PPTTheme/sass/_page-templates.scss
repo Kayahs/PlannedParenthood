@@ -1,5 +1,231 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+$purple: #ba0e82;
+$green: #a1b426;
+$blue: #00a3d7;
+$orange: #f7911d;
+$grey: #4a4a4a;
+$black: #000000;
+$white: #ffffff;
+
+/* Header */
+.site-header {
+  width: 100%;
+  padding-top: 52px;
+  background-color: $purple;
+  position: relative;
+}
+
+.header-logo {
+  width: 120px;
+  position: absolute;
+  left: 52px;
+}
+
+.header-top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  right: 21px;
+}
+
+.header-pnumber {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: $white;
+  margin-right: 25px;
+}
+
+.header-donate-button {
+  border-radius: 3px;
+  background-color: $white;
+  font-family: Arial;
+  font-size: 20px;
+  color: $purple;
+}
+
+.nav-search {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.search-bar {
+  border: none;
+  padding: none;
+  margin: none;
+  background-color: $purple;
+  color: $white;
+}
+
+.search-field {
+  border: none;
+  padding: none;
+  margin: none;
+  background-color: $purple;
+  color: $white;
+}
+
+.search-form {
+  border: none;
+  padding: none;
+  margin: none;
+  background-color: $purple;
+  color: $white;
+}
+
+.main-navigation {
+  height: 22px;
+  font-family: Arial;
+  font-size: 20px;
+  color: $white;
+
+  li {
+    margin-right: 70px;
+    color: $white !important;
+  }
+}
+
+.escape-button {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  opacity: 0.5;
+  z-index: 205;
+  width: 88px;
+  height: 88px;
+}
 
 /* Front page */
+.top-hero-purple {
+  width: 100%;
+  height: 235px;
+  background-color: $purple;
+  position: relative;
+
+  h1 {
+    width: 741.9px;
+    height: 207px;
+    font-family: Arial;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.91;
+    color: $white;
+    position: absolute;
+    z-index: 100;
+  }
+  img {
+    width: 80%;
+    height: 300px;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to bottom, #d8d8d8, #d8d8d8);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+}
+
+.bottom-hero-black {
+  width: 100%;
+  height: 336px;
+  background-color: $grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.black-div {
+  width: 319px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #d7d6d7;
+
+  h2 {
+    width: 349.3px;
+    height: 36px;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.white-icon-container {
+  padding: 150px 150px 150px 150px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+
+  h2 {
+    width: 306px;
+    height: 29px;
+    font-family: Arial;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 0.91;
+    text-align: center;
+    color: $purple;
+  }
+
+  p {
+    width: 137px;
+    height: 29px;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 1.61;
+    text-align: center;
+    color: $black;
+  }
+}
+/* Footer */
+.black-footer {
+  background-color: #2c2c2c;
+  width: 100%;
+  height: 170px;
+  color: $white;
+}
+
+.white-footer-top {
+  position: relative;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 45px;
+  margin-left: 44px;
+  padding: 0;
+  font-family: Arial;
+  font-size: 18px;
+  color: $black;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+    border-right: 1px solid $white;
+    padding: 0 1rem;
+  }
+}
+
+.footer-text {
+  margin-left: 45px;
+  width: 538px;
+  height: 131px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.1px;
+  color: $black;
+}

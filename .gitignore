@@ -12,7 +12,6 @@
 !.gitignore
 !/wp-content/plugins/
 !/wp-content/themes/
-!/wp-content/uploads/
 !README.md
 # Ignore everything in "plugins" except certain plugins. #
 /wp-content/plugins/*

@@ -46,6 +46,7 @@ function create_post_types() {
     'exclude_from_search' => false,
     'capability_type' => 'post',
     'rewrite' => array( 'slug' => 'facts' ),
+    'show_in_rest' => true,
     )
   );
 

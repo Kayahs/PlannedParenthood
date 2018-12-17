@@ -30,14 +30,18 @@ function ppt_register_metaboxes() {
 
    $fact_meta->add_field( array(
     'name' => 'Fact Blurb',
-    'desc' => 'Small little blurb to display on the card and at the top of the page.',
+    'desc' => 'Small little blurb to display under the title at the top of the page.',
     'id'   => $prefix . 'fact_blurb',
     'type' => 'textarea',
   ) );
-
-
-
-   //Create MetaBox for the Three Icons Template (For Services Page and Education Page)
+  
+   $fact_meta->add_field( array(
+    'name' => 'Card Excerpt',
+    'desc' => 'Excerpt to show on Factsheets page.',
+    'id' => $prefix . 'card_excerpt',
+    'type' => 'text',
+   ));
+     //Create MetaBox for the Three Icons Template (For Services Page and Education Page)
 
     $sections_meta = new_cmb2_box( array(   
     'id'            => $prefix . 'sections_metabox',
@@ -134,5 +138,31 @@ function ppt_register_metaboxes() {
   ) );
 }
 
-
 add_action( 'cmb2_admin_init', 'ppt_register_metaboxes' );
+
+add_action( 'rest_api_init', function() {
+  register_rest_field( 
+    'fact',
+    '_ppt_card_excerpt',
+    array(
+      'get_callback'    => 'ppt_get_card_excerpt',
+      'update_callback' => 'ppt_update_card_excerpt',
+      'schema'          => null,
+    )
+  );
+});
+
+function ppt_get_card_excerpt( $object, $field_name, $request ) {
+  $fact = get_post( $object['id'] );
+  return $fact->_ppt_card_excerpt;
+}
+
+function ppt_update_card_excerpt( $value, $object, $field_name ) {
+  if ( ! $value || ! is_string( $value ) ) {
+    return;
+  }
+
+  $fact = get_post( $object->ID );
+  $fact->_ppt_card_excerpt = $value;
+  return wp_update_post( $fact );
+}

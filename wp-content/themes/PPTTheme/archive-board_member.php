@@ -8,7 +8,7 @@
 get_header(); ?>
 
   <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main bod" role="main">
 
     <?php if ( have_posts() ) : ?>
 
@@ -19,21 +19,22 @@ get_header(); ?>
         ?>
       </header><!-- .page-header -->
 
-      <div class="top-hero-purple">
+      <div class="top-hero-green">
           <h1 class="page-title">board members</h1> ;
-          <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Program-hero.png" alt="Program hero image">' ?>
+          <?php printf('<a href="%1$s/services/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+          <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/About-hero.jpg" alt="About hero image">' ?>
       </div>
 
-      <?php
-      $query_vars = $wp_query->query_vars;
-/*           $query_vars['orderby'] = 'title';
-           $query_vars['order'] = 'ASC';*/
-           $query_vars['posts_per_page'] = -1;
-           $args = array(
-            'post_per_page' => -1,
-            'post_type' => 'board_member'
-            );
-           $new_query = new WP_Query($args); ?>
+      <div class="about-navigation">
+       <h2>about us</h2>
+       <h2>board of directors</h2>
+       <h2>strategic plan & annual report</h2>
+     </div>
+
+        <?php $query_vars = $wp_query->query_vars;
+
+           $query_vars['posts_per_page'] = 15;
+           $new_query = new WP_Query($query_vars); ?>
          <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
 
 

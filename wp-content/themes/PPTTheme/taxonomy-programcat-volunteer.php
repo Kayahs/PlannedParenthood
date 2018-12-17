@@ -20,7 +20,8 @@ get_header(); ?>
       </header><!-- .page-header -->
 
       <div class="top-hero-blue">
-          <h1 class="page-title">volunteer at ppt</h1> ;
+          <h1 class="page-title">volunteer at ppt</h1>
+
           <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Volunteer-hero.png" alt="Volunteer hero image">' ?>
       </div>
 

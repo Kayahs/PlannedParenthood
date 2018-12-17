@@ -14,16 +14,23 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+
+			<div class="top-hero-purple">
+					<h1 class="page-title">programs</h1> ;
+					<?php printf('<a href="%1$s"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+					<?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Program-hero.png" alt="Program hero image">' ?>
+			</div>
+
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					get_template_part( 'template-parts/content' );
+					get_template_part( 'template-parts/content','program' );
 				?>
 
 			<?php endwhile; ?>
@@ -39,5 +46,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -14,11 +14,10 @@
   <div class="dcta-content">
     Together, we can break down barriers, challenge conventions, and change hearts, minds and lives.
   </div>
-  <div class="dcta-button">
-    <button>
-      donate
-    </button>
+  <div>
+    <button type="button" class="dcta-button">donate</button>
   </div>
-</div>
 <div class="dcta-logo">
+<img src = <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/logo-with-text.svg' ?> alt="Planned Parenthood Logo with text">
+</div>
 </div>

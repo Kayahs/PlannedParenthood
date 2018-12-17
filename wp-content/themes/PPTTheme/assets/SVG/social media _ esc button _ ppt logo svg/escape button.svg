@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="130px" viewBox="0 0 130 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>escape button</title>
+    <desc>Created with Sketch.</desc>
+    <g id="escape-button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="escape">
+            <g>
+                <circle id="Oval-Copy-5" fill="#000000" cx="65" cy="65" r="65"></circle>
+                <polygon id="Path-2-Copy-3" stroke="#D8D8D8" fill="#FFFFFF" points="50.8114703 32.5 76.1170425 32.5 86.5538757 45.508166 98.9772727 45.508166 98.9772727 51.4104248 82.3179109 51.4104248 72.8844364 40.8329252 66.1841387 55.5855854 77.0922384 68.9391072 77.0922384 85.6818182 69.911069 85.6818182 69.911069 73.5670635 61.3100638 64.0614619 55.216994 73.5670635 32.5 73.5670635 32.5 66.551819 48.1351908 66.551819 62.2852597 39.8419116 53.2666022 39.8419116 47.4382828 49.4283975 40.0919339 49.4283975"></polygon>
+                <circle id="Oval-2-Copy-3" fill="#FFFFFF" cx="70.9090909" cy="22.1590909" r="7.38636364"></circle>
+                <text id="ESCAPE" font-family="Arial-BoldMT, Arial" font-size="14" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="36.2138672" y="104.693182">ESCAPE</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

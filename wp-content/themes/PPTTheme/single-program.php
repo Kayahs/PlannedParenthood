@@ -15,6 +15,7 @@ get_header(); ?>
       <div class="top-hero-purple">
       <?php $title = get_post_meta( get_the_ID(), '_ppt_single_program_title', true );
       echo '<h1 class="entry-title">' .$title. '</h1>'; ?>
+      <?php printf('<a href="%1$s/programs/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
       <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Workshop-snap-hero.png" alt="Workshop hero image">'; ?>
      </div><!-- .top-hero-purple -->
 

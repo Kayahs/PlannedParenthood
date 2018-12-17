@@ -17,7 +17,11 @@ get_header(); ?>
       </header>
     <?php endif; ?>
 
-    <?php the_title( '<h2 class="entry-title">' , '</h2>' ); ?>
+     <div class="top-hero-blue">
+      <?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
+      <?php if (is_page('services')) { echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Services-hero.png" alt="Services hero image">'; }
+      if (is_page('education')) { echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/Education-hero.png" alt="Education hero image">'; } ?>
+     </div><!-- .top-hero-blue -->
 
     <?php
     for ($x = 1; $x <= 3; $x++) {

@@ -163,3 +163,6 @@ require get_template_directory() . '/inc/taxonomies.php';
  * Load in metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';
+
+
+

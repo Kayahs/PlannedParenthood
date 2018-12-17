@@ -41,6 +41,35 @@ function ppt_register_metaboxes() {
     'id' => $prefix . 'card_excerpt',
     'type' => 'text',
    ));
+
+   $fact_meta->add_field( array(
+    'name' => 'PDF File',
+    'desc' => 'Upload a PDF or enter an URL.',
+    'id' => $prefix . 'fact_pdf_url',
+    'type' => 'file',
+    'query_args' => array(
+      'type' => 'application/pdf'
+    ),
+   ));
+
+   $research_meta = new_cmb2_box( array(
+    'id'            => $prefix . 'research_metabox',
+    'title'         => 'Research Metabox',
+    'object_types'  => array( 'research' ), // Post type
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+  ) );
+
+   $research_meta->add_field( array(
+    'name' => 'PDF URL',
+    'desc' => 'Upload a PDF or enter an URL.',
+    'id' => $prefix . 'research_pdf_url',
+    'type' => 'file',
+    'query_args' => array(
+      'type' => 'application/pdf'
+    ),
+   ));
      //Create MetaBox for the Three Icons Template (For Services Page and Education Page)
 
     $sections_meta = new_cmb2_box( array(   

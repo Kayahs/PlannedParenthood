@@ -12,20 +12,24 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="black-footer">
 			  <div class="footer-location">
-				<?php if ( is_active_sidebar( 'footer-sidebar-1' ) ) : ?>
+				<?php //if ( is_active_sidebar( 'footer-sidebar-1' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
-        <?php endif; ?>
+        <?php //endif; ?>
 				<!-- will place the location widget here -->
 				</div>
+				<div class="footer-both-hours">
 				<div class="footer-business-hours">
 				<?php if ( is_active_sidebar( 'footer-sidebar-2' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
         <?php endif; ?>
+				</div>
+				<div class="footer-sat-hours"> 
 				<?php if ( is_active_sidebar( 'footer-sidebar-3' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
         <?php endif; ?>
 				<!-- will place the business hours widget here -->
 				</div>
+				</div> <!-- div that has footer 2 and 3 -->
 				<div class="footer-social-media">
 				<?php if ( is_active_sidebar( 'footer-sidebar-4' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-4' ); ?>
@@ -53,6 +57,15 @@
 				<!-- This is where I will place the text in the bottom left of the footer -->
 				</div>
 				<div class="bottom-footer-icons">
+				<a href="http://www.lhins.on.ca/">
+        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/LHIN.svg' ?> alt="Ontario Toronto Central Local Health Integration Network">
+				</a>
+				<a href="https://www.unitedwaygt.org/list-of-agencies">
+        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/United-way.svg' ?> alt="United Way">
+				</a>
+				<a href="https://www.ontario.ca/page/community-health-centres">
+        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/OCHC.svg' ?> alt="Ontario's Community Health Centres">
+				</a>
 				<!-- This is where I will put the 3 icons with external links in the bottom right of the footer -->
 				</div>
 			</div>

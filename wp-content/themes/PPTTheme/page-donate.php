@@ -12,7 +12,7 @@ get_header(); ?>
 
       <header>
         <div class="banner">
-          <h2>donate today</h2>
+          <h1>donate today</h1>
           <p>You don’t need to be an activist to create  change, but you can add your voice to ours.</p>
           <a href=""><button class="white-btn">donate now</button></a>
         </div>

@@ -30,14 +30,18 @@ function ppt_register_metaboxes() {
 
    $fact_meta->add_field( array(
     'name' => 'Fact Blurb',
-    'desc' => 'Small little blurb to display on the card and at the top of the page.',
+    'desc' => 'Small little blurb to display under the title at the top of the page.',
     'id'   => $prefix . 'fact_blurb',
     'type' => 'textarea',
   ) );
-
-
-
-   //Create MetaBox for the Three Icons Template (For Services Page and Education Page)
+  
+   $fact_meta->add_field( array(
+    'name' => 'Card Excerpt',
+    'desc' => 'Excerpt to show on Factsheets page.',
+    'id' => $prefix . 'card_excerpt',
+    'type' => 'text',
+   ));
+     //Create MetaBox for the Three Icons Template (For Services Page and Education Page)
 
     $sections_meta = new_cmb2_box( array(   
     'id'            => $prefix . 'sections_metabox',
@@ -132,7 +136,150 @@ function ppt_register_metaboxes() {
     'id'   => $prefix . 'description_section3',
     'type' => 'textarea',
   ) );
+
+
+     //Create MetaBox for the Icon in Frame with Contact Btn (For Sexual Health Page, Mental Health Page and Primary Care Page)
+    
+    $components_meta = new_cmb2_box( array(   
+    'id'            => $prefix . 'components_metabox',
+    'title'         => 'Components Metabox',
+    'object_types' => array( 'page' ),
+    'show_on'      => array( 'key' => 'page-template', 'value' => 'icon-in-frame-with-contact-button-template.php' ),
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, 
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Icon for component 1',
+    'desc' => 'Set the image icon for component 1.',
+    'id'   => $prefix . 'image_component1',
+    'type' => 'file',
+  ) );    
+
+   $components_meta->add_field( array(
+    'name' => 'Title for component 1',
+    'desc' => 'Set the title for component 1.',
+    'id'   => $prefix . 'title_component1',
+    'type' => 'text',
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Description for component 1',
+    'desc' => 'Set the brief description for component 1.',
+    'id'   => $prefix . 'description_component1',
+    'type' => 'textarea',
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Content for component 1',
+    'desc' => 'Set the content for component 1.',
+    'id'   => $prefix . 'content_component1',
+    'type' => 'textarea',
+  ) );
+
+        $components_meta->add_field( array(
+    'name' => 'Icon for component 2',
+    'desc' => 'Set the image icon for component 2.',
+    'id'   => $prefix . 'image_component2',
+    'type' => 'file',
+  ) );    
+
+   $components_meta->add_field( array(
+    'name' => 'Title for component 2',
+    'desc' => 'Set the title for component 2.',
+    'id'   => $prefix . 'title_component2',
+    'type' => 'text',
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Description for component 2',
+    'desc' => 'Set the brief description for component 2.',
+    'id'   => $prefix . 'description_component2',
+    'type' => 'textarea',
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Content for component 2',
+    'desc' => 'Set the content for component 2.',
+    'id'   => $prefix . 'content_component2',
+    'type' => 'textarea',
+  ) );
+
+        $components_meta->add_field( array(
+    'name' => 'Icon for component 3',
+    'desc' => 'Set the image icon for component 3.',
+    'id'   => $prefix . 'image_component3',
+    'type' => 'file',
+  ) );    
+
+   $components_meta->add_field( array(
+    'name' => 'Title for component 3',
+    'desc' => 'Set the title for component 3.',
+    'id'   => $prefix . 'title_component3',
+    'type' => 'text',
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Description for component 3',
+    'desc' => 'Set the brief description for component 3.',
+    'id'   => $prefix . 'description_component3',
+    'type' => 'textarea',
+  ) );
+
+    $components_meta->add_field( array(
+    'name' => 'Content for component 3',
+    'desc' => 'Set the content for component 3.',
+    'id'   => $prefix . 'content_component3',
+    'type' => 'textarea',
+  ) );
+
+
+  //Create MetaBox for title appreared on the Single page of every program
+
+    $fact_meta = new_cmb2_box( array(
+    'id'            => $prefix . 'title_metabox',
+    'title'         => 'Single Page Title Metabox',
+    'object_types'  => array( 'program' ), // Post type
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+  ) );
+
+   $fact_meta->add_field( array(
+    'name' => 'Single Page Title Metabox',
+    'desc' => 'Set the title at the top of the page for every single program.',
+    'id'   => $prefix . 'single_program_title',
+    'type' => 'text',
+  ) );
+
 }
 
-
 add_action( 'cmb2_admin_init', 'ppt_register_metaboxes' );
+
+add_action( 'rest_api_init', function() {
+  register_rest_field( 
+    'fact',
+    '_ppt_card_excerpt',
+    array(
+      'get_callback'    => 'ppt_get_card_excerpt',
+      'update_callback' => 'ppt_update_card_excerpt',
+      'schema'          => null,
+    )
+  );
+});
+
+function ppt_get_card_excerpt( $object, $field_name, $request ) {
+  $fact = get_post( $object['id'] );
+  return $fact->_ppt_card_excerpt;
+}
+
+function ppt_update_card_excerpt( $value, $object, $field_name ) {
+  if ( ! $value || ! is_string( $value ) ) {
+    return;
+  }
+
+  $fact = get_post( $object->ID );
+  $fact->_ppt_card_excerpt = $value;
+  return wp_update_post( $fact );
+}

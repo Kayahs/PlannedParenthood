@@ -23,15 +23,32 @@ get_header(); ?>
         </header><!-- .entry-header -->
 
         <div class="entry-content">
-          <?php the_content(); ?>
-          <?php
-            wp_link_pages( array(
-              'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-              'after'  => '</div>',
-            ) );
-          ?>
+          <div class="fact-sections">
+            <h3>Sections</h3>
+            <ul class="section-list">
+            </ul>
+          </div>
+          <div class="content-container">
+            <div class="content-header">
+              <div class="tags-list">
+                Tags: 
+                <?php
+                  $fact_tags = get_the_terms(get_the_ID(), 'facttag');
+                  foreach ($fact_tags as $tag) { 
+                    echo $tag->name;
+                  }
+                ?>
+              </div>
+              <a class="download-container">
+                <div class="download-icon">
+                </div>
+                Download
+              </a>
+            </div>
+            <?php the_content(); ?>
+          </div>
         </div><!-- .entry-content -->
-
+        <?php require get_template_directory() . '/template-parts/donate-cta.php'; ?>
         <footer class="entry-footer">
           <?php red_starter_entry_footer(); ?>
         </footer><!-- .entry-footer -->

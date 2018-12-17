@@ -49,7 +49,7 @@ get_header(); ?>
             $query_vars = $wp_query->query_vars;
             $query_vars['orderby'] = 'title';
             $query_vars['order'] = 'ASC'; 
-            $query_vars['posts_per_page'] = 2;
+            $query_vars['posts_per_page'] = 9;
             $new_query = new WP_Query($query_vars); ?>
           <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
             <div class="card-container">

@@ -32,7 +32,7 @@
 				</div><!-- .site-branding (Will put the logo here as a background later in css)-->
 				<div class="header-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src= <?php echo get_template_directory_uri().'/assets/SVG/social%20media%20_%20esc%20button%20_%20ppt%20logo%20svg/ppt%20logo.svg' ?> alt="Planned Parenthood Logo">
+						<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/ppt-logo.svg' ?> alt="Planned Parenthood Logo">
 					</a>
 				</div> <!-- Will be moved to far left flex-start-->
 				<div class="header-top-right">
@@ -52,16 +52,15 @@
 				  </div><!-- .search-bar -->
 				</div> <!-- .nav-search-->
 			</header><!-- #masthead -->
-			<div class="top-button">
-				<img src="" alt="Back to top icon/image">
+			<div class="top-button" id="top-button">
+				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/back-to-top-icon.svg' ?> alt="Back to top icon/image">
 				<!-- This is where the back to top icon and text will go the scroll to top is in Javascript and not yet complete-->
 				<p>Back to Top</p>
 			</div>
 			<div class="escape-button">
 			<a href="https://www.youtube.com/">
-				<img src= <?php echo get_template_directory_uri().'/assets/SVG/social%20media%20_%20esc%20button%20_%20ppt%20logo%20svg/escape%20button.svg' ?> alt="escape icon/image">
+				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/escape-button.svg' ?> alt="escape icon/image">
 			</a>
 			</div>
 
 			<div id="content" class="site-content">
-

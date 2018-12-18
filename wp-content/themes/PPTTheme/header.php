@@ -52,11 +52,10 @@
 				  </div><!-- .search-bar -->
 				</div> <!-- .nav-search-->
 			</header><!-- #masthead -->
-			<div class="top-button" id="top-button">
+			<a class="top-button" id="top-button">
 				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/back-to-top-icon.svg' ?> alt="Back to top icon/image">
-				<!-- This is where the back to top icon and text will go the scroll to top is in Javascript and not yet complete-->
 				<p>Back to Top</p>
-			</div>
+			</a>
 			<div class="escape-button">
 			<a href="https://www.youtube.com/">
 				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/escape-button.svg' ?> alt="escape icon/image">

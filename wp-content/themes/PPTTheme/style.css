@@ -780,11 +780,22 @@ object {
 
 /* Front page */
 .top-hero-purple {
+  background-color: #ba0e82; }
+
+.top-hero-blue {
+  background-color: #00a3d7; }
+
+.top-hero-orange {
+  background-color: #f7911d; }
+
+.top-hero-green {
+  background-color: #a1b426; }
+
+.top-hero {
   width: 100%;
   height: 235px;
-  background-color: #ba0e82;
   position: relative; }
-  .top-hero-purple h1 {
+  .top-hero h1 {
     width: 741.9px;
     height: 207px;
     font-family: Arial;
@@ -796,13 +807,13 @@ object {
     top: 15px;
     z-index: 100;
     margin: 0; }
-    .top-hero-purple h1 p {
+    .top-hero h1 p {
       margin-top: 0;
       vertical-align: top;
       line-height: 0.6; }
-  .top-hero-purple img {
-    width: 80%;
-    height: 300px;
+  .top-hero img {
+    width: 90%;
+    height: auto;
     background-blend-mode: multiply;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d8d8), to(#d8d8d8));
     background-image: linear-gradient(to bottom, #d8d8d8, #d8d8d8);

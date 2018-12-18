@@ -22,7 +22,7 @@ get_header(); ?>
       <?php get_template_part( 'template-parts/content', 'single-program' );
 
       $categories = get_the_terms(get_the_ID(), 'programcat');      
-              foreach($categories as $category){
+              foreach($categories as $category) {
               if ($category->name != 'others') :
                 $linkWithSlash = esc_url( get_post_permalink() );               
                 $linkWithoutSlash = substr($linkWithSlash,0,strlen($linkWithSlash)-1);

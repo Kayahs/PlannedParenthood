@@ -266,7 +266,7 @@ function ppt_register_metaboxes() {
 
   //Create MetaBox for title appreared on the Single page of every program
 
-    $fact_meta = new_cmb2_box( array(
+    $form_meta = new_cmb2_box( array(
     'id'            => $prefix . 'title_metabox',
     'title'         => 'Single Page Title Metabox',
     'object_types'  => array( 'program' ), // Post type
@@ -275,7 +275,7 @@ function ppt_register_metaboxes() {
     'show_names' => true, // Show field names on the left
   ) );
 
-   $fact_meta->add_field( array(
+   $form_meta->add_field( array(
     'name' => 'Single Page Title Metabox',
     'desc' => 'Set the title at the top of the page for every single program.',
     'id'   => $prefix . 'single_program_title',

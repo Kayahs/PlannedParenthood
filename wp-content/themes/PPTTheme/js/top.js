@@ -1,17 +1,15 @@
-window.onscroll = function() {
-  scrollFunction();
-};
+$(window).scroll(function() {
+ if ($(window).scrollTop() > 100) {
+   $('.top-button').addClass('show');
+            } else {
+   $('.top-button').removeClass('show');
+            }
+        });
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById('top-button').style.display = 'block';
-  } else {
-    document.getElementById('top-button').style.display = 'none';
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+//back to top button function
+$('.top-button').on('click', function(e) {
+ e.preventDefault();
+ $('html, body').animate({
+   scrollTop:0
+ }, '300');
+});

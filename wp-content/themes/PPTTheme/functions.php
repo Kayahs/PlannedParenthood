@@ -128,6 +128,7 @@ function ppt_starter_scripts() {
 	wp_enqueue_script( 'red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
   wp_enqueue_script( 'ppt-section-builder', get_template_directory_uri() . '/build/js/section-builder.min.js', array(), '1.0', true);
+  wp_enqueue_script( 'top', get_template_directory_uri() . '/build/js/top.min.js', array(), '1.0', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -179,3 +180,9 @@ require get_template_directory() . '/inc/taxonomies.php';
  * Load in metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';
+
+/**
+ *  Load in custom Contact Form Hook
+ */
+
+require get_template_directory() . '/inc/cformhook.php';

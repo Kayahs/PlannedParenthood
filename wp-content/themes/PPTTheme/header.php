@@ -26,15 +26,24 @@
 				<!-- This is where I will place the service advisory which will be at the very top of the header -->
 			</div>
 
-			<header id="masthead" class="wrapper site-header" role="banner">
+			<header id="masthead" class="wrapper site-header 
+			<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' )) {
+						echo "blue";
+						} elseif (is_page('donate') || is_page('about') || is_page('privacy') || is_page('accessibility') || is_page('contact') || is_post_type_archive('board_member') ){
+							echo "green";
+						} elseif (is_page('education') || is_page('fqa') || is_post_type_archive('fact')) {
+							echo "orange";
+						} else {
+							echo "purple";
+						} ?>" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				</div><!-- .site-branding (Will put the logo here as a background later in css)-->
+				</div><!-- .site-branding -->
 				<div class="header-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/ppt-logo.svg' ?> alt="Planned Parenthood Logo">
 					</a>
-				</div> <!-- Will be moved to far left flex-start-->
+				</div> <!-- .header-logo-->
 				<div class="header-top-right">
 				  <div class="header-pnumber">
 				    <p>(416) 961-0113</p>

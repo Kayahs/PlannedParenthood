@@ -8,7 +8,7 @@
 get_header(); ?>
 
   <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main program volunteer-workshop" role="main">
 
     <?php if ( have_posts() ) : ?>
 
@@ -19,14 +19,16 @@ get_header(); ?>
         ?>
       </header><!-- .page-header -->
 
-      <div class="top-hero-blue">
+      <div class="wrapper top-hero blue">
           <h1 class="page-title">workshops</h1>
-          <?php printf('<a href="%1$s/education/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+            <?php printf('<a href="%1$s/education"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
           <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Workshop-hero.png" alt="Workshop hero image">' ?>
       </div>
 
-      <div class="content">
-        <p>PPT offers a wide range of workshops for different communities of youth throughout the city to promote healthy sexuality and informed decision making.  Through workshops ranging from birth control options to healthy relationships and STIs, we give you the knowledge and skills to make healthy choices.</p>
+      <div class="page-content">
+        <div class="page-extra-info">
+          <p>PPT offers a wide range of workshops for different communities of youth throughout the city to promote healthy sexuality and informed decision making.  Through workshops ranging from birth control options to healthy relationships and STIs, we give you the knowledge and skills to make healthy choices.</p>
+        </div>
       
 
       <?php /* Start the Loop */ ?>

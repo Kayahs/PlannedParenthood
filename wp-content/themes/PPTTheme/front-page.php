@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-      <div class="wrapper top-hero top-hero-purple">
+      <div class="wrapper top-hero purple">
       <h1><p>boldly</p><p>empowering</p><p>toronto's youth</p></h1>
       <img src = <?php echo get_site_url() . '/wp-content/uploads/2018/12/Home-page-hero.png' ?> alt="Homepage hero image">
       <!-- Inside this div will be placed the purple background, the text as well as the hero image -->

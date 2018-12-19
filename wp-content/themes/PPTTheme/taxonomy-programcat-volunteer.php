@@ -8,7 +8,7 @@
 get_header(); ?>
 
   <div id="primary" class="content-area">
-    <main id="main" class="site-main program volunteer" role="main">
+    <main id="main" class="site-main program volunteer-workshop" role="main">
 
     <?php if ( have_posts() ) : ?>
 
@@ -19,7 +19,7 @@ get_header(); ?>
         ?>
       </header><!-- .page-header -->
 
-      <div class="wrapper top-hero top-hero-green">
+      <div class="wrapper top-hero blue">
           <h1 class="page-title">volunteer at ppt</h1>
 
           <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Volunteer-hero.png" alt="Volunteer hero image">' ?>
@@ -51,7 +51,7 @@ get_header(); ?>
 
       <?php endif; ?>
 
-    <div class="page-extra-info"><p>To see career opportunities at PPT, please visit our <a href="">employment </a>page. </p></div>
+      <div class="page-extra-info"><p>To see career opportunities at PPT, please visit our <a href="">employment </a>page. </p></div>
 
   </div>
 

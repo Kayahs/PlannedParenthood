@@ -17,18 +17,14 @@
         <?php //endif; ?>
 				<!-- will place the location widget here -->
 				</div>
-				<div class="footer-both-hours">
-				<div class="footer-business-hours">
+				<div class="footer-hours">
 				<?php if ( is_active_sidebar( 'footer-sidebar-2' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
-        <?php endif; ?>
-				</div>
-				<div class="footer-sat-hours"> 
+        <?php endif; ?> 
 				<?php if ( is_active_sidebar( 'footer-sidebar-3' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
         <?php endif; ?>
 				<!-- will place the business hours widget here -->
-				</div>
 				</div> <!-- div that has footer 2 and 3 -->
 				<div class="footer-social-media">
 				<?php if ( is_active_sidebar( 'footer-sidebar-4' ) ) : ?>

@@ -9,7 +9,8 @@ get_header(); ?>
 
     <div id="primary" class="content-area contact-page">
       <main id="main" class="site-main" role="main">
-        <div class="entry-header">
+        
+      <div class="entry-header">
           <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
         </div>
 

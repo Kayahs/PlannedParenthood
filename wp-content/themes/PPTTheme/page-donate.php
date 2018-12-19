@@ -37,39 +37,39 @@ get_header(); ?>
 
       <section>
         <p>you can make an impact</p>
-        <div>
-          <div>
-            <img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/donation.png" alt="">
-            <p>your $50 donation</p>
-            <p>will cover birth control for up to 6 youth, so they can take control of their bodies</p>
-          </div>
-          <div>
-            <img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/youth.png" alt="">
-            <p>4211 youth per year</p>
-            <p>attend PPT workshops that help them make healthy and informed decisions</p>
-          </div>
-          <div>
-            <img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/IUDs.png" alt="">
-            <p>376 IUD’s inserted anually</p>
-            <p>At a cost of $236 each, PPT saves youth $88,736 per year on IUD’s</p>
-          </div>
-        </div>
-      </section>
+       <div>
+         <div>
+           <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/donation.png" alt="">' ?>
+           <p>your $50 donation</p>
+           <p>will cover birth control for up to 6 youth, so they can take control of their bodies</p>
+         </div>
+         <div>
+         <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/youth.png" alt="">' ?>
+           <p>4211 youth per year</p>
+           <p>attend PPT workshops that help them make healthy and informed decisions</p>
+         </div>
+         <div>
+         <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/IUDs.png" alt="">' ?>
+           <p>376 IUD’s inserted anually</p>
+           <p>At a cost of $236 each, PPT saves youth $88,736 per year on IUD’s</p>
+         </div>
+       </div>
+     </section>
+
+     <section>
+     <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/donation-page-mother-daughter.png" alt="">' ?>
+       <p>“ I have nothing but good things to say about anyone I’ve interacted with who works at PPT!”</p>
+       <p>– Client survey, 2018</p>
+     </section>
 
       <section>
-        <img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/donation-page-mother-daughter.png" alt="">
-        <p>“ I have nothing but good things to say about anyone I’ve interacted with who works at PPT!”</p>
-        <p>– Client survey, 2018</p>
-      </section>
-
-      <section>
-        <p>join our movement</p>
-        <a href=""><img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/mission.png" alt=""><p>our mission, vision, & values</p></a>
-        <a href=""><img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/annual-report.png" alt=""><p>download
-annual reports</p></a>
-        <a href=""><img src="http://localhost/PlannedParenthood/wp-content/uploads/2018/12/strategic-plan.png" alt=""><p>strategic plan
-2015-2020</p></a>
-      </section>
+       <p>join our movement</p>
+       <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/mission.png" alt=""><p>our mission, vision, & values</p></a>' ?>
+       <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/annual-report.png" alt=""><p>download
+        annual reports</p></a>' ?>
+       <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/strategic-plan.png" alt=""><p>strategic plan
+        2015-2020</p></a>' ?>
+     </section>
 
       <?php require get_template_directory() . '/template-parts/donate-cta.php'; ?>
       

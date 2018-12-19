@@ -14,8 +14,23 @@
 .site-header {
   width: 100%;
   padding-top: 52px;
-  background-color: $purple;
   position: relative;
+}
+
+.purple {
+  background-color: $purple;
+}
+
+.green {
+  background-color: $green;
+}
+
+.blue {
+  background-color: $blue;
+}
+
+.orange {
+  background-color: $orange;
 }
 
 .header-logo {
@@ -131,21 +146,7 @@
 }
 
 /* Front page */
-.top-hero-purple {
-  background-color: $purple;
-}
 
-.top-hero-blue {
-  background-color: $blue;
-}
-
-.top-hero-orange {
-  background-color: $orange;
-}
-
-.top-hero-green {
-  background-color: $green;
-}
 
 .top-hero {
   width: 100%;
@@ -607,7 +608,7 @@
 }
 
 
-//Program Page
+//Program Archive - Volunteer Archive - Workshop Archive
 
 .program {
   .page-content {
@@ -647,7 +648,7 @@
   }
 }
 
-.volunteer {
+.volunteer-workshop {
   .page-extra-info {
     margin-left:27.22%;
     margin-right:27.22%;
@@ -656,13 +657,42 @@
       font-weight: bold;
       font-size: 20px;
     }
+
+    p:only-child {
+      font-size: 25px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
   }
   article {
-    h2 a {
-      color:$color__text-main;
-    }
-    span a {
-      color: $green;
+    a {
+      color: $blue;
     }
   }
+}
+
+
+//Sexual health Page
+
+.nav-icon-in-frame {
+  ul {
+    display: flex;
+
+    li {
+      list-style-type: none;
+      font-size: 22px;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: $color__text-main;
+      }
+    }
+  }
+}
+.nav-sexual-health {
+
 }

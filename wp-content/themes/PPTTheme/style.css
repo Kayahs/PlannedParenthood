@@ -671,7 +671,7 @@ object {
   right: 21px; }
 
 .header-pnumber {
-  font-family: $font__main;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -680,7 +680,7 @@ object {
 .header-donate-button {
   border-radius: 3px;
   background-color: #fff;
-  font-family: $font__main;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   color: #ba0e82; }
 
@@ -699,30 +699,43 @@ object {
   .nav-search a {
     color: #fff; }
 
+.search-bar {
+  border: none; }
+
 .search-field {
+  border: 0 !important;
+  padding: none;
+  margin: none;
   background-color: #ba0e82;
-  color: $font__main!important;
-  border: 0!important;
-  border-bottom: 2px solid $font__main!important; }
+  color: #fff !important;
+  border-bottom: 2px solid #fff !important;
+  width: 100px; }
+
+.search-form {
+  padding: none;
+  margin: none;
+  background-color: #ba0e82;
+  color: #fff !important;
+  border: 0 !important; }
 
 .ffieldset {
   border: 0; }
 
 .search-submit {
-  color: #ffffff;
+  color: #fff;
   background-color: #ba0e82;
   border: 0;
-  overflow: visible;
+  overflow: visible !important;
   font-size: 25px; }
 
 .main-navigation {
   height: 22px;
-  font-family: $font__main;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   color: #fff; }
   .main-navigation li {
     margin-right: 70px;
-    color: #fff!important; }
+    color: #fff !important; }
 
 .escape-button {
   position: fixed;
@@ -773,7 +786,7 @@ object {
   .top-hero h1 {
     width: 741.9px;
     /* height: 207px; */
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 76px;
     font-weight: 900;
     line-height: 0.91;
@@ -786,7 +799,6 @@ object {
       margin-top: 0;
       vertical-align: top;
       line-height: 0.6; }
-
   .top-hero a img {
     position: absolute;
     top: 45%;
@@ -803,7 +815,6 @@ object {
     margin: 0;
     z-index: 98;
     color: #000000; }
-
   .top-hero img {
     width: 83%;
     height: auto;
@@ -834,7 +845,7 @@ object {
 .black-div {
   height: 100%;
   width: 319px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 0;
   text-align: center;
@@ -843,7 +854,7 @@ object {
     margin-top: 90px;
     width: 349.3px;
     height: 36px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -851,7 +862,7 @@ object {
   .black-div button {
     border-radius: 3px;
     background-color: #fff;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #ba0e82; }
 
@@ -861,7 +872,7 @@ object {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto; }
   .white-icon-container h2 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
     line-height: 0.91;
@@ -871,7 +882,7 @@ object {
     margin: 0; }
   .white-icon-container p {
     height: 29px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.61;
     color: #000000;
@@ -926,7 +937,7 @@ object {
   color: #fff;
   width: 670.1px;
   height: 112px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 54px;
   font-weight: 900;
   line-height: 1.04;
@@ -937,7 +948,7 @@ object {
   color: #fff;
   width: 654.1px;
   height: 84px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   line-height: 1.12;
   text-align: center; }
@@ -945,7 +956,7 @@ object {
 .dcta-button {
   border-radius: 3px;
   background-color: #fff;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: #ba0e82;
   width: 240px;
   height: 73px;
@@ -966,6 +977,25 @@ object {
   top: 0px;
   right: 0px; }
 
+.about-hero {
+  width: 100%;
+  height: 255px;
+  position: relative; }
+  .about-hero h1 {
+    font-family: Arial, sans-serif;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.91;
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    z-index: 100;
+    margin: 0; }
+
+.greyed-out {
+  opacity: 0.4; }
+
 .about-navigation {
   margin-top: 80px;
   width: 100%;
@@ -976,14 +1006,18 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 3px solid #a1b426; }
   .about-navigation h2 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
-    border-bottom: 5px solid #a1b426; }
+    margin-bottom: 0; }
 
 .about-text-area {
   display: -webkit-box;
@@ -1002,16 +1036,16 @@ object {
   width: 60%;
   margin-left: 20%; }
   .about-text-area h2 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold; }
   .about-text-area h3 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin: 0; }
   .about-text-area p {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.43; }
 
@@ -1036,17 +1070,27 @@ object {
   .equity-vision-block p {
     margin-top: 0;
     margin-bottom: 0; }
+  .equity-vision-block ul {
+    margin: 0; }
+  .equity-vision-block li {
+    font-size: 14px;
+    line-height: 1.43; }
 
 .about-rest-text {
   margin-bottom: 100px; }
   .about-rest-text p {
     margin: 0; }
+  .about-rest-text ul {
+    margin: 0; }
+  .about-rest-text li {
+    font-size: 14px;
+    line-height: 1.43; }
 
 /* Accessibility Page */
 .access-title {
   height: 300px;
   width: 100%;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 76px;
   font-weight: bold;
   display: -webkit-box;
@@ -1084,7 +1128,7 @@ object {
 .appointment-sidebar {
   width: 460px;
   background-color: #a1b426;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.4;
@@ -1100,8 +1144,8 @@ object {
   .sidebar-contact .acc-contact-button {
     margin-top: 25px;
     border-radius: 3px;
-    background-color: #ffffff;
-    font-family: Arial;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #a1b426; }
 
@@ -1111,8 +1155,8 @@ object {
   .sidebar-edgewest .acc-edgewest-button {
     margin-top: 25px;
     border-radius: 3px;
-    background-color: #ffffff;
-    font-family: Arial;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #a1b426; }
 
@@ -1121,7 +1165,7 @@ object {
 
 /* Privacy Page */
 .privacy-title {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 76px;
   font-weight: bold;
   display: -webkit-box;
@@ -1169,12 +1213,30 @@ object {
     margin: 0; }
 
 .footer-location {
-  font-family: Arial;
-  font-size: 18px;
-  margin-left: 40px; }
+  font-family: Arial, sans-serif;
+  font-size: 18px; }
   .footer-location h2 {
     margin: 0;
     font-size: 18px; }
+
+.footer-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 90px; }
+  .footer-hours p {
+    height: 25%;
+    margin-right: 60px; }
+  .footer-hours .clinic-desc {
+    display: none; }
+  .footer-hours .drop-in-desc {
+    display: none; }
 
 .footer-social-media {
   margin-right: 0; }
@@ -1194,7 +1256,7 @@ object {
   margin-top: 45px;
   margin-left: 45px;
   padding: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 18px;
   color: #000000; }
   .footer-nav ul {
@@ -1227,7 +1289,7 @@ object {
   margin-left: 45px;
   width: 538px;
   height: 131px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.1px;
@@ -1248,7 +1310,7 @@ object {
       -ms-flex-align: end;
           align-items: flex-end; }
   .bottom-footer-icons a {
-    margin-right: 15px; }
+    margin-right: 45px; }
 
 .program .page-content {
   padding-top: 5%; }
@@ -1287,3 +1349,93 @@ object {
 
 .volunteer article span a {
   color: #a1b426; }
+
+.donate .banner {
+  height: 330px;
+  width: 100%;
+  background-color: #a1b426;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .donate .banner h1 {
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.91;
+    margin: 0; }
+  .donate .banner p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0; }
+  .donate .banner .white-btn {
+    margin-top: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    color: #a1b426;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    width: 306px;
+    height: 68.3px; }
+
+.donate .banner-text-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-left: 45px; }
+  .donate .banner-text-block section {
+    width: 415px;
+    margin-right: 25px; }
+    .donate .banner-text-block section h3 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold; }
+    .donate .banner-text-block section p {
+      font-size: 14px;
+      line-height: 1.43; }
+
+.donate .impactu h1 {
+  text-align: center;
+  font-size: 76px;
+  font-weight: bold; }
+
+.donate .top-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 45px; }
+  .donate .top-grid .donate-item {
+    padding-right: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }

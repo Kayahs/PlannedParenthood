@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-      <div class="top-hero-purple">
+      <div class="wrapper top-hero top-hero-purple">
       <h1><p>boldly</p><p>empowering</p><p>toronto's youth</p></h1>
       <img src = <?php echo get_site_url() . '/wp-content/uploads/2018/12/Home-page-hero.png' ?> alt="Homepage hero image">
       <!-- Inside this div will be placed the purple background, the text as well as the hero image -->
@@ -28,9 +28,13 @@ get_header(); ?>
         </div>
         <div class="drop-in-widget black-div">
         <h2>drop-in hours</h2>
-        <p>
-        Placeholder text for the widget that i ssupposed to be inserted here
-        </p>
+        <p>Drop-in is for sexual health only</p>
+        <div class="footer-sat-hours"> 
+				<?php if ( is_active_sidebar( 'footer-sidebar-3' ) ) : ?>
+		    <?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
+        <?php endif; ?>
+				<!-- will place the business hours widget here -->
+				</div>
         <!-- this is where the drop in widget will be inserted -->
         </div>
         <div class="teen-health black-div">
@@ -50,7 +54,7 @@ get_header(); ?>
       <div class="white-icon-container"> <!-- grid container -->
         <div class="item-b-control fp-item">
         <a href="">
-        <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/birth-control.svg' ?> alt="Birth Control icon">
+        <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/home-page-birth-control-icon.png' ?> alt="Birth Control icon">
         <h2>birth control</h2>
         </a>
         <p>your body, your options</p>

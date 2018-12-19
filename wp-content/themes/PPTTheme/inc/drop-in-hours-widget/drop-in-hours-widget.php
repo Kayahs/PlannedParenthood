@@ -76,19 +76,19 @@ class Drop_in_Hours_Widget extends WP_Widget {
 		ob_start();
 
 		if ( $title ){
-			$widget_string .= $before_title;
-			$widget_string .= $title;
-			$widget_string .= $after_title;
+			//$widget_string .= $before_title;
+			//$widget_string .= $title;
+			//$widget_string .= $after_title;
 		}
 
 		include( plugin_dir_path( __FILE__ ) . 'views/widget.php' );
 
 
 
-		$widget_string .= ob_get_clean();
-		$widget_string .= $after_widget;
+		//$widget_string .= ob_get_clean();
+		//$widget_string .= $after_widget;
 
-		print $widget_string;
+		//print $widget_string;
 
 	} // end widget
 

@@ -10,16 +10,16 @@ get_header(); ?>
   <main id="main" class="site-main" role="main">
     
     <?php if (is_page('Sexual health')) : ?>
-    <div class="top-hero-purple">
+    <div class="wrapper top-hero purple">
       <?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
-      <?php printf('<a href="%1$s/services/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+      <?php printf('<a href="%1$s/services"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
       <img src=" <?php echo get_site_url() .'/wp-content/uploads/2018/12/Sexual-health-hero.png"' ?> alt="Sexual Health hero image">
     </div><!-- .top-hero-purple -->
 
     <?php else: ?>
-      <div class="top-hero-blue">
+      <div class="wrapper top-hero blue">
       <?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
-      <?php printf('<a href="%1$s/services/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+      <?php printf('<a href="%1$s/services"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
       <img src=" <?php echo get_site_url() .'/wp-content/uploads/2018/12/Services-hero.png"' ?> alt="Services hero image">
     <?php endif; ?>
     
@@ -30,7 +30,7 @@ get_header(); ?>
 
       <?php endwhile; ?>
 
-    <nav>
+    <nav class="nav-icon-in-frame nav-sexual-health">
       <ul>
         <?php 
         $x = 1;

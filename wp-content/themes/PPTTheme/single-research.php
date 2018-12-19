@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single facts.
+ * The template for displaying all single researches.
  *
  * @package RED_Starter_Theme
  */
@@ -11,37 +11,19 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
 
     <?php while ( have_posts() ) : the_post(); 
-      $blurb = get_post_meta(get_the_ID(), "_ppt_fact_blurb", true);
-      $pdfurl = get_post_meta(get_the_ID(), "_ppt_fact_pdf_url", true);
+      $pdfurl = get_post_meta(get_the_ID(), "_ppt_research_pdf_url", true);
       ?>
 
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header">
           <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-          <div class="fact-blurb">
-            <?php echo esc_html($blurb); ?>
-          </div>
         </header><!-- .entry-header -->
 
         <div class="entry-content">
-          <div class="fact-sections">
-            <h3>Sections</h3>
-            <ul class="section-list">
-            </ul>
-          </div>
           <div class="content-container">
             <div class="content-header">
-              <div class="tags-list">
-                Tags: 
-                <?php
-                  $fact_tags = get_the_terms(get_the_ID(), 'facttag');
-                  foreach ($fact_tags as $tag) { 
-                    echo $tag->name;
-                  }
-                ?>
-              </div>
-              <a class="download-container" href="<?php echo $pdfurl ?>">
-                <div class="download-icon">
+              <a class="download-container">
+                <div class="download-icon" href="<?php echo $pdfurl ?>">
                 </div>
                 Download
               </a>

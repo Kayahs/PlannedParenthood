@@ -2,7 +2,9 @@
   "name": "redstarter",
   "version": "1.1.0",
   "description": "A starter theme for RED students, based on Underscores.",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-clean": "^0.4.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
@@ -13,7 +15,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-terser": "^1.1.5"
+    "gulp-terser": "^1.1.5",
+    "gulp-clean": "^1.0"
   },
   "prettier": {
     "singleQuote": true

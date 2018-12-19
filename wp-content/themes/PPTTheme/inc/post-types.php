@@ -72,7 +72,20 @@ function create_post_types() {
     'rewrite' => array( 'slug' => 'board-of-directors' ),
     )
   );
+
+  register_post_type( 'research', array(
+    'labels' => create_labels_post_types("Research"),
+    'has_archive' => true,
+    'public' => true,
+    'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+    'exclude_from_search' => false,
+    'capability_type' => 'post',
+    'rewrite' => array( 'slug' => 'research' ),
+    'show_in_rest' => true,
+    )
+  );
 }
 add_action( 'init', 'create_post_types' );
 
 ?>
+

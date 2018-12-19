@@ -41,6 +41,35 @@ function ppt_register_metaboxes() {
     'id' => $prefix . 'card_excerpt',
     'type' => 'text',
    ));
+
+   $fact_meta->add_field( array(
+    'name' => 'PDF File',
+    'desc' => 'Upload a PDF or enter an URL.',
+    'id' => $prefix . 'fact_pdf_url',
+    'type' => 'file',
+    'query_args' => array(
+      'type' => 'application/pdf'
+    ),
+   ));
+
+   $research_meta = new_cmb2_box( array(
+    'id'            => $prefix . 'research_metabox',
+    'title'         => 'Research Metabox',
+    'object_types'  => array( 'research' ), // Post type
+    'context'    => 'normal',
+    'priority'   => 'high',
+    'show_names' => true, // Show field names on the left
+  ) );
+
+   $research_meta->add_field( array(
+    'name' => 'PDF URL',
+    'desc' => 'Upload a PDF or enter an URL.',
+    'id' => $prefix . 'research_pdf_url',
+    'type' => 'file',
+    'query_args' => array(
+      'type' => 'application/pdf'
+    ),
+   ));
      //Create MetaBox for the Three Icons Template (For Services Page and Education Page)
 
     $sections_meta = new_cmb2_box( array(   
@@ -237,7 +266,7 @@ function ppt_register_metaboxes() {
 
   //Create MetaBox for title appreared on the Single page of every program
 
-    $fact_meta = new_cmb2_box( array(
+    $form_meta = new_cmb2_box( array(
     'id'            => $prefix . 'title_metabox',
     'title'         => 'Single Page Title Metabox',
     'object_types'  => array( 'program' ), // Post type
@@ -246,7 +275,7 @@ function ppt_register_metaboxes() {
     'show_names' => true, // Show field names on the left
   ) );
 
-   $fact_meta->add_field( array(
+   $form_meta->add_field( array(
     'name' => 'Single Page Title Metabox',
     'desc' => 'Set the title at the top of the page for every single program.',
     'id'   => $prefix . 'single_program_title',

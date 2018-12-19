@@ -19,21 +19,18 @@ get_header(); ?>
         ?>
       </header><!-- .page-header -->
 
-      <div class="top-hero-blue">
-          <h1 class="page-title">workshops</h1>
-          <?php printf('<a href="%1$s/education/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
-          <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Workshop-hero.png" alt="Workshop hero image">' ?>
+      <div class="top-hero-orange">
+          <h1 class="page-title">research</h1> ;
+          <?php printf('<a href="%1$s/education"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+          <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Education-hero.png" alt="Education hero image">' ?>
       </div>
 
-      <div class="content">
-        <p>PPT offers a wide range of workshops for different communities of youth throughout the city to promote healthy sexuality and informed decision making.  Through workshops ranging from birth control options to healthy relationships and STIs, we give you the knowledge and skills to make healthy choices.</p>
-      
 
       <?php /* Start the Loop */ ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
         <?php
-          get_template_part( 'template-parts/content','program' );
+          get_template_part( 'template-parts/content','research' );
         ?>
 
       <?php endwhile; ?>
@@ -45,8 +42,6 @@ get_header(); ?>
       <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
     <?php endif; ?>
-
-    </div>
 
     </main><!-- #main -->
   </div><!-- #primary -->

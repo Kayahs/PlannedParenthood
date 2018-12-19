@@ -2,6 +2,8 @@
 /**
  * The template for the accessibility page.
  *
+ * Template Name: Accessibility Template
+ * 
  * @package RED_Starter_Theme
  */
 
@@ -12,6 +14,7 @@ get_header(); ?>
       <div class="access-title">
         <h1>accessibility</h1>
       </div>
+      <div class="access-content">
       <div class="appointment-sidebar">
         <div class="sidebar-contact">
         <h3>Do you require</h3>
@@ -22,6 +25,15 @@ get_header(); ?>
         <button type="button" class="acc-contact-button">contact</button>
         </div><!-- .sidebar-contact -->
         <div class="sidebar-edgewest">
+        <h3>Regrettably ppt is not fully</h3> 
+        <h3>wheelchair accessible.</h3>
+        <br>
+        <h3>Require mobility</h3>
+        <h3>accessible services?</h3>
+        <br>
+        <h3>Book an appointment at our</h3>
+        <h3>satellite location edgewest</h3>
+        <button type="button" class="acc-edgewest-button">Edgewest</button>
         </div><!-- .sidebar-edgewest -->
       </div>
       <div class="acc-content">
@@ -42,7 +54,7 @@ get_header(); ?>
           <p>Unfortunately due to the age of our building, we are not able to be fully wheelchair accessible. We have three exam rooms and a client washroom that are wheelchair accessible.  They are located on the ground level which can be accessed through a wheelchair-accessible side door from our connecting alley. We are happy to make arrangements for you to access the side door and be seen in one of these exam rooms. Please note that we do not have transfer boards or lifts in our exam rooms.</p>
           <p>To book a mobility accessible appointment at PPT, please email access@ppt.on.ca.</p>
         </div>
-      <div class="access-content"></div>
+      </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

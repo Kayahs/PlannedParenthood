@@ -26,7 +26,7 @@
 				<!-- This is where I will place the service advisory which will be at the very top of the header -->
 			</div>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="wrapper site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding (Will put the logo here as a background later in css)-->

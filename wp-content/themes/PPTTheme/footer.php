@@ -10,7 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="black-footer">
+			<div class=" wrapper black-footer">
 			  <div class="footer-location">
 				<?php //if ( is_active_sidebar( 'footer-sidebar-1' ) ) : ?>
 		    <?php dynamic_sidebar( 'footer-sidebar-1' ); ?>

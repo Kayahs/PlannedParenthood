@@ -16,10 +16,13 @@ $categories = array_reverse(get_the_terms(get_the_ID(), 'programcat'));
       <?php if ( has_post_thumbnail() ) : ?>
         <?php the_post_thumbnail( 'large' ); ?>
       <?php endif; ?>
+      </header><!-- .entry-header -->
 
-      <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+      <div class="entry-content">
+        <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+        <?php the_excerpt(); ?>
 
-      <?php if ( 'program' === get_post_type() ) : ?>
+        <?php if ( 'program' === get_post_type() ) : ?>
         <div class="entry-meta">
           <span>
           <?php echo '<a href="'. get_post_permalink() .'">read more</a>' ?>
@@ -32,20 +35,12 @@ $categories = array_reverse(get_the_terms(get_the_ID(), 'programcat'));
                 echo sprintf( '<a href="%1$s-%2$s" rel="bookmark"> / %3$s</a>', $linkWithoutSlash, $category->slug, $category->name);
               endif;
             }
-        
-
-
-        ?>
-        </span>
-
-    </div><!-- .entry-meta -->
-    <?php endif; ?>
-  </header><!-- .entry-header -->
-
-  <div class="entry-content">
-    <?php the_excerpt(); ?>
-  </div><!-- .entry-content -->
-</article><!-- #post-## -->
+          ?>
+          </span>
+        </div><!-- .entry-meta -->
+        <?php endif; ?>
+      </div><!-- .entry-content -->
+    </article><!-- #post-## -->
   <?php endif;
 /*}*/ ?>
 

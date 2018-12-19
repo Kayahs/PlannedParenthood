@@ -19,7 +19,7 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<div class="wrapper top-hero purple">
+			<div class="wrapper top-hero">
 					<h1 class="page-title">programs</h1>
 					<?php printf('<a href="%1$s"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
 					<?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Program-hero.png" alt="Program hero image">' ?>

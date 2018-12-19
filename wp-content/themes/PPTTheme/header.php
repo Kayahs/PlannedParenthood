@@ -19,15 +19,8 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<div id="page" class="hfeed site">
-			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
-
-			<div class="service-advisory">
-				<!-- This is where I will place the service advisory which will be at the very top of the header -->
-			</div>
-
-			<header id="masthead" class="wrapper site-header 
-			<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' )) {
+		<div id="page" class="hfeed site
+		<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' )) {
 						echo "blue";
 						} elseif (is_page('donate') || is_page('about') || is_page('privacy') || is_page('accessibility') || is_page('contact') || is_post_type_archive('board_member') ){
 							echo "green";
@@ -35,7 +28,14 @@
 							echo "orange";
 						} else {
 							echo "purple";
-						} ?>" role="banner">
+						} ?>">
+			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
+
+			<div class="service-advisory">
+				<!-- This is where I will place the service advisory which will be at the very top of the header -->
+			</div>
+
+			<header id="masthead" class="wrapper site-header  role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
@@ -61,10 +61,12 @@
 				  </div><!-- .search-bar -->
 				</div> <!-- .nav-search-->
 			</header><!-- #masthead -->
+			
 			<a class="top-button" id="top-button">
 				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/back-to-top-icon.svg' ?> alt="Back to top icon/image">
 				<p>Back to Top</p>
 			</a>
+			
 			<div class="escape-button">
 			<a href="https://www.youtube.com/">
 				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/escape-button.svg' ?> alt="escape icon/image">

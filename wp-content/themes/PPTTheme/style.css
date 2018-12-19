@@ -646,17 +646,89 @@ object {
   padding-top: 52px;
   position: relative; }
 
-.purple {
+.purple .site-header {
   background-color: #ba0e82; }
 
-.green {
+.purple .top-hero {
+  background-color: #ba0e82; }
+
+.purple .banner {
+  background-color: #ba0e82; }
+
+.purple .search-field {
+  background-color: #ba0e82; }
+
+.purple .search-form {
+  background-color: #ba0e82; }
+
+.purple .search-submit {
+  background-color: #ba0e82; }
+
+.purple .header-donate-button {
+  color: #ba0e82; }
+
+.green .site-header {
   background-color: #a1b426; }
 
-.blue {
+.green .top-hero {
+  background-color: #a1b426; }
+
+.green .banner {
+  background-color: #a1b426; }
+
+.green .search-field {
+  background-color: #a1b426; }
+
+.green .search-form {
+  background-color: #a1b426; }
+
+.green .search-submit {
+  background-color: #a1b426; }
+
+.green .header-donate-button {
+  color: #a1b426; }
+
+.blue .site-header {
   background-color: #00a3d7; }
 
-.orange {
+.blue .top-hero {
+  background-color: #00a3d7; }
+
+.blue .banner {
+  background-color: #00a3d7; }
+
+.blue .search-field {
+  background-color: #00a3d7; }
+
+.blue .search-form {
+  background-color: #00a3d7; }
+
+.blue .search-submit {
+  background-color: #00a3d7; }
+
+.blue .header-donate-button {
+  color: #00a3d7; }
+
+.orange .site-header {
   background-color: #f7911d; }
+
+.orange .top-hero {
+  background-color: #f7911d; }
+
+.orange .banner {
+  background-color: #f7911d; }
+
+.orange .search-field {
+  background-color: #f7911d; }
+
+.orange .search-form {
+  background-color: #f7911d; }
+
+.orange .search-submit {
+  background-color: #f7911d; }
+
+.orange .header-donate-button {
+  color: #f7911d; }
 
 .header-logo {
   width: 120px;
@@ -717,7 +789,6 @@ object {
   border: 0 !important;
   padding: none;
   margin: none;
-  background-color: #ba0e82;
   color: #fff !important;
   border-bottom: 2px solid #fff !important;
   width: 100px; }
@@ -725,7 +796,6 @@ object {
 .search-form {
   padding: none;
   margin: none;
-  background-color: #ba0e82;
   color: #fff !important;
   border: 0 !important; }
 
@@ -734,7 +804,6 @@ object {
 
 .search-submit {
   color: #fff;
-  background-color: #ba0e82;
   border: 0;
   overflow: visible !important;
   font-size: 25px; }
@@ -1214,7 +1283,6 @@ object {
 .footer-location {
   font-family: Arial, sans-serif;
   font-size: 18px; }
-
   .footer-location h2 {
     margin: 0;
     font-size: 18px; }
@@ -1352,7 +1420,6 @@ object {
 .volunteer-workshop article a {
   color: #00a3d7; }
 
-
 .nav-icon-in-frame ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1364,8 +1431,6 @@ object {
     .nav-icon-in-frame ul li a {
       text-decoration: none;
       color: #000000; }
-.volunteer article span a {
-  color: #a1b426; }
 
 .donate .banner {
   height: 330px;
@@ -1456,4 +1521,3 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-

@@ -671,7 +671,7 @@ object {
   right: 21px; }
 
 .header-pnumber {
-  font-family: $font__main;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -680,7 +680,7 @@ object {
 .header-donate-button {
   border-radius: 3px;
   background-color: #fff;
-  font-family: $font__main;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   color: #ba0e82; }
 
@@ -700,16 +700,26 @@ object {
     color: #fff; }
 
 .search-field {
+  border: none;
+  padding: none;
+  margin: none;
   background-color: #ba0e82;
-  color: $font__main!important;
-  border: 0!important;
-  border-bottom: 2px solid $font__main!important; }
+  color: #fff; }
+
+.search-form {
+  border: none;
+  padding: none;
+  margin: none;
+  background-color: #ba0e82;
+  color: #fff !important;
+  border: 0 !important;
+  border-bottom: 2px solid #fff !important; }
 
 .ffieldset {
   border: 0; }
 
 .search-submit {
-  color: #ffffff;
+  color: #fff;
   background-color: #ba0e82;
   border: 0;
   overflow: visible;
@@ -717,12 +727,12 @@ object {
 
 .main-navigation {
   height: 22px;
-  font-family: $font__main;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   color: #fff; }
   .main-navigation li {
     margin-right: 70px;
-    color: #fff!important; }
+    color: #fff !important; }
 
 .escape-button {
   position: fixed;
@@ -773,7 +783,7 @@ object {
   .top-hero h1 {
     width: 741.9px;
     /* height: 207px; */
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 76px;
     font-weight: 900;
     line-height: 0.91;
@@ -786,7 +796,6 @@ object {
       margin-top: 0;
       vertical-align: top;
       line-height: 0.6; }
-
   .top-hero a img {
     position: absolute;
     top: 45%;
@@ -803,7 +812,6 @@ object {
     margin: 0;
     z-index: 98;
     color: #000000; }
-
   .top-hero img {
     width: 83%;
     height: auto;
@@ -834,7 +842,7 @@ object {
 .black-div {
   height: 100%;
   width: 319px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 0;
   text-align: center;
@@ -843,7 +851,7 @@ object {
     margin-top: 90px;
     width: 349.3px;
     height: 36px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
@@ -851,7 +859,7 @@ object {
   .black-div button {
     border-radius: 3px;
     background-color: #fff;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #ba0e82; }
 
@@ -861,7 +869,7 @@ object {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto; }
   .white-icon-container h2 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
     line-height: 0.91;
@@ -871,7 +879,7 @@ object {
     margin: 0; }
   .white-icon-container p {
     height: 29px;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 18px;
     line-height: 1.61;
     color: #000000;
@@ -926,7 +934,7 @@ object {
   color: #fff;
   width: 670.1px;
   height: 112px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 54px;
   font-weight: 900;
   line-height: 1.04;
@@ -937,7 +945,7 @@ object {
   color: #fff;
   width: 654.1px;
   height: 84px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 25px;
   line-height: 1.12;
   text-align: center; }
@@ -945,7 +953,7 @@ object {
 .dcta-button {
   border-radius: 3px;
   background-color: #fff;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: #ba0e82;
   width: 240px;
   height: 73px;
@@ -980,7 +988,7 @@ object {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
   .about-navigation h2 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold;
     border-bottom: 5px solid #a1b426; }
@@ -1002,16 +1010,16 @@ object {
   width: 60%;
   margin-left: 20%; }
   .about-text-area h2 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 32px;
     font-weight: bold; }
   .about-text-area h3 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
     margin: 0; }
   .about-text-area p {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 1.43; }
 
@@ -1046,7 +1054,7 @@ object {
 .access-title {
   height: 300px;
   width: 100%;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 76px;
   font-weight: bold;
   display: -webkit-box;
@@ -1084,7 +1092,7 @@ object {
 .appointment-sidebar {
   width: 460px;
   background-color: #a1b426;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.4;
@@ -1100,8 +1108,8 @@ object {
   .sidebar-contact .acc-contact-button {
     margin-top: 25px;
     border-radius: 3px;
-    background-color: #ffffff;
-    font-family: Arial;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #a1b426; }
 
@@ -1111,8 +1119,8 @@ object {
   .sidebar-edgewest .acc-edgewest-button {
     margin-top: 25px;
     border-radius: 3px;
-    background-color: #ffffff;
-    font-family: Arial;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
     font-size: 20px;
     color: #a1b426; }
 
@@ -1121,7 +1129,7 @@ object {
 
 /* Privacy Page */
 .privacy-title {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 76px;
   font-weight: bold;
   display: -webkit-box;
@@ -1169,7 +1177,7 @@ object {
     margin: 0; }
 
 .footer-location {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 18px;
   margin-left: 40px; }
   .footer-location h2 {
@@ -1194,7 +1202,7 @@ object {
   margin-top: 45px;
   margin-left: 45px;
   padding: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 18px;
   color: #000000; }
   .footer-nav ul {
@@ -1227,7 +1235,7 @@ object {
   margin-left: 45px;
   width: 538px;
   height: 131px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.1px;
@@ -1287,3 +1295,50 @@ object {
 
 .volunteer article span a {
   color: #a1b426; }
+
+/*
+ * Education Page Styles
+ */
+.column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10% 20% 0 20%; }
+  .column-container .section {
+    margin-right: 40px;
+    text-align: center; }
+    .column-container .section a {
+      margin: 0 auto;
+      color: #f7911d;
+      text-decoration: none; }
+      .column-container .section a:visited, .column-container .section a:hover, .column-container .section a:active {
+        color: #f7911d; }
+      .column-container .section a h3 {
+        font-size: 34px; }
+    .column-container .section p {
+      text-align: left; }
+
+.banner {
+  background-color: #f7911d;
+  color: white;
+  padding: 0 20%;
+  text-align: center; }
+  .banner h2 {
+    max-width: 400px;
+    font-size: 34px; }
+  .banner button {
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #f7911d;
+    border-width: 0px; }
+
+.blue .banner {
+  background-color: #00a3d7; }
+
+.red .banner {
+  background-color: #00a3d7; }
+
+.orange .banner {
+  background-color: #f7911d; }

@@ -17,12 +17,13 @@ get_header(); ?>
       </header>
     <?php endif; ?>
 
-     <div class="top-hero-blue">
-      <?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
+     <div class="wrapper top-hero orange">
+      <?php the_title( '<h1 class="page-title">' , '</h1>' ); ?>
       <?php if (is_page('services')) { echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Services-hero.png" alt="Services hero image">'; }
       if (is_page('education')) { echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/Education-hero.png" alt="Education hero image">'; } ?>
      </div><!-- .top-hero-blue -->
 
+     <div class='column-container'>
     <?php
     for ($x = 1; $x <= 3; $x++) {
       $image = get_post_meta( get_the_ID(), sprintf('_ppt_image_section%d',$x ), true );
@@ -32,6 +33,7 @@ get_header(); ?>
       echo '<div class="section"><a href="' . $url . '"><img src="'.$image.'" alt=""><h3>'.$title.'</h3></a>';
       echo '<p>' . $description . '</p></div>';
     } ?>
+    </div>
 
       <?php if (is_page('services')) {
         echo '<div class="banner">';
@@ -44,7 +46,7 @@ get_header(); ?>
 
       <?php if (is_page('education')) {
         echo '<div class="banner">';
-        echo '<p>Get the facts you need, straight from the source.</p>';
+        echo '<h2>Get the facts you need, straight from the source.</h2>';
         echo '<p>Teen Health Source is a youth-run sexual health information service brought to you by Planned Parenthood Toronto.</p>';
         echo '<a href="http://teenhealthsource.com/"><button>teen health source</button></a>';
         echo '</div>';        
@@ -61,5 +63,4 @@ get_header(); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

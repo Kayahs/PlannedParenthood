@@ -49,7 +49,7 @@
 				    <p>(416) 961-0113</p>
 				  </div>
 				  <div>
-				    <button type="button" class="header-donate-button" >donate</button>
+				    <button type="button" class="coloured-button" >donate</button>
 				  </div> <!-- .header-donate-button-->
 				</div> <!-- .header-top-right The div where the number and donate button go -->
 				<div class="nav-search">

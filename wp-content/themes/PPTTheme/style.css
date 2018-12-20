@@ -664,7 +664,7 @@ object {
 .purple .search-submit {
   background-color: #ba0e82; }
 
-.purple .header-donate-button {
+.purple .coloured-button {
   color: #ba0e82; }
 
 .green .site-header {
@@ -685,7 +685,7 @@ object {
 .green .search-submit {
   background-color: #a1b426; }
 
-.green .header-donate-button {
+.green .coloured-button {
   color: #a1b426; }
 
 .blue .site-header {
@@ -706,7 +706,7 @@ object {
 .blue .search-submit {
   background-color: #00a3d7; }
 
-.blue .header-donate-button {
+.blue .coloured-button {
   color: #00a3d7; }
 
 .orange .site-header {
@@ -727,7 +727,7 @@ object {
 .orange .search-submit {
   background-color: #f7911d; }
 
-.orange .header-donate-button {
+.orange .coloured-button {
   color: #f7911d; }
 
 .header-logo {

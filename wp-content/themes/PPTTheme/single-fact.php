@@ -32,17 +32,16 @@ get_header(); ?>
           <div class="content-container">
             <div class="content-header">
               <div class="tags-list">
-                Tags: 
                 <?php
                   $fact_tags = get_the_terms(get_the_ID(), 'facttag');
+                  $taglist = [];
                   foreach ($fact_tags as $tag) { 
-                    echo $tag->name;
+                    $taglist[] = $tag->name;
                   }
+                  echo implode(', ', $taglist);
                 ?>
               </div>
               <a class="download-container" href="<?php echo $pdfurl ?>">
-                <div class="download-icon">
-                </div>
                 Download
               </a>
             </div>
@@ -50,9 +49,6 @@ get_header(); ?>
           </div>
         </div><!-- .entry-content -->
         <?php require get_template_directory() . '/template-parts/donate-cta.php'; ?>
-        <footer class="entry-footer">
-          <?php red_starter_entry_footer(); ?>
-        </footer><!-- .entry-footer -->
       </article><!-- #post-## -->
 
     <?php endwhile; // End of the loop. ?>
@@ -60,5 +56,4 @@ get_header(); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

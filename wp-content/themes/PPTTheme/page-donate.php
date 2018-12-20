@@ -33,6 +33,7 @@ get_header(); ?>
         <h3>prefer to donate offline?</h3>
         <p>Give us a call at 416-961-0113 x124,</p>
         <p>email development@ppt.on.ca,  or send regular mail to:</p>
+        <!-- this dynamic sidebar thing below is not appearing on the site it needs to be fixed (location widget) -->
         <?php dynamic_sidebar( 'donate-page' ); ?>
       </section>
       </div> <!-- .banner-text-block -->

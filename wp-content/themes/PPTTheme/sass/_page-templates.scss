@@ -17,19 +17,99 @@
 }
 
 .purple {
-  background-color: $purple;
+  .site-header {
+    background-color: $purple;
+  }
+  .top-hero {
+    background-color: $purple;
+  }
+  .banner {
+    background-color: $purple;
+  }
+  .search-field {
+    background-color: $purple;
+  }
+  .search-form {
+    background-color: $purple;
+  }
+  .search-submit {
+    background-color: $purple;
+  }
+  .coloured-button {
+    color: $purple;
+  }
 }
 
 .green {
-  background-color: $green;
+  .site-header {
+    background-color: $green;
+  }
+  .top-hero {
+    background-color: $green;
+  }
+  .banner {
+    background-color: $green;
+  }
+  .search-field {
+    background-color: $green;
+  }
+  .search-form {
+    background-color: $green;
+  }
+  .search-submit {
+    background-color: $green;
+  }
+  .coloured-button {
+    color: $green;
+  }
 }
 
 .blue {
-  background-color: $blue;
+  .site-header {
+    background-color: $blue;
+  }
+  .top-hero {
+    background-color: $blue;
+  }
+  .banner {
+    background-color: $blue;
+  }
+  .search-field {
+    background-color: $blue;
+  }
+  .search-form {
+    background-color: $blue;
+  }
+  .search-submit {
+    background-color: $blue;
+  }
+  .coloured-button {
+    color: $blue;
+  }
 }
 
 .orange {
-  background-color: $orange;
+  .site-header {
+    background-color: $orange;
+  }
+  .top-hero {
+    background-color: $orange;
+  }
+  .banner {
+    background-color: $orange;
+  }
+  .search-field {
+    background-color: $orange;
+  }
+  .search-form {
+    background-color: $orange;
+  }
+  .search-submit {
+    background-color: $orange;
+  }
+  .coloured-button {
+    color: $orange;
+  }
 }
 
 .header-logo {
@@ -82,7 +162,6 @@
   border: 0 !important;
   padding: none;
   margin: none;
-  background-color: $purple;
   color: $color__background-body !important;
   border-bottom: 2px solid $color__background-body !important;
   width: 100px;
@@ -91,7 +170,6 @@
 .search-form {
   padding: none;
   margin: none;
-  background-color: $purple;
   color: $color__background-body !important;
   border: 0 !important;
 }
@@ -102,7 +180,6 @@
 
 .search-submit {
   color: $color__background-body;
-  background-color: $purple;
   border: 0;
   overflow: visible !important;
   font-size: 25px;
@@ -149,7 +226,6 @@
 }
 
 /* Front page */
-
 
 .top-hero {
   width: 100%;
@@ -668,9 +744,7 @@
   }
 }
 
-
 //Program Archive - Volunteer Archive - Workshop Archive
-
 
 .program {
   .page-content {
@@ -731,11 +805,9 @@
   article {
     a {
       color: $blue;
-
     }
   }
 }
-
 
 //Sexual health Page
 
@@ -757,9 +829,7 @@
 }
 
 .nav-sexual-health {
-
 }
-
 
 // Donate page
 
@@ -835,10 +905,60 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 19px;
+        text-align: center;
+      }
+    }
+  }
+
+  .donate-image {
+    img {
+      display: block;
+    }
+  }
+
+  .donate-img-banner {
+    font-size: 32px;
+    font-weight: bold;
+    height: 215px;
+    width: 100%;
+    background-color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 0;
+    }
+  }
+  .low-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 45px;
+    .grid-center {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      a {
+        font-size: 32px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        p {
+          margin: 0;
+          text-align: center;
+        }
+      }
     }
   }
 }
-
 /*
  * Education Page Styles
  */
@@ -884,3 +1004,4 @@
     border-width: 0px;
   }
 }
+

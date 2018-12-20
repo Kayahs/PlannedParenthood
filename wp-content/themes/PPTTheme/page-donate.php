@@ -61,18 +61,35 @@ get_header(); ?>
       </section>
 
       <section>
+        <div class="donate-image">
       <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/donation-page-mother-daughter.png" alt="">' ?>
-        <p>“ I have nothing but good things to say about anyone I’ve interacted with who works at PPT!”</p>
+      </div> <!-- .donate-image -->
+      <div class="donate-img-banner">
+        <p>“I have nothing but good things to say</p>
+        <p>about anyone I’ve interacted with who</p>
+        <p>works at PPT!”</p>
         <p>– Client survey, 2018</p>
+      </div> <!-- .donate-img-banner -->
       </section>
 
       <section>
-        <p>join our movement</p>
-        <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/mission.png" alt=""><p>our mission, vision, & values</p></a>' ?>
-        <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/annual-report.png" alt=""><p>download
-annual reports</p></a>' ?>
-        <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/strategic-plan.png" alt=""><p>strategic plan
-2015-2020</p></a>' ?>
+        <div class="impactu">
+        <h1>join our movement</h1>
+        </div> <!-- .impactu -->
+        <div class="low-grid">
+        <div class="grid-center">
+        <a href="">
+          <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/mission.png" alt="">
+          <p>our mission,</p><p>vision, & values</p></a>' ?>
+        </div>
+        <div class="grid-center">
+        <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/annual-report.png" alt="">
+        <p>download</p><p>annual reports</p></a>' ?>
+        </div>
+        <div class="grid-center">
+        <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/strategic-plan.png" alt=""><p>strategic plan</p><p>2015-2020</p></a>' ?>
+        </div>
+        </div> <!-- .impactu -->
       </section>
 
 
@@ -83,5 +100,4 @@ annual reports</p></a>' ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

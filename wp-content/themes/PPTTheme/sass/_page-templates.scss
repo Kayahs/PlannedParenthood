@@ -894,6 +894,7 @@
       }
     }
   }
+
   .impactu {
     h1 {
       text-align: center;
@@ -915,3 +916,48 @@
   }
 }
 
+/*
+ * Education Page Styles
+ */
+
+.column-container {
+  display: flex;
+  margin: 10% 20% 0 20%;
+  .section {
+    margin-right: 40px;
+    text-align: center;
+    a {
+      margin: 0 auto;
+      color: $orange;
+      text-decoration: none;
+      &:visited, &:hover, &:active {
+        color: $orange;
+      }
+      h3 {
+        font-size: 34px;
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.banner {
+  background-color: $orange;
+  color: white;
+  padding: 0 20%;
+  text-align: center;
+  h2 {
+    max-width: 400px;
+  font-size: 34px;
+  }
+  button {
+    border-radius: 3px;
+    background-color: $color__background-body;
+    font-family: $font__main;
+    font-size: 20px;
+    color: $orange;
+    border-width: 0px;
+  }
+}

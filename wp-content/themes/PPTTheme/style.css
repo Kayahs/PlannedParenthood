@@ -786,6 +786,14 @@ object {
   border: none; }
 
 .search-field {
+  border: none;
+  padding: none;
+  margin: none;
+  background-color: #ba0e82;
+  color: #fff; }
+
+.search-form {
+  border: none;
   border: 0 !important;
   padding: none;
   margin: none;
@@ -797,8 +805,9 @@ object {
   padding: none;
   margin: none;
   color: #fff !important;
+  border: 0 !important;
+  border-bottom: 2px solid #fff !important; }
   border: 0 !important; }
-
 .ffieldset {
   border: 0; }
 
@@ -1282,6 +1291,8 @@ object {
 
 .footer-location {
   font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-left: 40px; }
   font-size: 18px; }
   .footer-location h2 {
     margin: 0;
@@ -1431,6 +1442,53 @@ object {
     .nav-icon-in-frame ul li a {
       text-decoration: none;
       color: #000000; }
+
+/*
+ * Education Page Styles
+ */
+.column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10% 20% 0 20%; }
+  .column-container .section {
+    margin-right: 40px;
+    text-align: center; }
+    .column-container .section a {
+      margin: 0 auto;
+      color: #f7911d;
+      text-decoration: none; }
+      .column-container .section a:visited, .column-container .section a:hover, .column-container .section a:active {
+        color: #f7911d; }
+      .column-container .section a h3 {
+        font-size: 34px; }
+    .column-container .section p {
+      text-align: left; }
+
+.banner {
+  background-color: #f7911d;
+  color: white;
+  padding: 0 20%;
+  text-align: center; }
+  .banner h2 {
+    max-width: 400px;
+    font-size: 34px; }
+  .banner button {
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #f7911d;
+    border-width: 0px; }
+
+.blue .banner {
+  background-color: #00a3d7; }
+
+.red .banner {
+  background-color: #00a3d7; }
+
+.orange .banner {
+  background-color: #f7911d; }
 
 .donate .banner {
   height: 330px;

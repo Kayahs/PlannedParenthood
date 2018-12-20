@@ -46,7 +46,6 @@ function dynamic_select_list( $tag ) {
 
     // Add terms to values
     if( ! empty( $terms ) && ! is_wp_error( $term_args ) ) {
-        echo "If complete";
         foreach( $terms as $term ) {
             $tag['values'][] = $term->post_title  ;
 

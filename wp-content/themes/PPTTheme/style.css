@@ -646,17 +646,89 @@ object {
   padding-top: 52px;
   position: relative; }
 
-.purple {
+.purple .site-header {
   background-color: #ba0e82; }
 
-.green {
+.purple .top-hero {
+  background-color: #ba0e82; }
+
+.purple .banner {
+  background-color: #ba0e82; }
+
+.purple .search-field {
+  background-color: #ba0e82; }
+
+.purple .search-form {
+  background-color: #ba0e82; }
+
+.purple .search-submit {
+  background-color: #ba0e82; }
+
+.purple .coloured-button {
+  color: #ba0e82; }
+
+.green .site-header {
   background-color: #a1b426; }
 
-.blue {
+.green .top-hero {
+  background-color: #a1b426; }
+
+.green .banner {
+  background-color: #a1b426; }
+
+.green .search-field {
+  background-color: #a1b426; }
+
+.green .search-form {
+  background-color: #a1b426; }
+
+.green .search-submit {
+  background-color: #a1b426; }
+
+.green .coloured-button {
+  color: #a1b426; }
+
+.blue .site-header {
   background-color: #00a3d7; }
 
-.orange {
+.blue .top-hero {
+  background-color: #00a3d7; }
+
+.blue .banner {
+  background-color: #00a3d7; }
+
+.blue .search-field {
+  background-color: #00a3d7; }
+
+.blue .search-form {
+  background-color: #00a3d7; }
+
+.blue .search-submit {
+  background-color: #00a3d7; }
+
+.blue .coloured-button {
+  color: #00a3d7; }
+
+.orange .site-header {
   background-color: #f7911d; }
+
+.orange .top-hero {
+  background-color: #f7911d; }
+
+.orange .banner {
+  background-color: #f7911d; }
+
+.orange .search-field {
+  background-color: #f7911d; }
+
+.orange .search-form {
+  background-color: #f7911d; }
+
+.orange .search-submit {
+  background-color: #f7911d; }
+
+.orange .coloured-button {
+  color: #f7911d; }
 
 .header-logo {
   width: 120px;
@@ -714,10 +786,17 @@ object {
   border: none; }
 
 .search-field {
-  border: 0 !important;
+  border: none;
   padding: none;
   margin: none;
   background-color: #ba0e82;
+  color: #fff; }
+
+.search-form {
+  border: none;
+  border: 0 !important;
+  padding: none;
+  margin: none;
   color: #fff !important;
   border-bottom: 2px solid #fff !important;
   width: 100px; }
@@ -725,16 +804,15 @@ object {
 .search-form {
   padding: none;
   margin: none;
-  background-color: #ba0e82;
   color: #fff !important;
+  border: 0 !important;
+  border-bottom: 2px solid #fff !important; }
   border: 0 !important; }
-
 .ffieldset {
   border: 0; }
 
 .search-submit {
   color: #fff;
-  background-color: #ba0e82;
   border: 0;
   overflow: visible !important;
   font-size: 25px; }
@@ -1213,6 +1291,8 @@ object {
 
 .footer-location {
   font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-left: 40px; }
   font-size: 18px; }
   .footer-location h2 {
     margin: 0;
@@ -1363,6 +1443,54 @@ object {
       text-decoration: none;
       color: #000000; }
 
+
+/*
+ * Education Page Styles
+ */
+.column-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10% 20% 0 20%; }
+  .column-container .section {
+    margin-right: 40px;
+    text-align: center; }
+    .column-container .section a {
+      margin: 0 auto;
+      color: #f7911d;
+      text-decoration: none; }
+      .column-container .section a:visited, .column-container .section a:hover, .column-container .section a:active {
+        color: #f7911d; }
+      .column-container .section a h3 {
+        font-size: 34px; }
+    .column-container .section p {
+      text-align: left; }
+
+.banner {
+  background-color: #f7911d;
+  color: white;
+  padding: 0 20%;
+  text-align: center; }
+  .banner h2 {
+    max-width: 400px;
+    font-size: 34px; }
+  .banner button {
+    border-radius: 3px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #f7911d;
+    border-width: 0px; }
+
+.blue .banner {
+  background-color: #00a3d7; }
+
+.red .banner {
+  background-color: #00a3d7; }
+
+.orange .banner {
+  background-color: #f7911d; }
+
 .donate .banner {
   height: 330px;
   width: 100%;
@@ -1452,6 +1580,7 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
     .donate .top-grid .donate-item h2 {
       font-size: 30px;
       font-weight: bold; }
@@ -1511,3 +1640,4 @@ object {
       .donate .low-grid .grid-center a p {
         margin: 0;
         text-align: center; }
+

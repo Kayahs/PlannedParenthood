@@ -17,19 +17,99 @@
 }
 
 .purple {
-  background-color: $purple;
+  .site-header {
+    background-color: $purple;
+  }
+  .top-hero {
+    background-color: $purple;
+  }
+  .banner {
+    background-color: $purple;
+  }
+  .search-field {
+    background-color: $purple;
+  }
+  .search-form {
+    background-color: $purple;
+  }
+  .search-submit {
+    background-color: $purple;
+  }
+  .coloured-button {
+    color: $purple;
+  }
 }
 
 .green {
-  background-color: $green;
+  .site-header {
+    background-color: $green;
+  }
+  .top-hero {
+    background-color: $green;
+  }
+  .banner {
+    background-color: $green;
+  }
+  .search-field {
+    background-color: $green;
+  }
+  .search-form {
+    background-color: $green;
+  }
+  .search-submit {
+    background-color: $green;
+  }
+  .coloured-button {
+    color: $green;
+  }
 }
 
 .blue {
-  background-color: $blue;
+  .site-header {
+    background-color: $blue;
+  }
+  .top-hero {
+    background-color: $blue;
+  }
+  .banner {
+    background-color: $blue;
+  }
+  .search-field {
+    background-color: $blue;
+  }
+  .search-form {
+    background-color: $blue;
+  }
+  .search-submit {
+    background-color: $blue;
+  }
+  .coloured-button {
+    color: $blue;
+  }
 }
 
 .orange {
-  background-color: $orange;
+  .site-header {
+    background-color: $orange;
+  }
+  .top-hero {
+    background-color: $orange;
+  }
+  .banner {
+    background-color: $orange;
+  }
+  .search-field {
+    background-color: $orange;
+  }
+  .search-form {
+    background-color: $orange;
+  }
+  .search-submit {
+    background-color: $orange;
+  }
+  .coloured-button {
+    color: $orange;
+  }
 }
 
 .header-logo {
@@ -82,7 +162,6 @@
   border: 0 !important;
   padding: none;
   margin: none;
-  background-color: $purple;
   color: $color__background-body !important;
   border-bottom: 2px solid $color__background-body !important;
   width: 100px;
@@ -91,7 +170,6 @@
 .search-form {
   padding: none;
   margin: none;
-  background-color: $purple;
   color: $color__background-body !important;
   border: 0 !important;
 }
@@ -102,7 +180,6 @@
 
 .search-submit {
   color: $color__background-body;
-  background-color: $purple;
   border: 0;
   overflow: visible !important;
   font-size: 25px;
@@ -810,6 +887,7 @@
       }
     }
   }
+
   .impactu {
     h1 {
       text-align: center;
@@ -881,3 +959,49 @@
     }
   }
 }
+/*
+ * Education Page Styles
+ */
+
+.column-container {
+  display: flex;
+  margin: 10% 20% 0 20%;
+  .section {
+    margin-right: 40px;
+    text-align: center;
+    a {
+      margin: 0 auto;
+      color: $orange;
+      text-decoration: none;
+      &:visited, &:hover, &:active {
+        color: $orange;
+      }
+      h3 {
+        font-size: 34px;
+      }
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.banner {
+  background-color: $orange;
+  color: white;
+  padding: 0 20%;
+  text-align: center;
+  h2 {
+    max-width: 400px;
+  font-size: 34px;
+  }
+  button {
+    border-radius: 3px;
+    background-color: $color__background-body;
+    font-family: $font__main;
+    font-size: 20px;
+    color: $orange;
+    border-width: 0px;
+  }
+}
+

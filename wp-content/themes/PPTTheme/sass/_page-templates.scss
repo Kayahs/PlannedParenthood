@@ -10,6 +10,14 @@
   margin: 0 auto;
 }
 
+.no-border {
+  border: none!important;
+}
+
+.visually-hidden {
+  display: none;
+}
+
 .site-header {
   width: 100%;
   padding-top: 52px;
@@ -37,7 +45,36 @@
   }
   .coloured-button {
     color: $purple;
+    a {
+      color: $purple;
+      text-decoration: none;
+    }
   }
+
+  .nav-icon-in-frame {
+    border-bottom: 4px solid $purple;
+    ul {
+      justify-content: space-between;      
+    }
+
+  }
+  .framed {
+    border: 3px solid $purple;
+    button {
+      border: 3px solid $purple;
+    }
+  }
+  .icon-in-frame article:not(:first-child) {
+    ul {
+        color: $purple;
+    }
+    .columns {
+      color: $color__text-main;
+    }
+    a {
+      color: $purple;
+    }
+  }          
 }
 
 .green {
@@ -61,6 +98,10 @@
   }
   .coloured-button {
     color: $green;
+    a {
+      color: $green;
+      text-decoration: none;
+    }
   }
 }
 
@@ -85,6 +126,27 @@
   }
   .coloured-button {
     color: $blue;
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+  .nav-icon-in-frame {
+    border-bottom: 4px solid $blue;
+    ul {
+      justify-content: space-around;
+    }
+  }
+  .framed {
+    border: 3px solid $blue;
+    button {
+      border: 3px solid $blue;
+    }
+  }
+  .icon-in-frame article:not(:first-child) {
+    a {
+      color: $blue;
+    }
   }
 }
 
@@ -109,6 +171,10 @@
   }
   .coloured-button {
     color: $orange;
+    a {
+      color: $orange;
+      text-decoration: none;
+    }
   }
 }
 
@@ -226,6 +292,28 @@
 }
 
 /* Front page */
+
+.service-advisory {
+  color: white;
+  background: $purple;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: white solid 1px;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: transparent;
+    border: none;
+    color: white;
+  }
+
+}
 
 .top-hero {
   width: 100%;
@@ -811,25 +899,172 @@
 
 //Sexual health Page
 
-.nav-icon-in-frame {
-  ul {
-    display: flex;
+.icon-in-frame {
 
-    li {
-      list-style-type: none;
-      font-size: 22px;
-      font-weight: bold;
+  .entry-content {
+    margin-left: 12%;
+    margin-right: 12%;
+    h2 {
+      font-size: 35px;
+    }
+    span {
+      color:$blue;
+    }
+  }
 
-      a {
-        text-decoration: none;
-        color: $color__text-main;
+  .nav-icon-in-frame {
+    width: 85%;
+    ul {
+      margin: 0 auto;
+      padding-left: 0;
+      padding-bottom: 10px;
+      margin-top: 8%;
+      display: flex;      
+
+      li {
+        list-style-type: none;
+        font-size: 22px;
+        font-weight: bold;
+
+        a {
+          text-decoration: none;
+          color: $color__text-main;
+        }
       }
+    }
+  }
+
+  article:not(:first-child) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3% 10%;
+
+    h3 {
+      font-size: 20px!important;
+    }
+
+    h3:first-of-type {
+      margin-top:0;
+    }
+
+    ul {
+      margin: 0;
+      color: $purple;
+    }
+
+    .columns {
+      column: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      color: $color__text-main;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $purple;
+    }
+
+    .framed {
+      padding: 2.78%;
+      width: 30vw;
+      text-align: center;
+      border-radius: 20px;
+
+      h3 {
+        font-size: 32px!important;
+      }
+
+      p {
+        text-align: left;
+      }
+
+      button {
+        width: 85%;
+        background: none;
+        border-radius: 10px;
+      }
+    }
+
+    .content {
+      width: 40vw;
     }
   }
 }
 
-.nav-sexual-health {
+// Contact Page
+
+.contact-page {
+  h3 {
+    font-size: 32px;
+  }
+
+  .banner {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 4.5%;
+    padding-bottom: 4.5%;
+    margin: 3% 3% 0 3%;
+    p{
+      font-size: 70px;
+      font-weight: bold;
+      margin:0;
+    }
+  }
+  .for-the-quotation-shape {
+    margin: 0 3% 3% 3%;
+    width: 0; 
+    height: 0; 
+    border-bottom: 4.5vw solid transparent;  
+    border-right: 4.5vw solid $green;
+  }
+
+  .content {
+    margin-left: 25%;
+    margin-right: 25%;
+
+    .section1, .hours {
+      display: flex;
+      justify-content: space-between;
+      * {
+        width: 90%;
+      }
+    }
+
+    .section1 {
+      p:not(:last-child) {
+        margin:0;
+      }
+    }
+
+    .section2, .section3 {
+      p:not(:nth-child(2)) {
+        margin:0;
+      }
+      p:nth-of-type(2n+2) {
+        font-weight: bold;
+      }
+    }
+    .location-widget {
+      .location:first-child {
+        font-weight: bold;
+      }
+    }
+  }
+  .entry-content {
+    ul {
+      margin-left:0;
+    }
+    a {
+      text-decoration: none;
+      color: $green;
+    }
+    span {
+      color: $green;
+    }
+  }
 }
+
 
 // Donate page
 
@@ -987,13 +1222,12 @@
 }
 
 .banner {
-  background-color: $orange;
   color: white;
   padding: 0 20%;
   text-align: center;
   h2 {
     max-width: 400px;
-  font-size: 34px;
+    font-size: 34px;
   }
   button {
     border-radius: 3px;

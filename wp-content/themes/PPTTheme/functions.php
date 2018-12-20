@@ -104,6 +104,26 @@ function red_starter_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+
+		register_sidebar( array(
+		'name' => 'Contact Page Section 3',
+		'id' => 'contact-page-section-3',
+		'description' => 'Appears in the contact page - section 3',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+		register_sidebar( array(
+		'name' => 'Service Advisory',
+		'id' => 'service-advisory',
+		'description' => 'Appears at the top of the home page',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget' => '</section>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 

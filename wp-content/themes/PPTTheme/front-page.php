@@ -35,7 +35,7 @@ get_header(); ?>
         </div>
 
         <div class="teen-health black-div grid-item4">
-          <h2>teens health source</h2>
+          <h2>teen health source</h2>
           <p>THS is a sexual health information  service run for</p> 
           <p>and by youth - brought to you by Planned</p>
           <p>Parenthood Toronto. Want to chat with a volunteer</p> 

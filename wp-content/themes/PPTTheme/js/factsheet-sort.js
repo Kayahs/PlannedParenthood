@@ -68,24 +68,18 @@ $(document).ready(() => {
     }
     $.ajax({
       method: "GET",
-      url: `${red_vars.rest_url}wp/v2/fact?per_page=2${page}${orderby}${tagList}`
+      url: `${red_vars.rest_url}wp/v2/fact?per_page=9${page}${orderby}${tagList}`
     }).done((result, textStatus, jqXHR) => {
       
       if (result.length) {
         let maxPages = jqXHR.getResponseHeader('X-WP-TotalPages');
-        console.log(`Max Pages: ${maxPages}.`);
         curPage++;
-        console.log(`Current Page: ${curPage}`);
         if (curPage > maxPages) {
           $('.load-button').attr("disabled", "disabled");
         }
-        console.log(curPage);
-        console.log(result);
-        console.log(result[0].facttag);
         let cardtags = "";
         for (let i = 0; i < result.length; i++) {
           cardtags = buildTagList(result[i].facttag).join(', ');
-          console.log(cardtags);
           $('.right-container').html($('.right-container').html() + 
             `<div class="card-container">
             <div class="card-title">

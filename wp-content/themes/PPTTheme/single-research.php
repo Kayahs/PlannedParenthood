@@ -22,9 +22,7 @@ get_header(); ?>
         <div class="entry-content">
           <div class="content-container">
             <div class="content-header">
-              <a class="download-container">
-                <div class="download-icon" href="<?php echo $pdfurl ?>">
-                </div>
+              <a class="download-container" href="<?php echo $pdfurl ?>">
                 Download
               </a>
             </div>
@@ -42,5 +40,4 @@ get_header(); ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

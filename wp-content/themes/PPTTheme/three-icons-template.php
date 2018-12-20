@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Three Icons Template
+ * Template Name: Three Icons Template
 */
 
 get_header(); ?>
@@ -17,7 +17,7 @@ get_header(); ?>
       </header>
     <?php endif; ?>
 
-     <div class="wrapper top-hero orange">
+     <div class="wrapper top-hero">
       <?php the_title( '<h1 class="page-title">' , '</h1>' ); ?>
       <?php if (is_page('services')) { echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Services-hero.png" alt="Services hero image">'; }
       if (is_page('education')) { echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/Education-hero.png" alt="Education hero image">'; } ?>
@@ -37,10 +37,10 @@ get_header(); ?>
 
       <?php if (is_page('services')) {
         echo '<div class="banner">';
-        echo '<p>come see what makes us different</p>';
+        echo '<h2>come see what makes us different</h2>';
         echo '<p>We put you – and your unique needs – at the centre of the respectful, confidential, and non-judgmental care we offer.</p>';
         dynamic_sidebar( 'banner' );
-        echo '<a href="PlannedParenthood/contact"><button>appointments</button></a>';
+        echo '<a href="PlannedParenthood/contact"><button class="coloured-button">appointments</button></a>';
         echo '</div>';        
       } ?>
 
@@ -48,14 +48,16 @@ get_header(); ?>
         echo '<div class="banner">';
         echo '<h2>Get the facts you need, straight from the source.</h2>';
         echo '<p>Teen Health Source is a youth-run sexual health information service brought to you by Planned Parenthood Toronto.</p>';
-        echo '<a href="http://teenhealthsource.com/"><button>teen health source</button></a>';
+        echo '<a href="http://teenhealthsource.com/"><button class="coloured-button">teen health source</button></a>';
         echo '</div>';        
       } ?>
 
       <?php /* Start the Loop */ ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'template-parts/content-single' ); ?>
-      <?php endwhile; ?>
+      <?php while ( have_posts() ) : the_post(); 
+        if ( !empty(get_the_content()) ) { 
+            get_template_part( 'template-parts/content-single' );
+        }
+      endwhile; ?>
       <?php else : ?>
         <?php get_template_part( 'template-parts/content', 'none' ); ?>
       <?php endif; ?>

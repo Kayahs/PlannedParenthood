@@ -8,8 +8,7 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-  <main id="main" class="site-main fqa" role="main">
-
+  <main id="main" class="site-main faq" role="main">
       <?php while ( have_posts() ) : the_post(); ?>
 
         <div class="entry-content">
@@ -17,7 +16,7 @@ get_header(); ?>
         </div><!-- .entry-content -->
 
       <?php endwhile; // End of the loop. ?>
-
+      <?php require get_template_directory() . '/template-parts/donate-cta.php'; ?>
   </main>
 </div>
 

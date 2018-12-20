@@ -19,18 +19,18 @@ get_header(); ?>
         ?>
       </header><!-- .page-header -->
 
-      <div class="top-hero-green">
+      <div class="top-hero">
           <h1 class="page-title">board members</h1> ;
           <?php printf('<a href="%1$s/services/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
           <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/About-hero.jpg" alt="About hero image">' ?>
       </div>
 
       <div class="about-navigation">
-       <h2>about us</h2>
+       <h2 class="grey-text">about us</h2>
        <h2>board of directors</h2>
-       <h2>strategic plan & annual report</h2>
+       <h2 class="grey-text">strategic plan & annual report</h2>
      </div>
-
+     <div class="bod-content">
         <?php $query_vars = $wp_query->query_vars;
 
            $query_vars['posts_per_page'] = 15;
@@ -50,7 +50,7 @@ get_header(); ?>
       <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
     <?php endif; ?>
-
+    </div> <!-- .bod-content -->
     </main><!-- #main -->
   </div><!-- #primary -->
 

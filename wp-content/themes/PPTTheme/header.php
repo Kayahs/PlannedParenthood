@@ -20,20 +20,22 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site
-		<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' )) {
+		<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' ) || is_singular('fact')) {
 						echo "blue";
 						} elseif (is_page('donate') || is_page('about') || is_page('privacy') || is_page('accessibility') || is_page('contact') || is_post_type_archive('board_member') ){
 							echo "green";
-						} elseif (is_page('education') || is_page('fqa') || is_post_type_archive('fact')) {
+						} elseif (is_page('education') || is_page('faq') || is_post_type_archive('fact')|| is_post_type_archive('research')) {
 							echo "orange";
 						} else {
 							echo "purple";
 						} ?>">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<div class="service-advisory">
-				<!-- This is where I will place the service advisory which will be at the very top of the header -->
-			</div>
+			<?php if (is_front_page()) { echo '<div class="wrapper service-advisory">';
+				/*This is where I will place the service advisory which will be at the very top of the header*/
+					dynamic_sidebar( 'service-advisory' );
+					echo '<button class="close-service-advisory">X</button>';
+					echo '</div>'; } ?>
 
 			<header id="masthead" class="wrapper site-header  role="banner">
 				<div class="site-branding">
@@ -49,7 +51,7 @@
 				    <p>(416) 961-0113</p>
 				  </div>
 				  <div>
-				    <button type="button" class="coloured-button" >donate</button>
+				    <button type="button" class="coloured-button" ><a href="<?php echo get_site_url() .'/donate' ?>">donate</a></button>
 				  </div> <!-- .header-donate-button-->
 				</div> <!-- .header-top-right The div where the number and donate button go -->
 				<div class="nav-search">
@@ -74,3 +76,5 @@
 			</div>
 
 			<div id="content" class="site-content">
+
+

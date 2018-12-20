@@ -13,3 +13,9 @@ $('.top-button').on('click', function(e) {
    scrollTop:0
  }, '300');
 });
+
+
+//button to close the service advisory widget at the top of the fron-page
+$('.close-service-advisory').on('click', function(e) {
+  $('.service-advisory').hide();
+});

@@ -973,7 +973,9 @@
       margin: 0 auto;
       color: $orange;
       text-decoration: none;
-      &:visited, &:hover, &:active {
+      &:visited,
+      &:hover,
+      &:active {
         color: $orange;
       }
       h3 {
@@ -993,7 +995,7 @@
   text-align: center;
   h2 {
     max-width: 400px;
-  font-size: 34px;
+    font-size: 34px;
   }
   button {
     border-radius: 3px;
@@ -1005,3 +1007,160 @@
   }
 }
 
+// Board of Director's Page
+
+.bod {
+  .grey-text {
+    opacity: 0.4;
+  }
+  .bod-content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    .entry-stuff {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      img {
+        width: 191px;
+        height: 191px;
+        border-radius: 50%;
+        margin-right: 40px;
+      }
+      .entry-content {
+        margin-top: 0 !important;
+        width: 655px;
+        h2 {
+          margin-top: 0 !important;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+// Archive Research Page
+.arc-research {
+  .page-title {
+    height: 300px;
+    width: 100%;
+    font-family: $font__main;
+    font-size: 76px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 76px;
+    }
+  }
+  .entry-header {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    h2 {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+  .entry-meta {
+    a {
+      text-transform: uppercase;
+      margin-right: 25px;
+    }
+  }
+  .donor-movement {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .donor-text {
+      text-align: left;
+    }
+    h2 {
+      margin: 0;
+    }
+    h3 {
+      margin: 0;
+    }
+    .donor-movement-button {
+      height: 100px;
+      width: 200px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Single Program Template CSS
+.single-program-area {
+  .single-area {
+    width: 60%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 100px;
+    margin-bottom: 52px;
+    h3 {
+      color: $purple;
+    }
+    a {
+      text-decoration: none;
+      color: $purple;
+      margin-right: 25px;
+    }
+  }
+  .snap-map {
+    height: 215px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+// Frequently Asked Questions Page
+.faq {
+  .faq-title {
+    width: 100%;
+    height: 300px;
+    background-color: $orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin: 0;
+      font-size: 76px;
+    }
+  }
+  .faq-content {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 52px;
+    display: flex;
+    span {
+      color: $orange;
+    }
+    .faq-left {
+      width: 42%;
+      margin-right: 4%;
+    }
+    .faq-right {
+      width: 42%;
+    }
+  }
+}

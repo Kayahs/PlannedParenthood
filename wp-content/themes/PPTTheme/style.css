@@ -816,6 +816,8 @@ object {
 .header-donate-button {
   border-radius: 3px;
   background-color: #fff;
+  padding-top: 2px;
+  padding-bottom: 2px;
   font-family: Arial, sans-serif;
   font-size: 20px;
   color: #ba0e82; }
@@ -825,6 +827,9 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -991,7 +996,7 @@ object {
   color: #d7d6d7; }
   .black-div h2 {
     margin-top: 90px;
-    width: 349.3px;
+    width: 335px;
     height: 36px;
     font-family: Arial, sans-serif;
     font-size: 32px;
@@ -1004,6 +1009,47 @@ object {
     font-family: Arial, sans-serif;
     font-size: 20px;
     color: #ba0e82; }
+
+.grid-container {
+  display: grid !important;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0;
+  height: 32vw;
+  /*   h2 {
+  margin-top:10%;
+} */ }
+  .grid-container .grid-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .grid-container .grid-item2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #ba0e82;
+    border-radius: 8px;
+    background: white; }
+  .grid-container .grid-item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; }
+  .grid-container .grid-item4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 50px; }
+  .grid-container .grid-item5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #ba0e82;
+    border-radius: 8px;
+    background: white; }
 
 .white-icon-container {
   padding: 150px 150px 150px 150px;
@@ -1783,7 +1829,6 @@ object {
       text-align: left; }
 
 .banner {
-  background-color: #f7911d;
   color: white;
   padding: 0 20%;
   text-align: center; }
@@ -1961,4 +2006,3 @@ object {
     margin-right: 4%; }
   .faq .faq-content .faq-right {
     width: 42%; }
-

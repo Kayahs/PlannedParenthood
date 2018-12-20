@@ -37,7 +37,7 @@
 					echo '<button class="close-service-advisory">X</button>';
 					echo '</div>'; } ?>
 
-			<header id="masthead" class="wrapper site-header  role="banner">
+			<header id="masthead" class="site-header  role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
@@ -51,7 +51,7 @@
 				    <p>(416) 961-0113</p>
 				  </div>
 				  <div>
-				    <button type="button" class="coloured-button" ><a href="<?php echo get_site_url() .'/donate' ?>">donate</a></button>
+				    <button type="button" class="coloured-button header-donate-button" ><a href="<?php echo get_site_url() .'/donate' ?>">donate</a></button>
 				  </div> <!-- .header-donate-button-->
 				</div> <!-- .header-top-right The div where the number and donate button go -->
 				<div class="nav-search">

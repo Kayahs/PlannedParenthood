@@ -1214,7 +1214,6 @@ object {
 .footer-location {
   font-family: Arial, sans-serif;
   font-size: 18px; }
-
   .footer-location h2 {
     margin: 0;
     font-size: 18px; }
@@ -1352,7 +1351,6 @@ object {
 .volunteer-workshop article a {
   color: #00a3d7; }
 
-
 .nav-icon-in-frame ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1364,8 +1362,6 @@ object {
     .nav-icon-in-frame ul li a {
       text-decoration: none;
       color: #000000; }
-.volunteer article span a {
-  color: #a1b426; }
 
 .donate .banner {
   height: 330px;
@@ -1456,4 +1452,62 @@ object {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .donate .top-grid .donate-item h2 {
+      font-size: 30px;
+      font-weight: bold; }
+    .donate .top-grid .donate-item h3 {
+      font-size: 19px;
+      text-align: center; }
 
+.donate .donate-image img {
+  display: block; }
+
+.donate .donate-img-banner {
+  font-size: 32px;
+  font-weight: bold;
+  height: 215px;
+  width: 100%;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .donate .donate-img-banner p {
+    margin: 0; }
+
+.donate .low-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 45px; }
+  .donate .low-grid .grid-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .donate .low-grid .grid-center a {
+      font-size: 32px;
+      font-weight: bold;
+      text-decoration: none;
+      color: black;
+      text-align: center; }
+      .donate .low-grid .grid-center a p {
+        margin: 0;
+        text-align: center; }

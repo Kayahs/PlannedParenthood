@@ -49,42 +49,42 @@ get_header(); ?>
       </div><!-- .bottom-hero-black -->
       <div class="white-icon-container"> <!-- grid container -->
         <div class="item-b-control fp-item">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/sexual-health/' ?>">
         <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/home-page-birth-control-icon.png' ?> alt="Birth Control icon">
         <h2>birth control</h2>
         </a>
         <p>your body, your options</p>
         </div>
         <div class="item-fact-sheets fp-item">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/facts/' ?>">
         <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/fact-sheet.svg' ?> alt="Fact Sheets icon">
         <h2>fact sheets</h2>
         </a>
         <p>the info you want</p>
         </div>
         <div class="item-workshops fp-item">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/programcat/workshop/' ?>">
         <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/workshops.svg' ?> alt="Workshops icon">
         <h2>workshops</h2>
         </a>
         <p>the tools you need</p>
         </div>
         <div class="item-testing fp-item">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/sexual-health/' ?>">
         <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/sti.svg' ?> alt="Testing icon">
         <h2>HIV & STI testing</h2>
         </a>
         <p>know your status</p>
         </div>
         <div class="item-counselling fp-item">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/mental-health/' ?>">
         <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/counselling.svg' ?> alt="Counselling icon">
         <h2>counselling</h2>
         </a>
         <p>what's on your mind</p>
         </div>
         <div class="item-resources fp-item">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/mental-health/' ?>">
         <img src = <?php echo get_template_directory_uri().'/assets/SVG/home-page-svg/life-resources.svg' ?> alt="Life Resources icon">
         <h2>life resources</h2>
         </a>

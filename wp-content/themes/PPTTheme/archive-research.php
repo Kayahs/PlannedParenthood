@@ -20,8 +20,9 @@ get_header(); ?>
       </header><!-- .page-header -->
 
       <div class="wrapper">
-          <h1 class="page-title">research</h1> ;
           <?php printf('<a href="%1$s/education"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+          <h1 class="page-title">research</h1> ;
+
       </div>
 
 

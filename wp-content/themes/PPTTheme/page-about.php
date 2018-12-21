@@ -15,7 +15,7 @@ get_header(); ?>
       </div><!-- .top-hero-green -->
       <div class="about-navigation">
         <h2>about us</h2>
-        <h2 class="greyed-out">board of directors</h2>
+        <h2 class="greyed-out"><a href="<?php echo get_site_url() .'/board-of-directors/' ?>">board of directors</a></h2>
         <h2 class="greyed-out">strategic plan & annual report</h2>
       </div>
       <?php while ( have_posts() ) : the_post(); ?>

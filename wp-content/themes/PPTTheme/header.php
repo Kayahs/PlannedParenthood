@@ -20,7 +20,7 @@
 
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site
-		<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' ) || is_singular('fact')) {
+		<?php if (is_page('services') || is_page('mental-health') || is_page('primary-care') || is_tax('programcat', 'workshop') || is_singular('fact') || is_singular('research') || is_tax('programcat', 'volunteer') || is_page_template( 'form-template.php' ) || is_singular('fact')) {
 						echo "blue";
 						} elseif (is_page('donate') || is_page('about') || is_page('privacy') || is_page('accessibility') || is_page('contact') || is_post_type_archive('board_member') ){
 							echo "green";

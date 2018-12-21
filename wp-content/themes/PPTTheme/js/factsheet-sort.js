@@ -70,8 +70,9 @@ $(document).ready(() => {
       method: "GET",
       url: `${red_vars.rest_url}wp/v2/fact?per_page=9${page}${orderby}${tagList}`
     }).done((result, textStatus, jqXHR) => {
-      
       if (result.length) {
+        console.log(result);
+        console.log(result[0].link);
         let maxPages = jqXHR.getResponseHeader('X-WP-TotalPages');
         curPage++;
         if (curPage > maxPages) {
@@ -82,9 +83,11 @@ $(document).ready(() => {
           cardtags = buildTagList(result[i].facttag).join(', ');
           $('.right-container').html($('.right-container').html() + 
             `<div class="card-container">
+            <a href="${result[i].link}">
             <div class="card-title">
             ${result[i].title.rendered}
             </div>
+            </a>  
             <div class="card-excerpt">
             ${result[i]._ppt_card_excerpt}
             </div>

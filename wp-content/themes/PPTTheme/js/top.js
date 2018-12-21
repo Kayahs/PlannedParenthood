@@ -16,6 +16,6 @@ $('.top-button').on('click', function(e) {
 
 
 //button to close the service advisory widget at the top of the fron-page
-$('.close-service-advisory').on('click', function(e) {
+$('.close-service-advisory').on('click', function() {
   $('.service-advisory').hide();
 });

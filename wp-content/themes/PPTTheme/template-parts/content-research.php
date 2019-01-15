@@ -24,7 +24,7 @@
 
     <div class="entry-meta">
       <?php echo '<a href="'. get_post_permalink() .'">read more</a>';
-      echo '<a href="'. get_post_meta( get_the_ID(), 'research_pdf_url', true ) .'">download guidlines</a>'; ?>
+      echo '<a href="'. get_post_meta( get_the_ID(), '_ppt_research_pdf_url', true ) .'">download guidlines</a>'; ?>
     </div><!-- .entry-meta -->
   </header><!-- .entry-header -->
 

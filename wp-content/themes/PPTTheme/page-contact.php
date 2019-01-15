@@ -81,10 +81,10 @@ get_header(); ?>
           <h3>how to make a complaint</h3>
           <p>Please download and follow the instructions below to make a complaint to PPT.</p>
 
-          <p><a href="<?php echo get_site_url() .'wp-content/uploads/2018/12/How-to-make-a-complaint.pdf' ?>">Download our How To Make A Complaint instructions</a></p>
-          <p><a href="<?php echo get_site_url() .'wp-content/uploads/2018/12/CLIENT-COMPLAINT-REPORTING-FORM.pdf' ?>">Download our Client Complaint Reporting Form</a></p>
+          <p><a href="<?php echo get_site_url() .'/wp-content/uploads/2018/12/How-to-make-a-complaint.pdf' ?>">Download our How To Make A Complaint instructions</a></p>
+          <p><a href="<?php echo get_site_url() .'/wp-content/uploads/2018/12/CLIENT-COMPLAINT-REPORTING-FORM.pdf' ?>">Download our Client Complaint Reporting Form</a></p>
           <p><a href="<?php echo get_site_url() .'/wp-content/uploads/2018/12/PART-16-Client-Complaint.pdf' ?>">Download our Client Complaint Policy and Procedures</a></p>
-          <p><a href="<?php echo get_site_url() .'wp-content/uploads/2018/12/WORKPLACE-HSD.pdf' ?>">Download our Workplace Harassment, Solicitation and Discrimination Policy</a></p>
+          <p><a href="<?php echo get_site_url() .'/wp-content/uploads/2018/12/WORKPLACE-HSD.pdf' ?>">Download our Workplace Harassment, Solicitation and Discrimination Policy</a></p>
         </div><!-- .entry-content -->
 
       <?php endwhile; // End of the loop. ?>

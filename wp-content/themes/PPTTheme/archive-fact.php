@@ -59,13 +59,15 @@ get_header(); ?>
               $new_query = new WP_Query($query_vars); ?>
             <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
               <div class="card-container">
-                <?php 
+                <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                <?php
                 the_title( '<div class="card-title">', '</div>' ); 
                 $excerpt = get_post_meta(get_the_ID(), "_ppt_card_excerpt", true);
                 ?>
+                </a>
                 <div class="card-excerpt"><?php echo $excerpt ?></div>
                 <div class="card-tags">
-                  <div class="pre-tag">Tags:</div> 
+                  <div class="pre-tag">Tags: </div> 
                   <?php
                     $fact_tags = get_the_terms(get_the_ID(), 'facttag');
                     $tags = array();

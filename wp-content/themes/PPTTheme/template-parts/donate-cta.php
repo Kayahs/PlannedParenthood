@@ -15,7 +15,7 @@
     Together, we can break down barriers, challenge conventions, and change hearts, minds and lives.
   </div>
   <div>
-    <button type="button" class="dcta-button coloured-button">donate</button>
+    <button type="button" class="dcta-button coloured-button"><a href="https://www.gifttool.com" target="_blank">donate</a></button>
   </div>
 <div class="dcta-logo">
 <img src = <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/logo-with-text.svg' ?> alt="Planned Parenthood Logo with text">

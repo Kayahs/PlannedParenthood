@@ -15,7 +15,7 @@ get_header(); ?>
       <div class="top-hero">
       <?php $title = get_post_meta( get_the_ID(), '_ppt_single_program_title', true );
       echo '<h1 class="entry-title">' .$title. '</h1>'; ?>
-      <?php printf('<a href="%1$s/programs/"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+          <?php printf('<a href="%1$s/programs"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
       <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Workshop-snap-hero.png" alt="Workshop hero image">'; ?>
      </div><!-- .top-hero -->
      <div class="single-area">
@@ -31,11 +31,7 @@ get_header(); ?>
             } 
        echo '<a href="'.get_site_url().'/programs/">back to program</a>' ?>
        </div>
-       <div class="snap-map">
-         <h2>Download our Snap Map to learn more about</h2>
-         <h2>the challenges newcomer youth face.</h2>
-         <a href=""><img src="" alt="PDF link to the snap map"></a>
-       </div>
+
       <?php
         // If comments are open or we have at least one comment, load up the comment template.
         if ( comments_open() || get_comments_number() ) :

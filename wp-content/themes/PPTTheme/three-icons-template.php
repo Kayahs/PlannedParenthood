@@ -19,8 +19,8 @@ get_header(); ?>
 
      <div class="wrapper top-hero">
       <?php the_title( '<h1 class="page-title">' , '</h1>' ); ?>
-      <?php if (is_page('services')) { echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Services-hero.png" alt="Services hero image">'; }
-      if (is_page('education')) { echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/Education-hero.png" alt="Education hero image">'; } ?>
+      <?php if (is_page('services')) { echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/Services-hero.png" alt="Services hero image">'; }
+      if (is_page('education')) { echo '<img src="' . get_template_directory_uri() .'/assets/hero-images/Education-hero.png" alt="Education hero image">'; } ?>
      </div><!-- .top-hero-blue -->
 
      <div class='column-container'>

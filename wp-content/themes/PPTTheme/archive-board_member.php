@@ -21,7 +21,7 @@ get_header(); ?>
 
       <div class="top-hero">
           <h1 class="page-title">board members</h1> ;
-          <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/About-hero.jpg" alt="About hero image">' ?>
+          <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/About-hero.jpg" alt="About hero image">' ?>
       </div>
 
       <div class="about-navigation">

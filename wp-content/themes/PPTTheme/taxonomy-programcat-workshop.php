@@ -22,7 +22,7 @@ get_header(); ?>
       <div class="wrapper top-hero blue">
           <h1 class="page-title">workshops</h1>
             <?php printf('<a href="%1$s/education"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
-          <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Workshop-hero.png" alt="Workshop hero image">' ?>
+          <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/Workshop-hero.png" alt="Workshop hero image">' ?>
       </div>
 
       <div class="page-content">

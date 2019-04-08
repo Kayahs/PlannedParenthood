@@ -56,6 +56,14 @@ function register_taxonomies() {
     'show_admin_column' => true,
     'show_in_rest' => true
   ) );
+
+  register_taxonomy( 'jobtag', 'job', array(
+  'hierarchical' => true,
+  'labels' => create_tag_labels("Job"),
+  'query_var' => true,
+  'show_admin_column' => true,
+  'show_in_rest' => true
+) );
 }
 add_action( 'init', 'register_taxonomies' );
 ?>

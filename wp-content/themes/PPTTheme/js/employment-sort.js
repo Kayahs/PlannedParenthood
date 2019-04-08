@@ -1,34 +1,34 @@
 $(document).ready(() => {
-  // console.log(red_vars.rest_url);
-  let curPage = 2;
-  $('.tag-list li').on('click', function() {
+  console.log(red_vars.rest_url);
+  let jobCurPage = 2;
+  $('.job-tag-list li').on('click', function() {
     $(this).toggleClass('selected');
-    curPage = 1;
-    clearPosts();
-    getPosts();
+    jobCurPage = 1;
+    clearJobs();
+    getJobs();
   });
-  $('.clear-filter').on('click', function() {
-    $('.tag-list li').toggleClass('selected', false);
-    curPage = 1;
-    clearPosts();
-    getPosts();
+  $('.job-clear-filter').on('click', function() {
+    $('.job-tag-list li').toggleClass('selected', false);
+    jobCurPage = 1;
+    clearJobs();
+    getJobs();
   });
-  $('#orderSelector').on('change', function() {
-    curPage = 1;
-    clearPosts();
-    getPosts();
+  $('#orderJobSelector').on('change', function() {
+    jobCurPage = 1;
+    clearJobs();
+    getJobs();
   });
-  $('.load-button').on('click', function() {
-    getPosts();
+  $('.job-load-button').on('click', function() {
+    getJobs();
   });
 
-  function clearPosts() {
-    $('.load-button').removeAttr("disabled");
-    $('.right-container').html("");
+  function clearJobs() {
+    $('.job-load-button').removeAttr("disabled");
+    $('.job-right-container').html("");
   }
 
-  function buildTagList(tagidarray) {
-    let target = $('.tag-list li');
+  function buildJobTagList(tagidarray) {
+    let target = $('.job-tag-list li');
     let tagList = [];
     for (let i = 0; i < tagidarray.length; i++) {
       for (let j = 0; j < target.length; j++) {
@@ -39,12 +39,12 @@ $(document).ready(() => {
     }
     return tagList;
   }
-  function getPosts() {
+  function getJobs() {
     let tagList = "";
-    let orderval = $('#orderSelector option:selected').val();
-    let target = $('.tag-list li.selected');
+    let orderval = $('#orderJobSelector option:selected').val();
+    let target = $('.job-tag-list li.selected');
     let orderby = "";
-    let page = `&page=${curPage}`;
+    let page = `&page=${jobCurPage}`;
     switch(orderval) {
       case "a-z":
         orderby = "&orderby=title&order=asc";
@@ -59,8 +59,9 @@ $(document).ready(() => {
         orderby = "&orderby=date&order=desc";
         break;
     }
+    console.log(target.length);
     if (target.length) {
-      tagList = "&facttag=";
+      tagList = "&jobtag=";
       for (let i = 0; i < target.length; i++) {
         tagList+= `${target[i].attributes.tagid.value},`;
       }
@@ -68,20 +69,20 @@ $(document).ready(() => {
     }
     $.ajax({
       method: "GET",
-      url: `${red_vars.rest_url}wp/v2/fact?per_page=9${page}${orderby}${tagList}`
+      url: `${red_vars.rest_url}wp/v2/job?per_page=9${page}${orderby}${tagList}`
     }).done((result, textStatus, jqXHR) => {
       if (result.length) {
         console.log(result);
         console.log(result[0].link);
         let maxPages = jqXHR.getResponseHeader('X-WP-TotalPages');
-        curPage++;
-        if (curPage > maxPages) {
-          $('.load-button').attr("disabled", "disabled");
+        jobCurPage++;
+        if (jobCurPage > maxPages) {
+          $('.job-load-button').attr("disabled", "disabled");
         }
         let cardtags = "";
         for (let i = 0; i < result.length; i++) {
-          cardtags = buildTagList(result[i].facttag).join(', ');
-          $('.right-container').html($('.right-container').html() + 
+          cardtags = buildJobTagList(result[i].jobtag).join(', ');
+          $('.job-right-container').html($('.job-right-container').html() + 
             `<div class="card-container">
             <a href="${result[i].link}">
             <div class="card-title">

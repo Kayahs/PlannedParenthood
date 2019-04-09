@@ -49,6 +49,13 @@ function register_taxonomies() {
     'show_admin_column' => true
   ) );
 
+  register_taxonomy( 'newscat', 'news', array(
+    'hierarchical' => true,
+    'labels' => create_category_labels("News"),
+    'query_var' => true,
+    'show_admin_column' => true
+  ) );
+
   register_taxonomy( 'facttag', 'fact', array(
     'hierarchical' => true,
     'labels' => create_tag_labels("Fact"),

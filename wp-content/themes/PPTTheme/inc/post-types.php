@@ -75,17 +75,18 @@ function create_post_types() {
     )
   );
 
-  // register_post_type( 'career', array(
-  //   'labels' => create_labels_post_types("Career"),
-  //   'has_archive' => true,
-  //   'public' => true,
-  //   'supports' => array( 'title', 'author', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
-  //   'taxonomies' => array( 'post_tag', 'category' ),  
-  //   'exclude_from_search' => false,
-  //   'capability_type' => 'post',
-  //   'rewrite' => array( 'slug' => 'careers' ),
-  //   )
-  // );
+  register_post_type( 'job', array(
+    'labels' => create_labels_post_types("Job"),
+    'has_archive' => true,
+    'public' => true,
+    'supports' => array( 'title', 'author', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+    /*'taxonomies' => array( 'category' ),  */
+    'exclude_from_search' => false,
+    'capability_type' => 'post',
+    'rewrite' => array( 'slug' => 'jobs' ),
+    'show_in_rest' => true,
+    )
+  );
 
   register_post_type( 'board_member', array(
     'labels' => create_labels_post_types("Board Member"),

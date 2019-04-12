@@ -155,13 +155,21 @@ function ppt_starter_scripts() {
 	}
 
   $script_url = get_template_directory_uri() . '/build/js/factsheet-sort.min.js';
-   wp_enqueue_script( 'jquery' );
-   wp_enqueue_script( 'red_posts', $script_url, array( 'jquery' ), false, true );
+  $employment_script_url = get_template_directory_uri() . '/build/js/employment-sort.min.js';
+  wp_enqueue_script( 'jquery' );
+  wp_enqueue_script( 'red_posts', $script_url, array( 'jquery' ), false, true );
   wp_localize_script( 'red_posts', 'red_vars', array(
+    'rest_url' => esc_url_raw( rest_url() ),
+    'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+    'post_id' => get_the_ID()
+	) );
+  wp_enqueue_script( 'employment-script', $employment_script_url, array( 'jquery' ), false, true );
+  wp_localize_script( 'employment-script', 'red_vars', array(
       'rest_url' => esc_url_raw( rest_url() ),
       'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
       'post_id' => get_the_ID()
   ) );
+
 }
 add_action( 'wp_enqueue_scripts', 'ppt_starter_scripts' );
 

@@ -2369,14 +2369,15 @@ object {
         margin-top: 25px; }
     .post-type-archive-job .main-container .jobs-container .job-right-container {
       margin-left: 30px;
-      width: 75%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-line-pack: start;
-          align-content: flex-start; }
+      width: 75%; }
+      .post-type-archive-job .main-container .jobs-container .job-right-container .job-right-container-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-line-pack: start;
+            align-content: flex-start; }
       .post-type-archive-job .main-container .jobs-container .job-right-container .card-container {
         background-color: #a1b426;
         padding: 25px;
@@ -2391,7 +2392,7 @@ object {
           .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:visited, .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:hover, .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:active {
             color: white; }
         .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-title {
-          font-size: 20px; }
+          font-size: 18px; }
         .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-excerpt {
           font-size: 12px;
           padding-bottom: 10px;
@@ -2465,5 +2466,7 @@ object {
   margin-left: 270px; }
   .news-content h2 {
     color: #ba0e82; }
-  .news-content p {
-    font-size: 14px; }
+  .news-content p a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black; }

@@ -27,8 +27,10 @@ get_header(); ?>
           <p>We are fearless. We aren’t afraid to present a point of view, or address the issues that may make people feel uncomfortable. We take calculated risks. We aren’t afraid to do things differently, to lead the way forward.</p>
           <p>We have an awesome, diverse and supportive multi-disciplinary team, and work every day to promote informed choice, champion youth and youth engagement, and provide some of the best healthcare in the
           city. That really sounds like something worth being a part of, right? It totally is</p>
-          <h3>current openings</h3>
         </div>
+       
+        
+
         <div class="order-container">Order 
           <select id=orderJobSelector>
             <option value="a-z">A-Z</option>
@@ -61,36 +63,85 @@ get_header(); ?>
               Follow us on twitter, facebook and linkedin to be the first to know about all ppt employment opportunities
             </div>
           </div>
+
+
+         <!--  bat dau phan cac jobs -->
           <div class="job-right-container">
             <?php 
               $query_vars = $wp_query->query_vars;
               $query_vars['orderby'] = 'title';
               $query_vars['order'] = 'ASC'; 
-              $query_vars['posts_per_page'] = 9;
-              $new_query = new WP_Query($query_vars); ?>
-            <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
-              <div class="card-container">
-                <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
-                <?php
-                the_title( '<div class="card-title">', '</div>' ); 
-                $excerpt = get_post_meta(get_the_ID(), "_ppt_card_excerpt", true);
-                ?>
-                </a>
-                <div class="card-excerpt"><?php echo $excerpt ?></div>
-                <div class="card-tags">
-                  <div class="pre-tag">Tags: </div> 
-                  <?php
-                    $job_tags = get_the_terms(get_the_ID(), 'jobtag');
-                    $tags = array();
-                    foreach ($job_tags as $tag) { 
-                      $tags[] = $tag->name;
-                    }
-                    echo implode(', ',$tags);
-                  ?>
-                </div>
-              </div>
+              $query_vars['posts_per_page'] = 18;
+              $new_query = new WP_Query($query_vars);
+ 
+              echo "<h3>current openings</h3>" ; 
+              echo "<div class='job-right-container-section job-open-section'>";
+              while ( $new_query->have_posts() ) : $new_query->the_post();
+                
+               $categories = array_reverse(get_the_terms(get_the_ID(), 'jobcat'));
+               foreach($categories as $category):
+                if ($category->name == 'open'): ?>
 
-            <?php endwhile; ?>
+                  <!-- <div class="job-right-container-section"> -->
+                  
+                  <div class="card-container">
+                    <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                    <?php the_title( '<div class="card-title">', '</div>' ); ?>
+                    </a>
+                    <div class="card-excerpt"><?php the_excerpt(); ?></div>
+                    <div class="card-tags">
+                      <div class="pre-tag">Tags:</div> 
+                      <?php
+                        $job_tags = get_the_terms(get_the_ID(), 'jobtag');
+                        $tags = array();
+                        foreach ($job_tags as $tag) { 
+                          $tags[] = $tag->name;
+                        }
+                        echo implode(', ',$tags);
+                      ?>
+                    </div> <!-- card-tags -->
+                  </div> <!-- card-container -->
+                
+                <?php
+                endif;
+              endforeach;
+              
+              endwhile;
+              echo "</div>";
+
+
+              echo "<h3>archive</h3>" ; 
+              echo "<div class='job-right-container-section job-closed-section'>";
+              while ( $new_query->have_posts() ) : $new_query->the_post();
+                
+               $categories = array_reverse(get_the_terms(get_the_ID(), 'jobcat'));
+               foreach($categories as $category):
+                if ($category->name == 'closed'): ?>
+                  <div class="card-container">
+                    <a href="<?php echo get_the_permalink(get_the_ID()); ?>">
+                    <?php the_title( '<div class="card-title">', '</div>' );?>
+                    </a>
+                    <div class="card-excerpt"><?php the_excerpt(); ?></div>
+                    <div class="card-tags">
+                      <div class="pre-tag">Tags:</div> 
+                      <?php
+                        $job_tags = get_the_terms(get_the_ID(), 'jobtag');
+                        $tags = array();
+                        foreach ($job_tags as $tag) { 
+                          $tags[] = $tag->name;
+                        }
+                        echo implode(', ',$tags);
+                      ?>
+                    </div>
+                    </div>
+
+              <?php 
+                endif;
+              endforeach;
+ 
+            endwhile;
+                         echo "</div>"; ?>
+           
           </div>
         </div>
       </div>

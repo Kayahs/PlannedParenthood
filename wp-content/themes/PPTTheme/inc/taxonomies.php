@@ -64,6 +64,23 @@ function register_taxonomies() {
   'show_admin_column' => true,
   'show_in_rest' => true
 ) );
+
+  register_taxonomy( 'jobcat', 'job', array(
+  'hierarchical' => true,
+  'labels' => create_category_labels("Job"),
+  'query_var' => true,
+  'show_admin_column' => true,
+  'show_in_rest' => true
+) );
+
+  register_taxonomy( 'presscat', 'press', array(
+  'hierarchical' => true,
+  'labels' => create_category_labels("Press"),
+  'query_var' => true,
+  'show_admin_column' => true,
+/*  'show_in_rest' => true*/
+) );
 }
 add_action( 'init', 'register_taxonomies' );
 ?>
+

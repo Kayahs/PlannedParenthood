@@ -1885,9 +1885,11 @@
       .job-right-container {
         margin-left: 30px;
         width: 75%;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
+        .job-right-container-section {
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+        }
         .card-container {
           a {
             color: white;
@@ -1904,7 +1906,7 @@
           height: 200px;
           color: white;
           .card-title {
-            font-size: 20px;
+            font-size: 18px;
           }
           .card-excerpt {
             font-size: 12px;
@@ -1986,7 +1988,9 @@
   h2 {
     color: $purple;
   }
-  p {
+  p a {
     font-size: 14px;
+    text-decoration: none;
+    color: black;
   }
 }

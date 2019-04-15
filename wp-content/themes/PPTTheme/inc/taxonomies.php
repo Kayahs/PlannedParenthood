@@ -49,6 +49,13 @@ function register_taxonomies() {
     'show_admin_column' => true
   ) );
 
+  register_taxonomy( 'newscat', 'news', array(
+    'hierarchical' => true,
+    'labels' => create_category_labels("News"),
+    'query_var' => true,
+    'show_admin_column' => true
+  ) );
+
   register_taxonomy( 'facttag', 'fact', array(
     'hierarchical' => true,
     'labels' => create_tag_labels("Fact"),
@@ -56,6 +63,31 @@ function register_taxonomies() {
     'show_admin_column' => true,
     'show_in_rest' => true
   ) );
+
+  register_taxonomy( 'jobtag', 'job', array(
+  'hierarchical' => true,
+  'labels' => create_tag_labels("Job"),
+  'query_var' => true,
+  'show_admin_column' => true,
+  'show_in_rest' => true
+) );
+
+  register_taxonomy( 'jobcat', 'job', array(
+  'hierarchical' => true,
+  'labels' => create_category_labels("Job"),
+  'query_var' => true,
+  'show_admin_column' => true,
+  'show_in_rest' => true
+) );
+
+  register_taxonomy( 'presscat', 'press', array(
+  'hierarchical' => true,
+  'labels' => create_category_labels("Press"),
+  'query_var' => true,
+  'show_admin_column' => true,
+/*  'show_in_rest' => true*/
+) );
 }
 add_action( 'init', 'register_taxonomies' );
 ?>
+

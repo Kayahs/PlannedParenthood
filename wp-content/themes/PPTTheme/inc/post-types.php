@@ -38,6 +38,31 @@ function create_post_types() {
     )
   );
 
+  register_post_type( 'news', array(
+    'labels' => array(
+      'name' => 'News',
+      'singular_name' => 'News',
+      'add_new' => 'Add New News',
+      'add_new_item' => 'Add New News',
+      'edit_item' => 'Edit News',
+      'new_item' => 'New News',
+      'all_items' => 'All News',
+      'view_item' => 'View News',
+      'search_items' => 'Search News',
+      'not_found' =>  'No News Found',
+      'not_found_in_trash' => 'No News found in Trash', 
+      'parent_item_colon' => '',
+      'menu_name' => 'News',
+    ),
+    'has_archive' => true,
+    'public' => true,
+    'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),  
+    'exclude_from_search' => false,
+    'capability_type' => 'post',
+    'rewrite' => array( 'slug' => 'news' ),
+    )
+  );
+
   register_post_type( 'fact', array(
     'labels' => create_labels_post_types("Fact"),
     'has_archive' => true,
@@ -50,17 +75,18 @@ function create_post_types() {
     )
   );
 
-  // register_post_type( 'career', array(
-  //   'labels' => create_labels_post_types("Career"),
-  //   'has_archive' => true,
-  //   'public' => true,
-  //   'supports' => array( 'title', 'author', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
-  //   'taxonomies' => array( 'post_tag', 'category' ),  
-  //   'exclude_from_search' => false,
-  //   'capability_type' => 'post',
-  //   'rewrite' => array( 'slug' => 'careers' ),
-  //   )
-  // );
+  register_post_type( 'job', array(
+    'labels' => create_labels_post_types("Job"),
+    'has_archive' => true,
+    'public' => true,
+    'supports' => array( 'title', 'author', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+    /*'taxonomies' => array( 'category' ),  */
+    'exclude_from_search' => false,
+    'capability_type' => 'post',
+    'rewrite' => array( 'slug' => 'jobs' ),
+    'show_in_rest' => true,
+    )
+  );
 
   register_post_type( 'board_member', array(
     'labels' => create_labels_post_types("Board Member"),
@@ -81,6 +107,18 @@ function create_post_types() {
     'exclude_from_search' => false,
     'capability_type' => 'post',
     'rewrite' => array( 'slug' => 'research' ),
+    'show_in_rest' => true,
+    )
+  );
+
+  register_post_type( 'press', array(
+    'labels' => create_labels_post_types("Press Release"),
+    'has_archive' => true,
+    'public' => true,
+    'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
+    'exclude_from_search' => false,
+    'capability_type' => 'post',
+    'rewrite' => array( 'slug' => 'news' ),
     'show_in_rest' => true,
     )
   );

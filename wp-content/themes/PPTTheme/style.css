@@ -1458,7 +1458,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .single-research .content-container {
   margin: 0 auto; }
-
 .program-template-form-template .entry-content {
   margin: 10% 20% 0; }
   .program-template-form-template .entry-content > p {
@@ -1488,6 +1487,48 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         width: 100%; }
         .program-template-form-template .entry-content .wpcf7 .wpcf7-checkbox .wpcf7-list-item input {
           width: 13px; }
+
+.page-title {
+  height: 300px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 76px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .page-title h1 {
+    font-size: 76px; }
+
+/* Front page */
+.service-advisory {
+  color: white;
+  background: #ba0e82;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: white solid 1px; }
+  .service-advisory h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px; }
+  .service-advisory button {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: transparent;
+    border: none;
+    color: white; }
 
 .arc-research .wrapper {
   margin-top: 5% !important; }
@@ -2388,6 +2429,118 @@ object {
 .wp-caption-text {
   text-align: center; }
 
+.post-type-archive-job .page-header {
+  text-align: center;
+  padding: 0 30%;
+  color: white;
+  background-color: #a1b426; }
+  .post-type-archive-job .page-header h1 {
+    font-size: 75px;
+    margin-top: 0; }
+  .post-type-archive-job .page-header .page-description {
+    padding-bottom: 30px; }
+
+.post-type-archive-job .main-container {
+  margin: 1% 8% 0; }
+  .post-type-archive-job .main-container .order-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .post-type-archive-job .main-container .order-container select {
+      padding-left: 10px;
+      border: 0;
+      border-bottom: 1px solid black; }
+  .post-type-archive-job .main-container .jobs-container {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .post-type-archive-job .main-container .jobs-container .left-container {
+      width: 25%; }
+      .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer {
+        background-color: #E6E6E6;
+        border-radius: 8px 8px 0 0;
+        padding: 25px 25px 10px 25px; }
+        .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer .job-tag-list {
+          list-style: none;
+          margin-left: 0;
+          padding-left: 0;
+          color: #a1b426;
+          margin-bottom: 0; }
+          .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer .job-tag-list li {
+            cursor: pointer;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-radius: 8px; }
+            .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer .job-tag-list li.selected {
+              background-color: #a1b426;
+              color: white; }
+      .post-type-archive-job .main-container .jobs-container .left-container .job-clear-filter {
+        color: #a1b426;
+        padding: 10px 25px 15px 25px;
+        border-radius: 0 0 8px 8px;
+        cursor: pointer;
+        background-color: #F8F8F8; }
+      .post-type-archive-job .main-container .jobs-container .left-container .disclaimer {
+        margin-top: 25px; }
+    .post-type-archive-job .main-container .jobs-container .job-right-container {
+      margin-left: 30px;
+      width: 75%; }
+      .post-type-archive-job .main-container .jobs-container .job-right-container .job-right-container-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-line-pack: start;
+            align-content: flex-start; }
+      .post-type-archive-job .main-container .jobs-container .job-right-container .card-container {
+        background-color: #a1b426;
+        padding: 25px;
+        margin: 1.5%;
+        border-radius: 8px;
+        width: 30%;
+        height: 200px;
+        color: white; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a {
+          color: white;
+          text-decoration: none; }
+          .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:visited, .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:hover, .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:active {
+            color: white; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-title {
+          font-size: 18px; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-excerpt {
+          font-size: 12px;
+          padding-bottom: 10px;
+          border-bottom: 1px white solid;
+          height: 50%; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-tags {
+          font-size: 12px;
+          padding-top: 5px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+
+.post-type-archive-job .job-load-more {
+  text-align: center;
+  margin-bottom: 40px; }
+  .post-type-archive-job .job-load-more .job-load-button {
+    color: #a1b426;
+    background-color: #F5F5F5;
+    text-transform: uppercase;
+    padding: 10px 70px;
+    font-size: 30px;
+    border: none;
+    font-weight: bold; }
+
+.faq .entry-content {
+  margin-top: 0; }
+
+
 /* Galleries*/
 .gallery {
   margin-bottom: 1.5rem; }
@@ -2416,3 +2569,33 @@ object {
 
 .gallery-caption {
   display: block; }
+.faq .faq-content {
+  width: 80%;
+  margin: 30px 10% 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .faq .faq-content span a {
+    color: #f7911d;
+    text-decoration: none; }
+  .faq .faq-content .faq-left, .faq .faq-content .faq-right {
+    width: 46%;
+    margin: 0 2%; }
+
+.news .page-title {
+  background: #ba0e82;
+  margin-top: -5vh;
+  padding-right: 260px;
+  padding-left: 260px;
+  color: white; }
+
+.news-content {
+  margin-right: 270px;
+  margin-left: 270px; }
+  .news-content h2 {
+    color: #ba0e82; }
+  .news-content p a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black; }
+

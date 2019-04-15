@@ -1,6 +1,6 @@
-<?php
+  <?php
 /**
- * The template for displaying the fact archive page.
+ * The template for displaying the job archive page.
  *
  * @package RED_Starter_Theme
  */

@@ -1,5 +1,5 @@
 $(document).ready(() => {
-  console.log(red_vars.rest_url);
+  // console.log(red_vars.rest_url);
   let curPage = 2;
   $('.tag-list li').on('click', function() {
     $(this).toggleClass('selected');
@@ -61,7 +61,7 @@ $(document).ready(() => {
     }
     if (target.length) {
       tagList = "&facttag=";
-      for (let i = 0; i < target.length - 1; i++) {
+      for (let i = 0; i < target.length; i++) {
         tagList+= `${target[i].attributes.tagid.value},`;
       }
       tagList+= target[target.length-1].attributes.tagid.value;

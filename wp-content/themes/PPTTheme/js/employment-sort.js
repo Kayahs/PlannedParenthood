@@ -24,7 +24,7 @@ $(document).ready(() => {
 
   function clearJobs() {
     $('.job-load-button').removeAttr("disabled");
-    $('.job-right-container').html("");
+    $('.job-right-container-section').html("");
   }
 
   function buildJobTagList(tagidarray) {
@@ -82,7 +82,9 @@ $(document).ready(() => {
         let cardtags = "";
         for (let i = 0; i < result.length; i++) {
           cardtags = buildJobTagList(result[i].jobtag).join(', ');
-          $('.job-right-container').html($('.job-right-container').html() + 
+          // jobcat 29 closed, jobcat 30 open
+          if (result[i].jobcat==30) {
+          $('.job-open-section').html($('.job-open-section').html() + 
             `<div class="card-container">
             <a href="${result[i].link}">
             <div class="card-title">
@@ -90,12 +92,29 @@ $(document).ready(() => {
             </div>
             </a>  
             <div class="card-excerpt">
-            ${result[i]._ppt_card_excerpt}
+            ${result[i].excerpt.rendered}
             </div>
             <div class="card-tags">
             ${cardtags}
             </div>
             </div>`);
+          }
+          if (result[i].jobcat==29) {
+          $('.job-closed-section').html($('.job-closed-section').html() + 
+            `<div class="card-container">
+            <a href="${result[i].link}">
+            <div class="card-title">
+            ${result[i].title.rendered}
+            </div>
+            </a>  
+            <div class="card-excerpt">
+            ${result[i].excerpt.rendered}
+            </div>
+            <div class="card-tags">
+            ${cardtags}
+            </div>
+            </div>`);
+          }
         }
       }
     });

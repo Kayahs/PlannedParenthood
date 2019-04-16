@@ -14,52 +14,51 @@ get_header(); ?>
         <h1>annual reports</h1>
       </header>
       <section>
-
         <h3>current edition</h3>
-        <iframe src="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" width="100%" height="500px" scrolling="no"></iframe>
+        <iframe src="<?php bloginfo('template_directory');?>/assets/PDF/PPT_ANNUALREPORT_2018_WEB.pdf" width="100%" height="500px" scrolling="no"></iframe>
 
         <h4>download</h4>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_ANNUALREPORT_2018_WEB.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2017-2018</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_ANNUALREPORT_2017.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2016-2017</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_ANNUALREPORT_2016_WEB.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2015-2016</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_AnnualReport_2015_Web.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2014-2015</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_AnnualReport_2014.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2013-2014</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_AnnualReport_2013_online.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2012-2013</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_AnnualReport_2012-FINAL.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2011-2012</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_AnnualReport_10-11_pdf.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2010-2011</p>
         </a>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/PPT_AnnualReport_09-10.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto Annual Report 2009-2010</p>
         </a>
 
         <h3 class="strategic-h3">strategic plan</h3>
         <h4>download</h4>
-        <a href="http://localhost/PlannedParenthood/wp-content/uploads/2019/04/Vaughn-Paulger-Resume-2019.pdf" download>
-          <img src=" <?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/Strategy_Map_Updated_2018_Final.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
           <p>Planned Parenthood Toronto 2015-2020 Strategic Plan</p>
         </a>
       </section>

@@ -2317,11 +2317,13 @@ object {
   .post-type-archive-job .page-header h1 {
     font-size: 75px;
     margin-top: 0; }
-  .post-type-archive-job .page-header .page-description {
-    padding-bottom: 30px; }
 
 .post-type-archive-job .main-container {
   margin: 1% 8% 0; }
+  .post-type-archive-job .main-container .page-description {
+    margin-left: 28%;
+    margin-right: 25%;
+    padding-bottom: 30px; }
   .post-type-archive-job .main-container .order-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2338,7 +2340,8 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 5%; }
     .post-type-archive-job .main-container .jobs-container .left-container {
       width: 25%; }
       .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer {
@@ -2453,6 +2456,100 @@ object {
   .faq .faq-content .faq-left, .faq .faq-content .faq-right {
     width: 46%;
     margin: 0 2%; }
+
+.partnerships {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .partnerships .banner {
+    height: 200px;
+    width: 100vw;
+    background-color: #a1b426;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0; }
+    .partnerships .banner h1 {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 0.91;
+      margin: 0; }
+  .partnerships section {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 50px; }
+    .partnerships section h3 {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: bold; }
+    .partnerships section p {
+      font-size: 14px;
+      line-height: 1.43; }
+
+.annual-reports {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .annual-reports .banner {
+    height: 200px;
+    width: 100vw;
+    background-color: #a1b426;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0; }
+    .annual-reports .banner h1 {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 0.91;
+      margin: 0; }
+  .annual-reports section {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 50px; }
+    .annual-reports section h3 {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: bold; }
+    .annual-reports section p {
+      font-size: 14px;
+      line-height: 1.43; }
 
 .news .page-title {
   background: #ba0e82;

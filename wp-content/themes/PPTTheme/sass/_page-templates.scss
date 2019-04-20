@@ -1193,7 +1193,6 @@
   }
 }
 
-
 // Donate page
 
 .donate {
@@ -1828,12 +1827,14 @@
       font-size: 75px;
       margin-top: 0;
     }
-    .page-description {
-      padding-bottom: 30px;
-    }
   }
   .main-container {
     margin: 1% 8% 0;
+    .page-description {
+      margin-left: 28%;
+      margin-right: 25%;
+      padding-bottom: 30px;
+    }
     .order-container {
       display: flex;
       justify-content: flex-end;
@@ -1847,6 +1848,7 @@
       margin-top: 25px;
       display: flex;
       width: 100%;
+      padding-bottom: 5%;
       .left-container {
         width: 25%;
         .tag-organizer {
@@ -1966,6 +1968,86 @@
     .faq-left, .faq-right {
       width: 46%;
       margin: 0 2%;
+    }
+  }
+}
+
+//Partnerships
+.partnerships {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    height: 200px;
+    width: 100vw;
+    background-color: $green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    h1 {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 0.91;
+      margin: 0;
+    }  
+  }
+  section {
+    margin-left: 25%;
+    margin-right: 25%;
+    // margin-right: 25px;
+    margin-bottom: 50px;
+    h3 {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.43;
+    }
+  }
+}
+
+//Annual Reports
+.annual-reports {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    height: 200px;
+    width: 100vw;
+    background-color: $green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    h1 {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 0.91;
+      margin: 0;
+    }  
+  }
+  section {
+    margin-left: 25%;
+    margin-right: 25%;
+    // margin-right: 25px;
+    margin-bottom: 50px;
+    h3 {
+      margin-top: 50px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.43;
     }
   }
 }

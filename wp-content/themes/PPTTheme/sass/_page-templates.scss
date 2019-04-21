@@ -2073,3 +2073,26 @@
     color: black;
   }
 }
+
+//Single news
+.single-news {
+  margin-left: 270px;
+  margin-right: 270px;
+  h3 {
+    color: $purple;
+  }
+}
+
+//Funders 
+.funders-content {
+  margin-left: 400px;
+  margin-right: 400px;
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4rem;
+  }
+}

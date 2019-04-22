@@ -1971,16 +1971,45 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   margin-left: 270px; }
   .news-content h2 {
     color: #ba0e82; }
-  .news-content p a {
+  .news-content p {
     font-size: 14px;
     text-decoration: none;
     color: black; }
+    .news-content p a.news-link {
+      text-decoration: none; }
 
-.single-news {
-  margin-left: 270px;
-  margin-right: 270px; }
-  .single-news h3 {
-    color: #ba0e82; }
+.single-news-content {
+  margin-left: 400px !important;
+  margin-right: 400px !important; }
+  .single-news-content h3 {
+    color: #ba0e82;
+    margin-top: 40px; }
+  .single-news-content p {
+    font-size: 14px;
+    line-height: 1.5rem; }
+    .single-news-content p a {
+      text-decoration: none; }
+  .single-news-content ul {
+    font-size: 14px;
+    line-height: 2.25rem;
+    margin: 15px;
+    padding: 0; }
+
+.funders-hero {
+  height: 150px !important; }
+  .funders-hero .funders-title {
+    width: 741.9px;
+    font-family: Arial,sans-serif;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: .91;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    z-index: 3;
+    margin: 0;
+    text-transform: lowercase;
+    left: 40%; }
 
 .funders-content {
   margin-left: 400px;
@@ -1991,6 +2020,31 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .funders-content p {
     font-size: 14px;
     line-height: 1.4rem; }
+
+.agreement-banner {
+  background-color: #a1b426;
+  width: 100%;
+  height: 225px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px; }
+  .agreement-banner .agreement-text {
+    font-size: 18px;
+    font-family: Arial, sans-serif; }
+    .agreement-banner .agreement-text p {
+      line-height: 1.1rem;
+      width: 500px;
+      margin: 0 auto; }
+  .agreement-banner .agreement-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 18px;
+    padding-bottom: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 html {
   font-family: sans-serif;
@@ -2411,6 +2465,9 @@ a:hover, a:active {
   float: right;
   text-align: right;
   width: 50%; }
+
+.main-navigation ul .current_page_item {
+  display: none !important; }
 
 /*--------------------------------------------------------------
 # Accessibility

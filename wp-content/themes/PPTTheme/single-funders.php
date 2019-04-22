@@ -13,8 +13,9 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-content single-news-content">
-    <?php //get_the_date('', the_ID()); ?> 
+<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+	<div class="entry-content funders-content">
+    <h1>sup</h1>
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

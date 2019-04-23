@@ -10,11 +10,10 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main partnerships" role="main">
 
-      <header>
-        <div class="banner">
-          <h1>seeking funding partners</h1>
-        </div>
+      <header class="banner">
+        <h1>seeking funding partners</h1>
       </header>
+
       <section>
         <h3>Corporate Funders: Invest Strategically in PPT</h3>
         <p>

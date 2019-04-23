@@ -2078,6 +2078,74 @@
   }
 } 
 
+//Newsletter
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    height: 200px;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    h1 {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 0.91;
+      margin: 0;
+    }  
+  }
+  section {
+    width: 60%;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      margin-top: 50px;
+      font-size: 24px;
+      font-weight: bold;
+      color: $purple;
+    }
+    iframe {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .strategic-h3 {
+      margin-top: 30px;
+      margin-bottom: 18px;
+    }
+    h4 {
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #000000;
+      img {
+        height: 24px;
+      }
+      p {
+        margin-left: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      &:visited {
+        color: black;
+      }
+    }
+
+  }
+} 
+
 //News page
 
 .news {

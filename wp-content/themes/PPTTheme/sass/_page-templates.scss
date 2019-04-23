@@ -1977,7 +1977,7 @@
 
   .banner {
     height: 200px;
-    width: 100vw;
+    width: 100%;
     background-color: $green;
     color: white;
     display: flex;
@@ -1995,7 +1995,6 @@
   section {
     margin-left: 25%;
     margin-right: 25%;
-    // margin-right: 25px;
     margin-bottom: 50px;
     h3 {
       margin-top: 50px;

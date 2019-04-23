@@ -2066,9 +2066,90 @@
   h2 {
     color: $purple;
   }
-  p a {
+  p{
     font-size: 14px;
     text-decoration: none;
     color: black;
+    a.news-link {
+      text-decoration: none;
+    }
+  }
+}
+
+//Single news
+.single-news-content {
+  margin-left: 400px !important;
+  margin-right: 400px !important;
+  h3 {
+    color: $purple;
+    margin-top: 40px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    a {
+      text-decoration: none;
+    }
+  }
+  ul {
+    font-size: 14px;
+    line-height: 2.25rem;
+    margin: 15px;
+    padding: 0;
+  }
+}
+
+//Funders 
+.funders-hero {
+  height: 150px !important;
+  .funders-title {
+    width: 741.9px;
+    font-family: Arial,sans-serif;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: .91;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    z-index: 3;
+    margin: 0;
+    text-transform: lowercase;
+    left: 40%;
+  }
+}
+.funders-content {
+  margin-left: 400px;
+  margin-right: 400px;
+  h3 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4rem;
+  }
+}
+.agreement-banner {
+  background-color: $green;
+  width: 100%;
+  height: 225px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  .agreement-text {
+    font-size: 18px;
+    font-family: $font__main;
+    p {
+      line-height: 1.1rem;
+      width: 500px;
+      margin: 0 auto;
+    }
+  }
+  .agreement-icon {
+    display: flex;
+    font-size: 18px;
+    padding-bottom: 5px;
+    justify-content: center;
   }
 }

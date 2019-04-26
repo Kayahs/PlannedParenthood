@@ -1827,12 +1827,14 @@
       font-size: 75px;
       margin-top: 0;
     }
-    .page-description {
-      padding-bottom: 30px;
-    }
   }
   .main-container {
     margin: 1% 8% 0;
+    .page-description {
+      margin-left: 28%;
+      margin-right: 25%;
+      padding-bottom: 30px;
+    }
     .order-container {
       display: flex;
       justify-content: flex-end;
@@ -1846,6 +1848,7 @@
       margin-top: 25px;
       display: flex;
       width: 100%;
+      padding-bottom: 5%;
       .left-container {
         width: 25%;
         .tag-organizer {
@@ -2144,7 +2147,7 @@
     }
 
   }
-} 
+
 
 //News page
 

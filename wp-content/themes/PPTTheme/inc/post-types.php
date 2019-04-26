@@ -38,6 +38,31 @@ function create_post_types() {
     )
   );
 
+  register_post_type( 'news', array(
+    'labels' => array(
+      'name' => 'News',
+      'singular_name' => 'News',
+      'add_new' => 'Add New News',
+      'add_new_item' => 'Add New News',
+      'edit_item' => 'Edit News',
+      'new_item' => 'New News',
+      'all_items' => 'All News',
+      'view_item' => 'View News',
+      'search_items' => 'Search News',
+      'not_found' =>  'No News Found',
+      'not_found_in_trash' => 'No News found in Trash', 
+      'parent_item_colon' => '',
+      'menu_name' => 'News',
+    ),
+    'has_archive' => true,
+    'public' => true,
+    'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),  
+    'exclude_from_search' => false,
+    'capability_type' => 'post',
+    'rewrite' => array( 'slug' => 'news' ),
+    )
+  );
+
   register_post_type( 'fact', array(
     'labels' => create_labels_post_types("Fact"),
     'has_archive' => true,
@@ -93,7 +118,7 @@ function create_post_types() {
     'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
     'exclude_from_search' => false,
     'capability_type' => 'post',
-    'rewrite' => array( 'slug' => 'news' ),
+    'rewrite' => array( 'slug' => 'press-release' ),
     'show_in_rest' => true,
     )
   );

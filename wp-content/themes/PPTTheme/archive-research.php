@@ -20,7 +20,7 @@ get_header(); ?>
       </header><!-- .page-header -->
 
       <div class="wrapper">
-          <?php printf('<a href="%1$s/education"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon.png" alt="Previous button icon"></a>', get_site_url()) ?>
+          <?php printf('<a href="%1$s/education"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
           <h1 class="page-title">research</h1> ;
 
       </div>

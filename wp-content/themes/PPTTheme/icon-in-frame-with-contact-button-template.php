@@ -12,14 +12,14 @@ get_header(); ?>
     <?php if (is_page('Sexual health')) : ?>
     <div class="wrapper top-hero purple">
       <?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
-      <?php printf('<a href="%1$s/services"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
+      <?php printf('<a href="%1$s/services"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
       <img src=" <?php echo get_template_directory_uri() .'/assets/hero-images/Sexual-health-hero.png"' ?> alt="Sexual Health hero image">
     </div><!-- .top-hero purple -->
 
     <?php else: ?>
       <div class="wrapper top-hero blue">
       <?php the_title( '<h1 class="entry-title">' , '</h1>' ); ?>
-      <?php printf('<a href="%1$s/services"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
+      <?php printf('<a href="%1$s/services"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
       <img src=" <?php echo get_template_directory_uri() .'/assets/hero-images/Services-hero.png"' ?> alt="Services hero image">
     </div>
     <?php endif; ?>

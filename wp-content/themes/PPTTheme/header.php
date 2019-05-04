@@ -24,7 +24,7 @@
 						echo "blue";
 						} elseif (is_page('donate') || is_page('about') || is_page('privacy') || is_page('accessibility') || is_page('contact') || is_post_type_archive('board_member') || is_page('partnerships') || is_page('annual-reports') || is_post_type_archive('job') || is_singular('job') || is_page('funders')){
 							echo "green";
-						} elseif (is_page('education') || is_page('faq') || is_post_type_archive('fact')|| is_post_type_archive('research')) {
+						} elseif (is_page('education') || is_page('faq') || is_page('search') || is_post_type_archive('fact')|| is_post_type_archive('research')) {
 							echo "orange";
 						} else {
 							echo "purple";

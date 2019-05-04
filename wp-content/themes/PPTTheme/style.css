@@ -1098,20 +1098,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .contact-page .content {
   margin-left: 25%;
   margin-right: 25%; }
-  .contact-page .content .section1, .contact-page .content .hours {
+  .contact-page .content .section1,
+  .contact-page .content .hours {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .contact-page .content .section1 *, .contact-page .content .hours * {
+    .contact-page .content .section1 *,
+    .contact-page .content .hours * {
       width: 90%; }
   .contact-page .content .section1 p:not(:last-child) {
     margin: 0; }
-  .contact-page .content .section2 p:not(:nth-child(2)), .contact-page .content .section3 p:not(:nth-child(2)) {
+  .contact-page .content .section2 p:not(:nth-child(2)),
+  .contact-page .content .section3 p:not(:nth-child(2)) {
     margin: 0; }
-  .contact-page .content .section2 p:nth-of-type(2n+2), .contact-page .content .section3 p:nth-of-type(2n+2) {
+  .contact-page .content .section2 p:nth-of-type(2n + 2),
+  .contact-page .content .section3 p:nth-of-type(2n + 2) {
     font-weight: bold; }
   .contact-page .content .location-widget .location:first-child {
     font-weight: bold; }
@@ -1412,23 +1416,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         text-decoration: none;
         color: black; }
 
-.single-fact article, .single-research article {
+.single-fact article,
+.single-research article {
   margin-bottom: 0; }
 
-.single-fact .entry-header, .single-research .entry-header {
+.single-fact .entry-header,
+.single-research .entry-header {
   text-align: center;
   width: 100%;
   padding: 0 15%;
   background-color: #00a3d7;
   color: white; }
-  .single-fact .entry-header h1, .single-research .entry-header h1 {
+  .single-fact .entry-header h1,
+  .single-research .entry-header h1 {
     margin-top: 0;
     padding-top: 40px;
     font-size: 70px; }
-  .single-fact .entry-header .fact-blurb, .single-research .entry-header .fact-blurb {
+  .single-fact .entry-header .fact-blurb,
+  .single-research .entry-header .fact-blurb {
     padding-bottom: 30px; }
 
-.single-fact .entry-content, .single-research .entry-content {
+.single-fact .entry-content,
+.single-research .entry-content {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1436,20 +1445,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .single-fact .entry-content .fact-sections, .single-research .entry-content .fact-sections {
+  .single-fact .entry-content .fact-sections,
+  .single-research .entry-content .fact-sections {
     width: 15%;
     margin-right: 30px; }
-    .single-fact .entry-content .fact-sections h3, .single-research .entry-content .fact-sections h3 {
+    .single-fact .entry-content .fact-sections h3,
+    .single-research .entry-content .fact-sections h3 {
       color: #00a3d7; }
-    .single-fact .entry-content .fact-sections ul, .single-research .entry-content .fact-sections ul {
+    .single-fact .entry-content .fact-sections ul,
+    .single-research .entry-content .fact-sections ul {
       list-style: none;
       margin-left: 0;
       padding-left: 0; }
-      .single-fact .entry-content .fact-sections ul li, .single-research .entry-content .fact-sections ul li {
+      .single-fact .entry-content .fact-sections ul li,
+      .single-research .entry-content .fact-sections ul li {
         margin-bottom: 10px; }
-  .single-fact .entry-content .content-container, .single-research .entry-content .content-container {
+  .single-fact .entry-content .content-container,
+  .single-research .entry-content .content-container {
     width: 50%; }
-    .single-fact .entry-content .content-container .content-header, .single-research .entry-content .content-container .content-header {
+    .single-fact .entry-content .content-container .content-header,
+    .single-research .entry-content .content-container .content-header {
       padding: 20px 10px;
       color: white;
       font-size: 25px;
@@ -1460,18 +1475,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      .single-fact .entry-content .content-container .content-header a, .single-research .entry-content .content-container .content-header a {
+      .single-fact .entry-content .content-container .content-header a,
+      .single-research .entry-content .content-container .content-header a {
         text-decoration: none;
         color: white; }
-        .single-fact .entry-content .content-container .content-header a:visited, .single-fact .entry-content .content-container .content-header a:hover, .single-fact .entry-content .content-container .content-header a:active, .single-research .entry-content .content-container .content-header a:visited, .single-research .entry-content .content-container .content-header a:hover, .single-research .entry-content .content-container .content-header a:active {
+        .single-fact .entry-content .content-container .content-header a:visited, .single-fact .entry-content .content-container .content-header a:hover, .single-fact .entry-content .content-container .content-header a:active,
+        .single-research .entry-content .content-container .content-header a:visited,
+        .single-research .entry-content .content-container .content-header a:hover,
+        .single-research .entry-content .content-container .content-header a:active {
           color: white; }
-    .single-fact .entry-content .content-container h2, .single-research .entry-content .content-container h2 {
+    .single-fact .entry-content .content-container h2,
+    .single-research .entry-content .content-container h2 {
       color: #00a3d7; }
-    .single-fact .entry-content .content-container p, .single-research .entry-content .content-container p {
+    .single-fact .entry-content .content-container p,
+    .single-research .entry-content .content-container p {
       line-height: 30px; }
-    .single-fact .entry-content .content-container a, .single-research .entry-content .content-container a {
+    .single-fact .entry-content .content-container a,
+    .single-research .entry-content .content-container a {
       color: #00a3d7; }
-      .single-fact .entry-content .content-container a:visited, .single-fact .entry-content .content-container a:hover, .single-fact .entry-content .content-container a:active, .single-research .entry-content .content-container a:visited, .single-research .entry-content .content-container a:hover, .single-research .entry-content .content-container a:active {
+      .single-fact .entry-content .content-container a:visited, .single-fact .entry-content .content-container a:hover, .single-fact .entry-content .content-container a:active,
+      .single-research .entry-content .content-container a:visited,
+      .single-research .entry-content .content-container a:hover,
+      .single-research .entry-content .content-container a:active {
         color: #00a3d7; }
 
 .single-research .content-header {
@@ -1489,12 +1514,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     font-size: 30px; }
   .program-template-form-template .entry-content .wpcf7 {
     margin: 0 10%; }
-    .program-template-form-template .entry-content .wpcf7 input:not([type=submit]), .program-template-form-template .entry-content .wpcf7 select {
+    .program-template-form-template .entry-content .wpcf7 input:not([type='submit']),
+    .program-template-form-template .entry-content .wpcf7 select {
       width: 100%;
       font-size: 20px;
       padding: 5px 10px;
       border: 2px solid #00a3d7; }
-    .program-template-form-template .entry-content .wpcf7 input[type=submit] {
+    .program-template-form-template .entry-content .wpcf7 input[type='submit'] {
       background-color: white;
       border: 2px solid #00a3d7; }
     .program-template-form-template .entry-content .wpcf7 textarea {
@@ -1647,7 +1673,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     .post-type-archive-fact .main-container .factsheet-container .left-container {
       width: 25%; }
       .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer {
-        background-color: #E6E6E6;
+        background-color: #e6e6e6;
         border-radius: 8px 8px 0 0;
         padding: 25px 25px 10px 25px; }
         .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer .tag-list {
@@ -1669,7 +1695,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         padding: 10px 25px 15px 25px;
         border-radius: 0 0 8px 8px;
         cursor: pointer;
-        background-color: #F8F8F8; }
+        background-color: #f8f8f8; }
       .post-type-archive-fact .main-container .factsheet-container .left-container .disclaimer {
         margin-top: 25px; }
     .post-type-archive-fact .main-container .factsheet-container .right-container {
@@ -1714,7 +1740,115 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   margin-bottom: 40px; }
   .post-type-archive-fact .load-more .load-button {
     color: #f7911d;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
+    text-transform: uppercase;
+    padding: 10px 70px;
+    font-size: 30px;
+    border: none;
+    font-weight: bold; }
+
+.post-type-archive-job .page-header {
+  text-align: center;
+  padding: 0 30%;
+  color: white;
+  background-color: #a1b426; }
+  .post-type-archive-job .page-header h1 {
+    font-size: 75px;
+    margin-top: 0; }
+  .post-type-archive-job .page-header .page-description {
+    padding-bottom: 30px; }
+
+.post-type-archive-job .main-container {
+  margin: 1% 8% 0; }
+  .post-type-archive-job .main-container .order-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .post-type-archive-job .main-container .order-container select {
+      padding-left: 10px;
+      border: 0;
+      border-bottom: 1px solid black; }
+  .post-type-archive-job .main-container .jobs-container {
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+    .post-type-archive-job .main-container .jobs-container .left-container {
+      width: 25%; }
+      .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer {
+        background-color: #e6e6e6;
+        border-radius: 8px 8px 0 0;
+        padding: 25px 25px 10px 25px; }
+        .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer .job-tag-list {
+          list-style: none;
+          margin-left: 0;
+          padding-left: 0;
+          color: #a1b426;
+          margin-bottom: 0; }
+          .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer .job-tag-list li {
+            cursor: pointer;
+            margin-top: 10px;
+            padding-left: 10px;
+            border-radius: 8px; }
+            .post-type-archive-job .main-container .jobs-container .left-container .tag-organizer .job-tag-list li.selected {
+              background-color: #a1b426;
+              color: white; }
+      .post-type-archive-job .main-container .jobs-container .left-container .job-clear-filter {
+        color: #a1b426;
+        padding: 10px 25px 15px 25px;
+        border-radius: 0 0 8px 8px;
+        cursor: pointer;
+        background-color: #f8f8f8; }
+      .post-type-archive-job .main-container .jobs-container .left-container .disclaimer {
+        margin-top: 25px; }
+    .post-type-archive-job .main-container .jobs-container .job-right-container {
+      margin-left: 30px;
+      width: 75%; }
+      .post-type-archive-job .main-container .jobs-container .job-right-container .job-right-container-section {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-line-pack: start;
+            align-content: flex-start; }
+      .post-type-archive-job .main-container .jobs-container .job-right-container .card-container {
+        background-color: #a1b426;
+        padding: 25px;
+        margin: 1.5%;
+        border-radius: 8px;
+        width: 30%;
+        height: 200px;
+        color: white; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a {
+          color: white;
+          text-decoration: none; }
+          .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:visited, .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:hover, .post-type-archive-job .main-container .jobs-container .job-right-container .card-container a:active {
+            color: white; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-title {
+          font-size: 18px; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-excerpt {
+          font-size: 12px;
+          padding-bottom: 10px;
+          border-bottom: 1px white solid;
+          height: 50%; }
+        .post-type-archive-job .main-container .jobs-container .job-right-container .card-container .card-tags {
+          font-size: 12px;
+          padding-top: 5px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+
+.post-type-archive-job .job-load-more {
+  text-align: center;
+  margin-bottom: 40px; }
+  .post-type-archive-job .job-load-more .job-load-button {
+    color: #a1b426;
+    background-color: #f5f5f5;
     text-transform: uppercase;
     padding: 10px 70px;
     font-size: 30px;
@@ -1865,7 +1999,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .faq .faq-content span a {
     color: #f7911d;
     text-decoration: none; }
-  .faq .faq-content .faq-left, .faq .faq-content .faq-right {
+  .faq .faq-content .faq-left,
+  .faq .faq-content .faq-right {
     width: 46%;
     margin: 0 2%; }
 
@@ -2160,6 +2295,81 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
+.news .page-title {
+  background: #ba0e82;
+  margin-top: -5vh;
+  padding-right: 260px;
+  padding-left: 260px;
+  color: white; }
+
+.news-content {
+  margin-right: 270px;
+  margin-left: 270px; }
+  .news-content h2 {
+    color: #ba0e82; }
+  .news-content p a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black; }
+
+.search h1 {
+  font-size: 4rem; }
+
+.search .space-bottom {
+  padding-bottom: 1em; }
+
+.search article {
+  border-top: solid; }
+
+.search .page-header {
+  text-align: center; }
+
+.search h2 a {
+  color: #f7911d;
+  text-decoration: none; }
+
+.tangerine {
+  color: #f7911d; }
+
+.search-content-area {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.search-search-bar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: relative;
+  padding-top: 2rem; }
+
+.search-search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.search-search-field {
+  border-radius: 25px !important;
+  border: 3px solid #f7911d !important;
+  width: 100%;
+  height: 3rem;
+  padding-left: 25px !important; }
+
+.search-search-button {
+  margin-bottom: 0;
+  border-radius: 25px;
+  background-color: #f7911d;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 25px;
+  position: absolute;
+  right: 0px;
+  top: 2rem;
+  line-height: 25px; }
 
 html {
   font-family: sans-serif;

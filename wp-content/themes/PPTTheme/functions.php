@@ -139,6 +139,24 @@ function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 }
 add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 
+function wps_highlight_results($text){
+	if(is_search()){
+	$sr = get_query_var('s');
+	$keys = explode(" ",$sr);
+	$text = preg_replace('/('.implode('|', $keys) .')/iu', '<strong class="search-excerpt">'.$sr.'</strong>', $text);
+	}
+	return $text;
+}
+add_filter('the_excerpt', 'wps_highlight_results');
+add_filter('the_title', 'wps_highlight_results');
+
+// Filter except length to 35 words.
+// tn custom excerpt length
+function tn_custom_excerpt_length( $length ) {
+	return 35;
+	}
+	add_filter( 'excerpt_length', 'tn_custom_excerpt_length', 999 );
+
 /**
  * Enqueue scripts and styles.
  */
@@ -214,3 +232,4 @@ require get_template_directory() . '/inc/metaboxes.php';
  */
 
 require get_template_directory() . '/inc/cformhook.php';
+

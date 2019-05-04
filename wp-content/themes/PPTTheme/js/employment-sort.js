@@ -94,7 +94,7 @@ $(document).ready(() => {
             <div class="card-excerpt">
             ${result[i].excerpt.rendered}
             </div>
-            <div class="card-tags">
+            <div class="card-tags"><div class="pre-tag">Tags: </div>
             ${cardtags}
             </div>
             </div>`);
@@ -110,7 +110,7 @@ $(document).ready(() => {
             <div class="card-excerpt">
             ${result[i].excerpt.rendered}
             </div>
-            <div class="card-tags">
+            <div class="card-tags"><div class="pre-tag">Tags: </div> 
             ${cardtags}
             </div>
             </div>`);

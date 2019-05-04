@@ -118,7 +118,7 @@ function create_post_types() {
     'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail','page-attributes' ),
     'exclude_from_search' => false,
     'capability_type' => 'post',
-    'rewrite' => array( 'slug' => 'news' ),
+    'rewrite' => array( 'slug' => 'press-release' ),
     'show_in_rest' => true,
     )
   );

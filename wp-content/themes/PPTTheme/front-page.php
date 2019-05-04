@@ -17,11 +17,7 @@ get_header(); ?>
       <div class="bottom-hero-black grid-container">
         <div class="make-appointment black-div grid-item1">
           <h2>make an appointment</h2>
-          <p>Our doctors and nurse practicioners can help you</p> 
-          <p>find all the answers to your questions about your</p>
-          <p>sexual, mental and physical heatlh.</p>
-          <p>Appointments are available Monday - Friday.</p>
-          <p>See our contact page for more details.</p>
+          <p>Our doctors and nurse practicioners can help you find all the answers to your questions about your sexual, mental and physical heatlh.Appointments are available Monday - Friday. See our contact page for more details.</p>
         </div>
 				<button type="button" class="fp-contact-button grid-item2">contact</button>
 				  
@@ -36,12 +32,7 @@ get_header(); ?>
 
         <div class="teen-health black-div grid-item4">
           <h2>teen health source</h2>
-          <p>THS is a sexual health information  service run for</p> 
-          <p>and by youth - brought to you by Planned</p>
-          <p>Parenthood Toronto. Want to chat with a volunteer</p> 
-          <p>about a question or concern you have about your</p> 
-          <p>sexual health? We have trained teen volunteers</p> 
-          <p>waiting to speak with you live 5 times a week.</p>
+          <p>THS is a sexual health information  service run for and by youth - brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question or concern you have about your sexual health? We have trained teen volunteers waiting to speak with you live 5 times a week.</p>
         </div>
 				 <button type="button" class="fp-mk-appointment-button grid-item5" >make an appointment</button>
 

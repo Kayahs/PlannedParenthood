@@ -51,7 +51,7 @@ get_header(); ?>
 
       <?php endif; ?>
 
-      <div class="page-extra-info"><p>To see career opportunities at PPT, please visit our <a href="">employment </a>page. </p></div>
+      <div class="page-extra-info"><p>To see career opportunities at PPT, please visit our <a href="<?php echo get_site_url() ?>/jobs">employment </a>page. </p></div>
 
   </div>
 

@@ -476,8 +476,8 @@
   display: grid !important;
   grid-template-columns: auto auto auto;
   grid-gap: 0;
-  height: 32vw;
-} 
+  height: 30%;
+  padding: 7% 0 3%;
 
   .grid-item1 {
     grid-column-start: 1;
@@ -2090,9 +2090,8 @@
         color: #000000;
       }
     }
-
   }
-} 
+}
 
 //Newsletter
 .newsletter {
@@ -2114,7 +2113,7 @@
       font-weight: 700;
       line-height: 0.91;
       margin: 0;
-    }  
+    }
   }
   section {
     width: 60%;
@@ -2159,10 +2158,8 @@
         color: black;
       }
     }
-
   }
 }
-
 
 //News page
 
@@ -2181,7 +2178,7 @@
   h2 {
     color: $purple;
   }
-  p{
+  p {
     font-size: 14px;
     text-decoration: none;
     color: black;
@@ -2214,15 +2211,15 @@
   }
 }
 
-//Funders 
+//Funders
 .funders-hero {
   height: 150px !important;
   .funders-title {
     width: 741.9px;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 76px;
     font-weight: 900;
-    line-height: .91;
+    line-height: 0.91;
     color: #fff;
     position: absolute;
     top: 15px;

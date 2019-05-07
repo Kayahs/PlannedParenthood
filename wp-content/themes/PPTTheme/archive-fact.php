@@ -47,7 +47,7 @@ get_header(); ?>
               Please note that this information is to be used for informational purposes only and is not intended as a substitute for professional medical advice, diagnosis or treatment. Please consult your health care provider for advice about a specific medical condition or call the PPT clinic at 416-961-0113 to discuss your options.
               <br>
               <br>
-              For more comprehensive information on sexual health for teens, visit www.TeenHealthSource.com
+              For more comprehensive information on sexual health for teens, visit <a href="http://teenhealthsource.com/" target="_blank">www.TeenHealthSource.com</a>
             </div>
           </div>
           <div class="right-container">
@@ -63,11 +63,13 @@ get_header(); ?>
                 <?php
                 the_title( '<div class="card-title">', '</div>' ); 
                 $excerpt = get_post_meta(get_the_ID(), "_ppt_card_excerpt", true);
+                $trimmedExcerpt = mb_strimwidth($excerpt, 0, 125, '...');
                 ?>
                 </a>
-                <div class="card-excerpt"><?php echo $excerpt ?></div>
+                <div class="card-excerpt"><?php echo $trimmedExcerpt ?></div>
                 <div class="card-tags">
-                  <div class="pre-tag">Tags: </div> 
+                  <div class="pre-tag">Tags: </div>
+                  &nbsp; 
                   <?php
                     $fact_tags = get_the_terms(get_the_ID(), 'facttag');
                     $tags = array();

@@ -2332,3 +2332,108 @@
   top: 2rem;
   line-height: 25px;
 }
+
+//404 page
+
+.fourohfour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-size: 62px;
+    font-family: $font__main;
+    width: 65%;
+    text-align: center;
+  }
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .page-header {
+      display: flex;
+      justify-content: center;
+      line-height: initial;
+    }
+    .page-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font-size: 16px;
+      font-family: $font__main;
+      margin-top: 0;
+      p {
+        text-align: center;
+        width: 36%;
+      }
+      .bold {
+        font-weight: bold;
+        margin-bottom: 3rem;
+      }
+      .bigger {
+        font-size: 1.5rem;
+      }
+      .search-form {
+        border-radius: 35px;
+        width: 65%;
+        border: 1px solid $orange !important;
+        height: 2.75rem;
+        width: 38%;
+        background-color: white;
+        .ffieldset {
+          margin: 0;
+          padding: 0;
+        }
+        .search-field {
+          float: left;
+          width: 77%;
+          background-color: white;
+          color: black !important;
+          margin-top: 5.6px;
+          margin-left: 10px;  
+        }
+        .search-field:focus {
+          outline: none;
+        }
+        .search-submit {
+          border-radius: 35px;
+          font-size: 18px;
+          float: right;
+          background-color: $orange;
+          padding-right: 2.5rem;
+          padding-left: 2.5rem;
+        }
+      }
+      .suggestions {
+        display: flex;
+        background-color: $orange;
+        color: white;
+        padding: 3rem 0px;
+        .column {
+          display: flex;
+          flex-direction: column;
+          width: 33%;
+          align-items: center;
+          p {
+            margin: 0;
+            width: 66%;
+          }
+          h2 {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+          .button {
+            color: $orange;
+            border: none;
+            background: white;
+            padding: 0.25rem 4rem;
+            margin-top: 1.5rem;
+          }
+        }
+        .divider {
+          border-left: 1px solid white;
+          height: 230px;
+        }
+      }
+    }
+  }
+}

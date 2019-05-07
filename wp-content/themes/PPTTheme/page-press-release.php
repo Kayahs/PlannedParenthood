@@ -1,48 +1,46 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The main template file.
+ *
+ * @package RED_Starter_Theme
  */
 
 get_header(); ?>
 
   <div id="primary" class="content-area">
-    <main id="main" class="site-main bod" role="main">
+    <main id="main" class="site-main press-release" role="main">
 
-    <?php if ( have_posts() ) : ?>
+      <header class="banner">
+        <h1 class="page-title">media statements <br/>&amp; press releases</h1>
+      </header>
 
-    <header class="news page-header">
-      <h1 class="page-title">media statements  &amp; press releases</h1>
-      <?php
-          
-          the_archive_description( '<div class="taxonomy-description">', '</div>' );
-        ?>
-    </header><!-- .page-header -->
-    
-    <div class="news-content">
-      <h2>media number</h2>
-      (416) 961-0113 x 124
-    <h2>press releases</h2>
-      <div class="press-releases">
-        <?php $query_vars = $wp_query->query_vars;
+      <section>
+        <h3>media number</h3>
+        (416) 961-0113 x 124
+        <h3>press releases</h3>
 
-           $query_vars['posts_per_page'] = 12;
-           $new_query = new WP_Query($query_vars); ?>
-         <?php while ( $new_query->have_posts() ) : $new_query->the_post(); ?>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/press-release/Press-release_TeenHealthSource-25years.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+          <p>Tuesday, May 8th, 2017 | press release —  Teen Health Source Celebrate 5 Years</p>
+        </a>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/press-release/PPT-statement_safe-access-zones.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+          <p>Wednesday, October 4th, 2017 | ppt statement — Safe Access Zone Bill</p>
+        </a>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/press-release/Press-release_Send-the-right-message_PPT.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+          <p>Wednesday, September 20th, 2017 | press release — Planned Parenthood Toronto to launch Send The Right Message Campaign | download image</p>
+        </a>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/press-release/statement-ppt-to-receive-CIRF-funding.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+          <p>Tuesday, September 5th, 2017 | ppt statement — CIRF Funding Recipient</p>
+        </a>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/press-release/ppt-mifegymiso-statement.pdf" download>
+          <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
+          <p>Thursday, August 3rd, 2017 | ppt statement — OHIP Funding for Mifegymiso</p>
+        </a>
+      </section>
 
-          <?php
-          get_template_part( 'template-parts/content','press' );
-        ?>          
-
-      <?php endwhile; ?>
-      <?php else : ?>
-
-      <?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-    <?php endif; ?>
-    </div> <!-- .press-releases -->
-</div> <!-- .news-content -->
-     
-     
     </main><!-- #main -->
   </div><!-- #primary -->
 

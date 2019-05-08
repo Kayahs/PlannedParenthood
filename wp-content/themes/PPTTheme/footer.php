@@ -54,13 +54,10 @@
 				</div>
 				<div class="bottom-footer-icons">
 				<a href="http://www.lhins.on.ca/">
-        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/LHIN.svg' ?> alt="Ontario Toronto Central Local Health Integration Network">
+        <img src=<?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/LHIN.svg' ?> alt="Ontario Toronto Central Local Health Integration Network">
 				</a>
 				<a href="https://www.unitedwaygt.org/list-of-agencies">
-        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/United-way.svg' ?> alt="United Way">
-				</a>
-				<a href="https://www.ontario.ca/page/community-health-centres">
-        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/OCHC.svg' ?> alt="Ontario's Community Health Centres">
+        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/UnitedWay.png' ?> alt="United Way">
 				</a>
 				<!-- This is where I will put the 3 icons with external links in the bottom right of the footer -->
 				</div>

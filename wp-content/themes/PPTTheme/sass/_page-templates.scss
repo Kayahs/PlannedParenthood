@@ -373,7 +373,9 @@
   position: relative;
 
   h1 {
-    width: 741.9px;
+    margin: 0;
+    margin-left: 13%;
+    width: fit-content;
     /* height: 207px; */
     font-family: $font__main;
     font-size: 76px;
@@ -383,7 +385,6 @@
     position: absolute;
     top: 15px;
     z-index: 100;
-    margin: 0;
     p {
       margin-top: 0;
       vertical-align: top;
@@ -1615,9 +1616,13 @@
 // Archive Research Page
 .arc-research {
   .wrapper {
-    margin-top: 5% !important;
+    // margin-top: 5% !important; 
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
     h1 {
       margin: 0;
+      width: fit-content;
     }
   }
   .page-title {

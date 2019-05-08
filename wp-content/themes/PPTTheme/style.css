@@ -381,7 +381,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   height: 235px;
   position: relative; }
   .top-hero h1 {
-    width: 741.9px;
+    margin: 0;
+    margin-left: 13%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     /* height: 207px; */
     font-family: Arial, sans-serif;
     font-size: 76px;
@@ -390,8 +394,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     color: #fff;
     position: absolute;
     top: 15px;
-    z-index: 100;
-    margin: 0; }
+    z-index: 100; }
     .top-hero h1 p {
       margin-top: 0;
       vertical-align: top;
@@ -1537,9 +1540,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           width: 13px; }
 
 .arc-research .wrapper {
-  margin-top: 5% !important; }
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .arc-research .wrapper h1 {
-    margin: 0; }
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
 
 .arc-research .page-title {
   height: 300px;

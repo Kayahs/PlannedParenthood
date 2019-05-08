@@ -10,19 +10,64 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main fourohfour" role="main">
 
 			<section class="error-404 not-found">
+			
+			<div class= "top-hero">
+				<?php printf('<a href="javascript:history.back()"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
+			</div>
+
 				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+					<h1><?php echo esc_html( 'oops, something is missing' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
+					<p class="bold"><?php echo esc_html( 'The page you are looking for isn\'t here. We recommend trying the search bar below to get the best results.' ); ?></p>
 
 					<?php get_search_form(); ?>
 
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+					<p class="bold bigger"><?php echo esc_html( 'we are also available to help you.' ); ?></p>
+
+					<div class="suggestions">
+						<div class="appointment column">
+							<h2><?php echo esc_html( 'make an appointment' ); ?></h2>
+							<p><?php echo esc_html( 
+                'Our doctors and nurse practitioners can help you find the answers to all of your questions 
+                about your sexual, mental and physical health.' ); 
+              ?></p>
+							<br>
+							<p><?php echo esc_html( 
+                'Appointments are available Monday - Friday. See our contatct page for more details.' ); 
+              ?></p>
+							<a href='#'><button class="button">Contact</button></a>
+						</div>
+
+						<div class="divider"></div>
+
+						<div class="drop-in column">
+							<h2><?php echo esc_html( 'drop-in times' ); ?></h2>
+              <p><?php echo esc_html( 'Drop-in is for sexual health only' ); ?></p>
+							<br>
+              <p><?php echo esc_html( 'Saturdays:' ); ?></p>
+              <p><?php echo esc_html( '10am - 2pm' ); ?></p>
+						</div>
+
+						<div class="divider"></div>
+
+						<div class="teen-health column">
+							<h2><?php echo esc_html( 'Teen Health Source' ); ?></h2>
+              <p><?php echo esc_html( 
+                'THS is a sexual health information service run for and by youth - 
+                brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question 
+                or concern you have about your sexual health? We have trained teen volunteers waiting to speak 
+                with you live 5 days a week.' ); 
+              ?></p>
+							<a href='#'><button class="button">Live Chat</button></a>
+
+						</div>
+
+					</div>
 
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
@@ -40,11 +85,6 @@ get_header(); ?>
 						</ul>
 					</div><!-- .widget -->
 					<?php endif; ?>
-
-					<?php
-						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
-					?>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->

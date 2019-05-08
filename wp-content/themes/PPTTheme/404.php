@@ -13,6 +13,11 @@ get_header(); ?>
 		<main id="main" class="site-main fourohfour" role="main">
 
 			<section class="error-404 not-found">
+			
+			<div class= "top-hero">
+				<?php printf('<a href="javascript:history.back()"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
+			</div>
+
 				<header class="page-header">
 					<h1><?php echo esc_html( 'oops, something is missing' ); ?></h1>
 				</header><!-- .page-header -->

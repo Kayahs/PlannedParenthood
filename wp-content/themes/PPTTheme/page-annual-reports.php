@@ -16,8 +16,8 @@ get_header(); ?>
 
       <section>
         <h3>current edition</h3>
-        <img src="<?php bloginfo('template_directory');?>/assets/annual-reports-page-image.png" width="100%" height="500px" scrolling="no"/>
-
+        <iframe style="border:none;width:100%;height:500px;" src="//e.issuu.com/embed.html#28573712/62553054" allowfullscreen></iframe>
+        
         <h4>download</h4>
         <a href="<?php bloginfo('template_directory');?>/assets/PDF/annual-report/PPT_ANNUALREPORT_2018_WEB.pdf" download>
           <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">

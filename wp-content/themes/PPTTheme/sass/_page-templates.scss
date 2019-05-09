@@ -1624,8 +1624,8 @@
   }
 }
 
-// Archive Research Page
-.arc-research {
+// Archive Research/News Page
+.arc-research, .arc-news {
   .wrapper {
     // margin-top: 5% !important;
     margin-top: 0;
@@ -2334,8 +2334,7 @@
   }
 }
 .funders-content {
-  margin-left: 400px;
-  margin-right: 400px;
+  margin: 0% 10% !important;
   h3 {
     margin-top: 50px;
     margin-bottom: 5px;

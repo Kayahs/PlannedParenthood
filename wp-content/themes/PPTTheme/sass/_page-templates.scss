@@ -1586,28 +1586,39 @@
       margin: 0 10%;
       input:not([type='submit']),
       select {
-        width: 100%;
-        font-size: 20px;
-        padding: 5px 10px;
         border: 2px solid $blue;
       }
       input[type='submit'] {
-        background-color: white;
         border: 2px solid $blue;
       }
       textarea {
         border: 2px solid $blue;
-        font-size: 20px;
       }
-      .wpcf7-checkbox {
-        display: flex;
-        flex-direction: column;
-        .wpcf7-list-item {
-          width: 100%;
-          input {
-            width: 13px;
-          }
-        }
+    }
+  }
+}
+
+//form styling
+.wpcf7 {
+  input:not([type='submit']),
+  select {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  input[type='submit'] {
+    background-color: white;
+  }
+  textarea {
+    font-size: 20px;
+  }
+  .wpcf7-checkbox {
+    display: flex;
+    flex-direction: column;
+    .wpcf7-list-item {
+      width: 100%;
+      input {
+        width: 13px;
       }
     }
   }
@@ -1616,7 +1627,7 @@
 // Archive Research Page
 .arc-research {
   .wrapper {
-    // margin-top: 5% !important; 
+    // margin-top: 5% !important;
     margin-top: 0;
     display: flex;
     justify-content: center;
@@ -2110,6 +2121,28 @@
   flex-direction: column;
   align-items: center;
 
+  .wpcf7 {
+    margin-right: 20%;
+    .names {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      label {
+        width: 40%;
+      }
+    }
+    input:not([type='submit']),
+    select {
+      border: 2px solid $purple;
+    }
+    input[type='submit'] {
+      border: 2px solid $purple;
+    }
+    textarea {
+      border: 2px solid $purple;
+    }
+  }
+
   .banner {
     height: 200px;
     width: 100%;
@@ -2420,7 +2453,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .top-hero{
+    .top-hero {
       margin-top: 3%;
       width: 100%;
       height: fit-content;
@@ -2467,7 +2500,7 @@
           background-color: white;
           color: black !important;
           margin-top: 5.6px;
-          margin-left: 10px;  
+          margin-left: 10px;
         }
         .search-field:focus {
           outline: none;

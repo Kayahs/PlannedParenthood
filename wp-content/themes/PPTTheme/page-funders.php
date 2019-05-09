@@ -29,7 +29,7 @@ get_header(); ?>
            the Toronto Local Health Integration Network here.</p>
         </div>
         <div class="agreement-icon">
-          <?php echo '<img src="'. get_template_directory_uri() .'/assets/icons/green-pdf.svg" alt="PDF Icon">' ?>
+          <?php echo '<img src="'. get_template_directory_uri() .'/assets/icons/white-pdf.svg" alt="PDF Icon">' ?>
           <p>Download our Multi-Sector Service Agreement</p>
         </div>
       </div>

@@ -1,22 +1,14 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Theme Name: Planned Parenthood Toronto
+Theme URI: http://www.ppt.on.ca/
+Author: Planned Parenthood
+Author URI: http://www.ppt.on.ca/
+Description: A WordPress theme for Planned Parenthood Toronto
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -416,7 +408,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     z-index: 98;
     color: #000000; }
   .top-hero img {
-    width: 83%;
+    max-width: 83%;
     height: auto;
     background-blend-mode: multiply;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#d8d8d8), to(#d8d8d8));
@@ -964,6 +956,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           align-items: flex-end; }
   .bottom-footer-icons a {
     margin-right: 45px; }
+  .bottom-footer-icons img {
+    max-height: 79px; }
 
 .program .page-content {
   padding-top: 9%; }
@@ -1516,30 +1510,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     margin: 0 10%; }
     .program-template-form-template .entry-content .wpcf7 input:not([type='submit']),
     .program-template-form-template .entry-content .wpcf7 select {
-      width: 100%;
-      font-size: 20px;
-      padding: 5px 10px;
       border: 2px solid #00a3d7; }
     .program-template-form-template .entry-content .wpcf7 input[type='submit'] {
-      background-color: white;
       border: 2px solid #00a3d7; }
     .program-template-form-template .entry-content .wpcf7 textarea {
-      border: 2px solid #00a3d7;
-      font-size: 20px; }
-    .program-template-form-template .entry-content .wpcf7 .wpcf7-checkbox {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
-      .program-template-form-template .entry-content .wpcf7 .wpcf7-checkbox .wpcf7-list-item {
-        width: 100%; }
-        .program-template-form-template .entry-content .wpcf7 .wpcf7-checkbox .wpcf7-list-item input {
-          width: 13px; }
+      border: 2px solid #00a3d7; }
 
-.arc-research .wrapper {
+.wpcf7 input:not([type='submit']),
+.wpcf7 select {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px 10px; }
+
+.wpcf7 input[type='submit'] {
+  background-color: white; }
+
+.wpcf7 textarea {
+  font-size: 20px; }
+
+.wpcf7 .wpcf7-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .wpcf7 .wpcf7-checkbox .wpcf7-list-item {
+    width: 100%; }
+    .wpcf7 .wpcf7-checkbox .wpcf7-list-item input {
+      width: 13px; }
+
+.arc-research .wrapper, .arc-news .wrapper {
   margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1547,13 +1549,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .arc-research .wrapper h1 {
+  .arc-research .wrapper h1, .arc-news .wrapper h1 {
     margin: 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
 
-.arc-research .page-title {
+.arc-research .page-title, .arc-news .page-title {
   height: 300px;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -1572,26 +1574,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .arc-research .page-title h1 {
+  .arc-research .page-title h1, .arc-news .page-title h1 {
     font-size: 76px; }
 
-.arc-research .entry-header {
+.arc-research .entry-header, .arc-news .entry-header {
   width: 50%;
   margin-right: 25%;
   margin-left: 25%; }
-  .arc-research .entry-header h2 a {
+  .arc-research .entry-header h2 a, .arc-news .entry-header h2 a {
     text-decoration: none;
     color: black; }
 
-.arc-research .entry-meta a {
+.arc-research .entry-meta a, .arc-news .entry-meta a {
   text-transform: uppercase;
   margin-right: 25px;
   text-decoration: none;
   color: black; }
-  .arc-research .entry-meta a:hover {
+  .arc-research .entry-meta a:hover, .arc-news .entry-meta a:hover {
     font-weight: bold; }
 
-.arc-research .donor-movement {
+.arc-research .donor-movement, .arc-news .donor-movement {
   width: 100%;
   height: 360px;
   display: -webkit-box;
@@ -1607,13 +1609,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .arc-research .donor-movement .donor-text {
+  .arc-research .donor-movement .donor-text, .arc-news .donor-movement .donor-text {
     text-align: left; }
-  .arc-research .donor-movement h2 {
+  .arc-research .donor-movement h2, .arc-news .donor-movement h2 {
     margin: 0; }
-  .arc-research .donor-movement h3 {
+  .arc-research .donor-movement h3, .arc-news .donor-movement h3 {
     margin: 0; }
-  .arc-research .donor-movement .donor-movement-button {
+  .arc-research .donor-movement .donor-movement-button, .arc-news .donor-movement .donor-movement-button {
     height: 100px;
     width: 200px;
     text-transform: uppercase; }
@@ -1722,7 +1724,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         padding: 25px;
         margin: 1.5%;
         border-radius: 8px;
-        width: 30%;
+        width: 300px;
         height: 200px;
         color: white; }
         .post-type-archive-fact .main-container .factsheet-container .right-container .card-container a {
@@ -1731,12 +1733,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
           .post-type-archive-fact .main-container .factsheet-container .right-container .card-container a:visited, .post-type-archive-fact .main-container .factsheet-container .right-container .card-container a:hover, .post-type-archive-fact .main-container .factsheet-container .right-container .card-container a:active {
             color: white; }
         .post-type-archive-fact .main-container .factsheet-container .right-container .card-container .card-title {
-          font-size: 20px; }
+          font-size: 20px;
+          line-height: 1.25;
+          margin-bottom: 5px; }
         .post-type-archive-fact .main-container .factsheet-container .right-container .card-container .card-excerpt {
           font-size: 12px;
           padding-bottom: 10px;
           border-bottom: 1px white solid;
-          height: 50%; }
+          height: 80px; }
         .post-type-archive-fact .main-container .factsheet-container .right-container .card-container .card-tags {
           font-size: 12px;
           padding-top: 5px;
@@ -1988,7 +1992,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       line-height: 0.91;
       margin: 0; }
   .annual-reports section {
-    width: 60%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2042,6 +2047,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .newsletter .wpcf7 {
+    margin-right: 20%; }
+    .newsletter .wpcf7 .names {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; }
+      .newsletter .wpcf7 .names label {
+        width: 40%; }
+    .newsletter .wpcf7 input:not([type='submit']),
+    .newsletter .wpcf7 select {
+      border: 2px solid #ba0e82; }
+    .newsletter .wpcf7 input[type='submit'] {
+      border: 2px solid #ba0e82; }
+    .newsletter .wpcf7 textarea {
+      border: 2px solid #ba0e82; }
   .newsletter .banner {
     height: 200px;
     width: 100%;
@@ -2066,7 +2090,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       line-height: 0.91;
       margin: 0; }
   .newsletter section {
-    width: 60%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2109,6 +2134,78 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         margin-bottom: 0px; }
       .newsletter section a:visited {
         color: black; }
+
+.press-releases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .press-releases .banner {
+    height: 300px;
+    width: 100%;
+    background-color: #ba0e82;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    line-height: 2.5; }
+    .press-releases .banner h1 {
+      font-size: 76px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0; }
+  .press-releases section {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .press-releases section h3 {
+      color: #ba0e82;
+      margin-top: 50px;
+      font-size: 28px;
+      font-weight: bold; }
+    .press-releases section a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #000000; }
+      .press-releases section a img {
+        height: 24px; }
+      .press-releases section a p {
+        margin-left: 24px;
+        margin-top: 0px;
+        margin-bottom: 0px; }
+      .press-releases section a:visited {
+        color: #000000; }
 
 .news .page-title {
   background: #ba0e82;
@@ -2163,8 +2260,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     left: 40%; }
 
 .funders-content {
-  margin-left: 400px;
-  margin-right: 400px; }
+  margin: 0% 10% !important; }
   .funders-content h3 {
     margin-top: 50px;
     margin-bottom: 5px; }
@@ -2282,6 +2378,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .fourohfour .not-found .top-hero {
+      margin-top: 3%;
+      width: 100%;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+      position: relative;
+      background-color: white; }
     .fourohfour .not-found .page-header {
       display: -webkit-box;
       display: -ms-flexbox;

@@ -15,7 +15,7 @@ get_header(); ?>
           <h1>donate today</h1>
           <p>You don’t need to be an activist to create</p>
           <p>change, but you can add your voice to ours.</p>
-          <button type="button" class="dcta-button coloured-button"><a href="https://www.gifttool.com" target="_blank">donate</a></button>
+          <button type="button" class="dcta-button coloured-button"><a href="https://www.gifttool.com/donations/Donate?ID=1417&AID=4934" target="_blank">donate</a></button>
         </div>
       </header>
       <div class="banner-text-block">
@@ -44,17 +44,17 @@ get_header(); ?>
         </div> <!-- .impactu -->
         <div class="top-grid">
           <div class="donate-item">
-            <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/donation.png" alt="">' ?>
+            <?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/donation.svg" alt="">' ?>
             <h2>your $50 donation</h2>
             <h3>will cover birth control for up to 6 youth, so they can take control of their bodies</h3>
           </div>
           <div class="donate-item">
-          <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/youth.png" alt="">' ?>
+          <?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/youth.svg" alt="">' ?>
             <h2>4211 youth per year</h2>
             <h3>attend PPT workshops that help them make healthy and informed decisions</h3>
           </div>
           <div class="donate-item">
-          <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/IUDs.png" alt="">' ?>
+          <?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/IUD.svg" alt="">' ?>
             <h2>376 IUD’s inserted anually</h2>
             <h3>At a cost of $236 each, PPT saves youth $88,736 per year on IUD’s</h3>
           </div>
@@ -63,7 +63,7 @@ get_header(); ?>
 
       <section>
         <div class="donate-image">
-      <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/donation-page-mother-daughter.png" alt="">' ?>
+      <?php echo '<img src="' . get_template_directory_uri() .'/assets/hero-images/donation-page-mother-daughter.png" alt="">' ?>
       </div> <!-- .donate-image -->
       <div class="donate-img-banner">
         <p>“I have nothing but good things to say</p>
@@ -80,15 +80,15 @@ get_header(); ?>
         <div class="low-grid">
         <div class="grid-center">
         <a href="">
-          <?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/mission.png" alt="">
+          <?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/mission.svg" alt="">
           <p>our mission,</p><p>vision, & values</p></a>' ?>
         </div>
         <div class="grid-center">
-        <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/annual-report.png" alt="">
+        <a href=""><?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/annual-report.svg" alt="">
         <p>download</p><p>annual reports</p></a>' ?>
         </div>
         <div class="grid-center">
-        <a href=""><?php echo '<img src="' . get_site_url() .'/wp-content/uploads/2018/12/strategic-plan.png" alt=""><p>strategic plan</p><p>2015-2020</p></a>' ?>
+        <a href=""><?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/strategic-plan.svg" alt=""><p>strategic plan</p><p>2015-2020</p></a>' ?>
         </div>
         </div> <!-- .impactu -->
       </section>

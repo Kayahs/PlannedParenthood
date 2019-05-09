@@ -15,8 +15,8 @@ get_header(); ?>
       <div class="top-hero">
       <?php $title = get_post_meta( get_the_ID(), '_ppt_single_program_title', true );
       echo '<h1 class="entry-title">' .$title. '</h1>'; ?>
-          <?php printf('<a href="%1$s/programs"><img src="%1$s/wp-content/uploads/2018/12/previous-page-icon-1.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url()) ?>
-      <?php echo '<img src="'. get_site_url() .'/wp-content/uploads/2018/12/Workshop-snap-hero.png" alt="Workshop hero image">'; ?>
+          <?php printf('<a href="%1$s/programs"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
+      <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/Workshop-snap-hero.png" alt="Workshop hero image">'; ?>
      </div><!-- .top-hero -->
      <div class="single-area">
       <?php get_template_part( 'template-parts/content', 'single-program' );

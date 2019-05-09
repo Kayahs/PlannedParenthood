@@ -2547,3 +2547,27 @@
     }
   }
 }
+
+//Single Job
+
+.single-job {
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  font-family: $font__main;
+  h1 {
+    font-size: 76px;
+    text-align: center;
+    margin: .67em 0;
+  }
+  .job-details {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    p {
+      margin: 0;
+      margin-bottom: 1.5rem;
+      font-size: 14px;
+    }
+  }
+}

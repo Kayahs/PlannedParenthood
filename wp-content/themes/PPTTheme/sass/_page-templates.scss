@@ -1613,7 +1613,7 @@
 // Archive Research Page
 .arc-research {
   .wrapper {
-    // margin-top: 5% !important; 
+    // margin-top: 5% !important;
     margin-top: 0;
     display: flex;
     justify-content: center;
@@ -2394,7 +2394,7 @@
           background-color: white;
           color: black !important;
           margin-top: 5.6px;
-          margin-left: 10px;  
+          margin-left: 10px;
         }
         .search-field:focus {
           outline: none;
@@ -2439,6 +2439,30 @@
           height: 230px;
         }
       }
+    }
+  }
+}
+
+//Single Job
+
+.single-job {
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important;
+  font-family: $font__main;
+  h1 {
+    font-size: 76px;
+    text-align: center;
+    margin: .67em 0;
+  }
+  .job-details {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    p {
+      margin: 0;
+      margin-bottom: 1.5rem;
+      font-size: 14px;
     }
   }
 }

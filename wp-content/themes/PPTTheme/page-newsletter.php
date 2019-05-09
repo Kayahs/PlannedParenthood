@@ -19,6 +19,11 @@ get_header(); ?>
 
         <h3 class="strategic-h3">sign up for more news!</h3>
 
+        <?php while ( have_posts() ) : the_post(); ?>
+
+          <?php the_content(); ?>
+
+        <?php endwhile; ?>
         <h3 class="strategic-h3">download a history of choice</h3> 
         <a href="<?php bloginfo('template_directory');?>/assets/newsletter/Newsletter_web_format_2018.pdf" download>
           <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">

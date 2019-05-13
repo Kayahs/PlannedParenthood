@@ -17,9 +17,9 @@ get_header(); ?>
       <div class="bottom-hero-black grid-container">
         <div class="make-appointment black-div grid-item1">
           <h2>make an appointment</h2>
-          <p>Our doctors and nurse practicioners can help you find all the answers to your questions about your sexual, mental and physical heatlh.Appointments are available Monday - Friday. See our contact page for more details.</p>
+          <p>Our team can help you find all the answers to your questions about your sexual, mental and physical health needs. Appointments are available Monday - Friday. See our contact page for more details.</p>
         </div>
-				<button type="button" class="fp-contact-button grid-item2">contact</button>
+				<button type="button" class="fp-contact-button grid-item2"><a href="/contact">make an appointment</a></button>
 				  
         <div class="drop-in-widget black-div grid-item3">
           <h2>drop-in hours</h2>
@@ -34,7 +34,7 @@ get_header(); ?>
           <h2>teen health source</h2>
           <p>THS is a sexual health information  service run for and by youth - brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question or concern you have about your sexual health? We have trained teen volunteers waiting to speak with you live 5 times a week.</p>
         </div>
-				 <button type="button" class="fp-mk-appointment-button grid-item5" >make an appointment</button>
+				 <button type="button" class="fp-mk-appointment-button grid-item5" ><a href="/contact">contact</a></button>
 
       <!-- this div is where the 3 boxes of text will be placed underneath the hero image -->
       </div><!-- .bottom-hero-black -->

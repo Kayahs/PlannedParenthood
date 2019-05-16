@@ -10,7 +10,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
     <div class="top-hero about-hero">
       <h1>about us</h1>
-      <img src = <?php echo get_template_directory_uri() .'/assets/hero-images/About-hero.jpg' ?> alt="About Us hero image">
+      <img src = <?php echo get_template_directory_uri() .'/assets/hero-images/About-hero.png' ?> alt="About Us hero image">
       <!-- Inside this div will be placed the green background, the text as well as the hero image -->
       </div><!-- .top-hero-green -->
       <div class="about-navigation">

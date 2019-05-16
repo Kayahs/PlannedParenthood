@@ -55,7 +55,7 @@ get_header(); ?>
         echo sprintf('<article id="component%d">',$x ).'<div class="framed"><img src="'.$image.'" alt="">';
         echo '<h3>'.$title.'</h3>';
         echo '<p>' . $description . '</p>';
-        echo '<button><a href="'.get_home_url(). '/contact">contact</a></button></div>';
+        echo '<a href="'.get_home_url(). '/contact"><button>contact</button></a></div>';
         echo '<div class="content">'.$content.'</div></article>';
         $x++;
        } ?>

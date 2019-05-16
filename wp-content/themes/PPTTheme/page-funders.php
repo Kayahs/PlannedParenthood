@@ -28,7 +28,8 @@ get_header(); ?>
           <p>You can download a copy of our service agreement with
            the Toronto Local Health Integration Network here.</p>
         </div>
-        <a class="agreement-icon" href="<?php bloginfo('template_directory');?>/assets/PDF/Multi-Sector-Service-Accountability-Agreement-2019-2022-signed.pdf" download>            <?php echo '<img src="'. get_template_directory_uri() .'/assets/icons/white-pdf.svg" alt="PDF Icon">' ?>
+        <a class="agreement-icon" href="<?php bloginfo('template_directory');?>/assets/PDF/Multi-Sector-Service-Accountability-Agreement-2019-2022-signed.pdf" download>            
+          <?php echo '<img src="'. get_template_directory_uri() .'/assets/icons/white-pdf.svg" alt="PDF Icon">' ?>
           <p>Download our Multi-Sector Service Agreement</p>
         </a>
       </div>

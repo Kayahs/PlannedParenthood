@@ -21,13 +21,13 @@ get_header(); ?>
 
       <div class="top-hero">
           <h1 class="page-title">board members</h1> ;
-          <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/About-hero.jpg" alt="About hero image">' ?>
+          <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/About-hero.png" alt="About hero image">' ?>
       </div>
 
       <div class="about-navigation">
        <h2 class="grey-text"><a href="<?php echo get_site_url() .'/about/' ?>">about us</a></h2>
        <h2>board of directors</h2>
-       <h2 class="grey-text">strategic plan & annual report</h2>
+       <h2 class="grey-text"><a href="<?php echo get_site_url() .'/annual-reports/' ?>">strategic plan & annual report</a></h2>
      </div>
      <div class="bod-content">
         <?php $query_vars = $wp_query->query_vars;

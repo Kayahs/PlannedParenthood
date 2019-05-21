@@ -79,16 +79,16 @@ get_header(); ?>
         </div> <!-- .impactu -->
         <div class="low-grid">
         <div class="grid-center">
-        <a href="">
+        <a href="<?php echo get_site_url() .'/about/' ?>">
           <?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/mission.svg" alt="">
           <p>our mission,</p><p>vision, & values</p></a>' ?>
         </div>
         <div class="grid-center">
-        <a href=""><?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/annual-report.svg" alt="">
+        <a href="<?php echo get_site_url() .'/annual-reports/' ?>"><?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/annual-report.svg" alt="">
         <p>download</p><p>annual reports</p></a>' ?>
         </div>
         <div class="grid-center">
-        <a href=""><?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/strategic-plan.svg" alt=""><p>strategic plan</p><p>2015-2020</p></a>' ?>
+        <a href="<?php echo get_site_url() .'/annual-reports/' ?>"><?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/strategic-plan.svg" alt=""><p>strategic plan</p><p>2015-2020</p></a>' ?>
         </div>
         </div> <!-- .impactu -->
       </section>

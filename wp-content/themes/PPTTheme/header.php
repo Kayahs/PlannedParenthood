@@ -31,7 +31,9 @@
 						} ?>">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<?php if (is_front_page()) { echo '<div class="wrapper service-advisory">';
+			<?php if (is_front_page() && is_active_sidebar('service-advisory')) { 
+
+        echo '<div class="wrapper service-advisory">';
 				/*This is where I will place the service advisory which will be at the very top of the header*/
 					dynamic_sidebar( 'service-advisory' );
 					echo '<button class="close-service-advisory">X</button>';

@@ -370,7 +370,6 @@ Description: A WordPress theme for Planned Parenthood Toronto
   position: relative; }
   .top-hero h1 {
     margin: 0;
-    margin-left: 13%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -544,7 +543,6 @@ Description: A WordPress theme for Planned Parenthood Toronto
         align-self: center; }
 
 .dcta-container {
-  height: 381px;
   width: 100%;
   background-color: #ba0e82;
   display: -webkit-box;
@@ -565,7 +563,6 @@ Description: A WordPress theme for Planned Parenthood Toronto
 .dcta-title {
   color: #fff;
   width: 670.1px;
-  height: 112px;
   font-family: Arial, sans-serif;
   font-size: 54px;
   font-weight: 900;
@@ -576,7 +573,6 @@ Description: A WordPress theme for Planned Parenthood Toronto
 .dcta-content {
   color: #fff;
   width: 654.1px;
-  height: 84px;
   font-family: Arial, sans-serif;
   font-size: 25px;
   line-height: 1.12;
@@ -1226,7 +1222,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
       text-align: center; }
 
 .donate .donate-image img {
-  display: block; }
+  display: block;
+  width: 100%; }
 
 .donate .donate-img-banner {
   font-size: 32px;
@@ -1300,7 +1297,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
 
 .banner {
   color: white;
-  padding: 0 20% 3%;
+  padding: 20% 3%;
   text-align: center; }
   .banner h2 {
     padding-top: 30px;
@@ -1537,7 +1534,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
     .wpcf7 .wpcf7-checkbox .wpcf7-list-item input {
       width: 13px; }
 
-.arc-research .wrapper, .arc-news .wrapper {
+.arc-research .wrapper,
+.arc-news .wrapper {
   margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1545,13 +1543,15 @@ Description: A WordPress theme for Planned Parenthood Toronto
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .arc-research .wrapper h1, .arc-news .wrapper h1 {
+  .arc-research .wrapper h1,
+  .arc-news .wrapper h1 {
     margin: 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
 
-.arc-research .page-title, .arc-news .page-title {
+.arc-research .page-title,
+.arc-news .page-title {
   height: 300px;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -1570,26 +1570,32 @@ Description: A WordPress theme for Planned Parenthood Toronto
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .arc-research .page-title h1, .arc-news .page-title h1 {
+  .arc-research .page-title h1,
+  .arc-news .page-title h1 {
     font-size: 76px; }
 
-.arc-research .entry-header, .arc-news .entry-header {
+.arc-research .entry-header,
+.arc-news .entry-header {
   width: 50%;
   margin-right: 25%;
   margin-left: 25%; }
-  .arc-research .entry-header h2 a, .arc-news .entry-header h2 a {
+  .arc-research .entry-header h2 a,
+  .arc-news .entry-header h2 a {
     text-decoration: none;
     color: black; }
 
-.arc-research .entry-meta a, .arc-news .entry-meta a {
+.arc-research .entry-meta a,
+.arc-news .entry-meta a {
   text-transform: uppercase;
   margin-right: 25px;
   text-decoration: none;
   color: black; }
-  .arc-research .entry-meta a:hover, .arc-news .entry-meta a:hover {
+  .arc-research .entry-meta a:hover,
+  .arc-news .entry-meta a:hover {
     font-weight: bold; }
 
-.arc-research .donor-movement, .arc-news .donor-movement {
+.arc-research .donor-movement,
+.arc-news .donor-movement {
   width: 100%;
   height: 360px;
   display: -webkit-box;
@@ -1605,13 +1611,17 @@ Description: A WordPress theme for Planned Parenthood Toronto
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .arc-research .donor-movement .donor-text, .arc-news .donor-movement .donor-text {
+  .arc-research .donor-movement .donor-text,
+  .arc-news .donor-movement .donor-text {
     text-align: left; }
-  .arc-research .donor-movement h2, .arc-news .donor-movement h2 {
+  .arc-research .donor-movement h2,
+  .arc-news .donor-movement h2 {
     margin: 0; }
-  .arc-research .donor-movement h3, .arc-news .donor-movement h3 {
+  .arc-research .donor-movement h3,
+  .arc-news .donor-movement h3 {
     margin: 0; }
-  .arc-research .donor-movement .donor-movement-button, .arc-news .donor-movement .donor-movement-button {
+  .arc-research .donor-movement .donor-movement-button,
+  .arc-news .donor-movement .donor-movement-button {
     height: 100px;
     width: 200px;
     text-transform: uppercase; }
@@ -2287,7 +2297,15 @@ Description: A WordPress theme for Planned Parenthood Toronto
     padding-bottom: 5px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: white; }
+    .agreement-banner .agreement-icon p {
+      margin-left: 24px;
+      margin-bottom: 15px; }
 
 .search h1 {
   font-size: 4rem; }
@@ -2486,7 +2504,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
   .single-job h1 {
     font-size: 76px;
     text-align: center;
-    margin: .67em 0; }
+    margin: 0.67em 0; }
   .single-job .job-details {
     margin-left: 20%;
     margin-right: 20%; }

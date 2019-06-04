@@ -18,6 +18,6 @@
     <button type="button" class="dcta-button coloured-button"><a href="https://www.gifttool.com/donations/Donate?ID=1417&AID=4934" target="_blank">donate</a></button>
   </div>
 <div class="dcta-logo">
-<img src = <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/logo-with-text.svg' ?> alt="Planned Parenthood Logo with text">
+<img src = <?php echo get_template_directory_uri().'/assets/logos/PPT_Logo.png' ?> alt="Planned Parenthood Logo with text">
 </div>
 </div>

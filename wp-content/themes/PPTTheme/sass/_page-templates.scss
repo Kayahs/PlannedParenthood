@@ -329,7 +329,7 @@
 }
 
 .page-title {
-  height: 300px;
+  height: 200px;
   width: 100%;
   font-family: $font__main;
   font-size: 76px;
@@ -394,7 +394,7 @@
   a {
     img {
       position: absolute;
-      top: 45%;
+      top: 77%;
       left: 3.12%;
       z-index: 99;
       width: 28px;
@@ -405,8 +405,8 @@
 
     p {
       position: absolute;
-      top: 45%;
-      left: 7%;
+      top: 77%;
+      left: 6%;
       margin: 0;
       z-index: 98;
       color: $color__text-main;
@@ -1639,7 +1639,7 @@
     }
   }
   .page-title {
-    height: 300px;
+    height: 200px;
     width: 100%;
     font-family: $font__main;
     font-size: 76px;

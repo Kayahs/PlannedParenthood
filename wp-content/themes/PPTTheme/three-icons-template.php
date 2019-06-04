@@ -40,7 +40,6 @@ get_header(); ?>
         echo '<h2>come see what makes us different</h2>';
         echo '<p>We put you – and your unique needs – at the centre of the respectful, confidential, and non-judgmental care we offer.</p>';
         echo '<p>to set up an appointment call us at <br /> (416) 961-0113</p>';
-        echo '<a href="PlannedParenthood/contact"><button class="coloured-button">appointments</button></a>';
         echo '</div>';        
       } ?>
 

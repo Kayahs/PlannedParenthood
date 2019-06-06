@@ -1668,7 +1668,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
   background-color: #f7911d; }
   .post-type-archive-fact .page-header h1 {
     font-size: 75px;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0; }
   .post-type-archive-fact .page-header .page-description {
     padding-bottom: 30px; }
 

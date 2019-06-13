@@ -1141,11 +1141,11 @@ Description: A WordPress theme for Planned Parenthood Toronto
   .donate .banner h1 {
     font-size: 76px;
     font-weight: 900;
-    line-height: 0.91;
+    line-height: 1.5;
     margin: 0; }
   .donate .banner p {
     max-width: 100%;
-    line-height: 1.5;
+    line-height: 1;
     padding: 0;
     font-size: 32px;
     font-weight: bold;
@@ -1220,7 +1220,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
             justify-content: center; }
     .donate .top-grid .donate-item h2 {
       font-size: 30px;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 0; }
     .donate .top-grid .donate-item h3 {
       font-size: 19px;
       text-align: center; }

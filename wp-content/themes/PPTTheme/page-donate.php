@@ -56,7 +56,7 @@ get_header(); ?>
           <div class="donate-item">
           <?php echo '<img src="' . get_template_directory_uri() .'/assets/SVG/donation-page-svg/IUD.svg" alt="">' ?>
             <h2>376 IUD’s inserted anually</h2>
-            <h3>At a cost of $236 each, PPT saves youth $88,736 per year on IUD’s</h3>
+            <h3>$300 provides one youth with effective birth control for 5 years in the form of an IUD.</h3>
           </div>
         </div> <!-- .top-grid -->
       </section>

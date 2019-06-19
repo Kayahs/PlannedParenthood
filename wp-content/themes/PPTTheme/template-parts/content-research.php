@@ -20,8 +20,7 @@
     </div><!-- .entry-content -->
 
     <div class="entry-meta">
-      <?php echo '<a href="'. get_post_permalink() .'">read more</a>';
-      echo '<a href="'. get_post_meta( get_the_ID(), '_ppt_research_pdf_url', true ) .'">download guidelines</a>'; ?>
+      <?php echo '<a href="'. get_post_permalink() .'">read more</a>'; ?>
     </div><!-- .entry-meta -->
   </header><!-- .entry-header -->
 

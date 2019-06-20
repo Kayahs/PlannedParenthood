@@ -1121,7 +1121,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
   color: #a1b426; }
 
 .donate .banner {
-  height: 330px;
+  padding-top: 30px;
   width: 100%;
   background-color: #a1b426;
   color: white;

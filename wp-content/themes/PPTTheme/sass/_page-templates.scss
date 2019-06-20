@@ -21,6 +21,7 @@
 .site-header {
   width: 100%;
   padding-top: 52px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -569,6 +570,7 @@
 }
 
 .dcta-container {
+  padding-top: 30px;
   width: 100%;
   background-color: $purple;
   display: flex;
@@ -1373,7 +1375,7 @@
 
 .banner {
   color: white;
-  padding: 0 20% 3%;
+  padding: 30px 20% 3%;
   text-align: center;
   h2 {
     padding-top: 30px;

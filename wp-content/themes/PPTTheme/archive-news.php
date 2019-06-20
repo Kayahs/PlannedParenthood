@@ -31,18 +31,7 @@ get_header(); ?>
       <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
     <?php endif; ?>
-    <div class="donor-movement banner">
-      <div class="donor-text">
-      <h2>join our movement.</h2>
-      <h2>become a donor today.</h2>
-      <h3>Together, we can break down barriers,</h3>
-      <h3>challenge conventions, and change hearts,</h3>
-      <h3>minds and lives.</h3>
-      </div><!-- .donor-text -->
-      <div class="donor-movement-button">
-      <button type="button" class="donor-movement-button coloured-button">donate</button>
-      </div>
-    </div><!-- .donor-movement -->
+    <?php require get_template_directory() . '/template-parts/donate-cta.php'; ?>
     </main><!-- #main -->
   </div><!-- #primary -->
 

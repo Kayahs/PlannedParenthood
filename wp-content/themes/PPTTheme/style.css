@@ -49,6 +49,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
 .site-header {
   width: 100%;
   padding-top: 52px;
+  padding-bottom: 15px;
   position: relative; }
 
 .purple .site-header {
@@ -545,6 +546,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
         align-self: center; }
 
 .dcta-container {
+  padding-top: 30px;
   width: 100%;
   background-color: #ba0e82;
   display: -webkit-box;
@@ -1302,7 +1304,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
 
 .banner {
   color: white;
-  padding: 0 20% 3%;
+  padding: 30px 20% 3%;
   text-align: center; }
   .banner h2 {
     padding-top: 30px;

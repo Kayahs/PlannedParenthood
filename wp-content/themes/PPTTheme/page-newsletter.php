@@ -25,11 +25,11 @@ get_header(); ?>
 
         <?php endwhile; ?>
         <h3 class="strategic-h3">download a history of choice</h3> 
-        <a href="<?php bloginfo('template_directory');?>/assets/newsletter/Newsletter_web_format_2018.pdf" download>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/newsletter/Newsletter_web_format_2018.pdf" download>
           <img src="<?php bloginfo('template_directory');?>/assets/icons/pink-pdf.png">
           <p>Planned Parenthood Toronto Newsletter 2018</p>
         </a>
-        <a href="<?php bloginfo('template_directory');?>/assets/newsletter/Newsletter_Issue1-2017-FINAL.pdf" download>
+        <a href="<?php bloginfo('template_directory');?>/assets/PDF/newsletter/Newsletter_Issue1-2017-FINAL.pdf" download>
           <img src="<?php bloginfo('template_directory');?>/assets/icons/pink-pdf.png">
           <p>Planned Parenthood Toronto  Newsletter 2017</p>
         </a>

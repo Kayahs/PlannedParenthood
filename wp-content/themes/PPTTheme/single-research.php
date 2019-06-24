@@ -21,11 +21,6 @@ get_header(); ?>
 
         <div class="entry-content">
           <div class="content-container">
-            <div class="content-header">
-              <a class="download-container" href="<?php echo $pdfurl ?>">
-                Download
-              </a>
-            </div>
             <?php the_content(); ?>
           </div>
         </div><!-- .entry-content -->

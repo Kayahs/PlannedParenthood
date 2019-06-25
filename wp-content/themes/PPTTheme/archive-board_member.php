@@ -20,7 +20,8 @@ get_header(); ?>
       </header><!-- .page-header -->
 
       <div class="top-hero">
-          <h1 class="page-title">board members</h1> ;
+          <h1 class="page-title">board members</h1>
+          <?php printf('<a href="%1$s/about"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
           <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/About-hero.png" alt="About hero image">' ?>
       </div>
 

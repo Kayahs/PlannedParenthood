@@ -323,7 +323,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
     display: flex; }
 
 .page-title {
-  height: 200px;
+  height: 100px;
   width: 100%;
   font-family: Arial, sans-serif;
   font-size: 76px;
@@ -1557,7 +1557,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
 
 .arc-research .page-title,
 .arc-news .page-title {
-  height: 200px;
+  height: 100px;
   width: 100%;
   font-family: Arial, sans-serif;
   font-size: 76px;
@@ -1780,6 +1780,21 @@ Description: A WordPress theme for Planned Parenthood Toronto
   .post-type-archive-job .page-header h1 {
     font-size: 75px;
     margin-top: 0; }
+  .post-type-archive-job .page-header a {
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 3%;
+    text-decoration: none;
+    color: #000; }
+    .post-type-archive-job .page-header a img {
+      width: 28px; }
+    .post-type-archive-job .page-header a p {
+      font-size: 16px;
+      margin: 0px;
+      padding-top: 0px; }
 
 .post-type-archive-job .main-container {
   margin: 1% 8% 0; }
@@ -1888,7 +1903,6 @@ Description: A WordPress theme for Planned Parenthood Toronto
 
 .faq .faq-title {
   width: 100%;
-  height: 300px;
   background-color: #f7911d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1906,6 +1920,20 @@ Description: A WordPress theme for Planned Parenthood Toronto
   .faq .faq-title h1 {
     margin: 0;
     font-size: 76px; }
+  .faq .faq-title a {
+    padding-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    left: 3%;
+    text-decoration: none;
+    color: #000; }
+    .faq .faq-title a img {
+      width: 28px; }
+    .faq .faq-title a p {
+      font-size: 16px;
+      padding-top: 0px; }
 
 .faq .faq-content {
   width: 80%;

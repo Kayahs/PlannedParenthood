@@ -10,6 +10,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
       <div class="wrapper top-hero">
         <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+        <?php printf('<a href="%1$s/"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
         <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/About-hero.png" alt="About hero image">' ?>
       <!-- Inside this div will be placed the green background, the text as well as the hero image -->
       </div><!-- .top-hero-green -->

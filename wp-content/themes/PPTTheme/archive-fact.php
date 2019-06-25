@@ -12,6 +12,7 @@ get_header(); ?>
 
       <header class="page-header">
         <h1 class="page-title">factsheets</h1>
+        <?php printf('<a href="%1$s/education"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
         <div class="page-description">We believe knowledge is most valuable when it is shared. PPT offers factsheets on birth control options, sexually transmitted infections, sexual pleasure and related issues to help you make informed choices about your sexual health. </div>
       </header><!-- .page-header -->
       <div class="main-container">

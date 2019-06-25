@@ -20,7 +20,7 @@ get_header(); ?>
       </header><!-- .page-header -->
 
       <div class="wrapper top-hero blue">
-          <h1 class="page-title">volunteer at ppt</h1>
+          <h1 class="page-title">volunteer</h1>
 
           <?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/Volunteer-hero.png" alt="Volunteer hero image">' ?>
       </div>

@@ -12,7 +12,7 @@ get_header(); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-      <div class="top-hero">
+      <div class="wrapper top-hero">
       <?php $title = get_post_meta( get_the_ID(), '_ppt_single_program_title', true );
       echo '<h1 class="entry-title">' .$title. '</h1>'; ?>
           <?php printf('<a href="%1$s/programs"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>

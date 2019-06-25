@@ -45,7 +45,7 @@
 				</div><!-- .site-branding -->
 				<div class="header-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/ppt-logo.svg' ?> alt="Planned Parenthood Logo">
+						<img src= <?php echo get_template_directory_uri().'/assets/logos/PPT_Logo.png' ?> alt="Planned Parenthood Logo">
 					</a>
 				</div> <!-- .header-logo-->
 				<div class="header-top-right">

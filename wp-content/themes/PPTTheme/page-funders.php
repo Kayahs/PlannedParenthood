@@ -9,6 +9,7 @@ get_header(); ?>
 
 <div class="wrapper top-hero funders-hero green">
   <?php the_title( '<h1 class="funders-title">' , '</h1>' ); ?>
+  <?php printf('<a href="%1$s/"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
 </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -28,7 +29,7 @@ get_header(); ?>
           <p>You can download a copy of our service agreement with
            the Toronto Local Health Integration Network here.</p>
         </div>
-        <a class="agreement-icon" href="<?php bloginfo('template_directory');?>/assets/PDF/Multi-Sector-Service-Accountability-Agreement-2019-2022-signed.pdf" download>            
+        <a class="agreement-icon" href="<?php bloginfo('template_directory');?>/assets/PDF/Multi-Sector-Service-Accountability-Agreement-2019-2022-signed.pdf" >            
           <?php echo '<img src="'. get_template_directory_uri() .'/assets/icons/white-pdf.svg" alt="PDF Icon">' ?>
           <p>Download our Multi-Sector Service Agreement</p>
         </a>

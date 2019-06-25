@@ -30,7 +30,7 @@ get_header(); ?>
         </div>
 
         <div class="teen-health black-div grid-item4">
-          <a href="www.teenhealthsource.com"><h2>teen health source</h2></a>
+          <a href="http://www.teenhealthsource.com"><h2>teen health source</h2></a>
           <p>THS is a sexual health information  service run for and by youth - brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question or concern you have about your sexual health? We have trained teen volunteers waiting to speak with you live 5 times a week.</p>
         </div>
 

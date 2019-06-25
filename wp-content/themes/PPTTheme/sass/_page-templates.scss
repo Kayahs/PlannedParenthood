@@ -21,6 +21,7 @@
 .site-header {
   width: 100%;
   padding-top: 52px;
+  padding-bottom: 15px;
   position: relative;
 }
 
@@ -569,6 +570,7 @@
 }
 
 .dcta-container {
+  padding-top: 30px;
   width: 100%;
   background-color: $purple;
   display: flex;
@@ -1203,7 +1205,7 @@
 
 .donate {
   .banner {
-    height: 330px;
+    padding-top: 30px;
     width: 100%;
     background-color: $green;
     color: white;
@@ -1373,7 +1375,7 @@
 
 .banner {
   color: white;
-  padding: 0 20% 3%;
+  padding: 30px 20% 3%;
   text-align: center;
   h2 {
     padding-top: 30px;
@@ -1882,8 +1884,8 @@
   .main-container {
     margin: 1% 8% 0;
     .page-description {
-      margin-left: 28%;
-      margin-right: 25%;
+      margin-left: 15%;
+      margin-right: 15%;
       padding-bottom: 30px;
     }
     .order-container {

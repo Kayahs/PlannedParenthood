@@ -22,7 +22,6 @@ get_header(); ?>
 			<div class="wrapper top-hero">
 					<h1 class="page-title">programs</h1>
 					<?php echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/Program-hero.png" alt="Program hero image">' ?>
-          <?php printf('<a href="%1$s"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
 			</div>
 
 			<div class="page-content">

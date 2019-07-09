@@ -9,7 +9,6 @@ get_header(); ?>
 
 <div class="wrapper top-hero funders-hero green">
   <?php the_title( '<h1 class="funders-title">' , '</h1>' ); ?>
-  <?php printf('<a href="%1$s/"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
 </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

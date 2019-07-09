@@ -20,7 +20,6 @@ get_header(); ?>
       </header><!-- .page-header -->
 
       <div class="wrapper top-hero">
-          <?php printf('<a href="%1$s/education"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
           <h1 class="page-title">research</h1>
 
       </div>

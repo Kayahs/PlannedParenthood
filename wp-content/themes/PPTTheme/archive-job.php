@@ -9,7 +9,6 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
       <header class="page-header">
         <h1 class="page-title">employment</h1>
-        <?php printf('<a href="%1$s/"><img src="%2$s/assets/icons/previous_page_icon.png" alt="Previous button icon"><p>Previous Page</p></a>', get_site_url(), get_template_directory_uri()) ?>
       </header><!-- .page-header -->
       <div class="main-container">
         <div class="page-description">

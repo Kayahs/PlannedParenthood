@@ -40,7 +40,7 @@ get_header(); ?>
 							<p><?php echo esc_html( 
                 'Appointments are available Monday - Friday. See our contatct page for more details.' ); 
               ?></p>
-							<a href='#'><button class="button">Contact</button></a>
+							<a href='/contact'><button class="button">Contact</button></a>
 						</div>
 
 						<div class="divider"></div>
@@ -63,7 +63,7 @@ get_header(); ?>
                 or concern you have about your sexual health? We have trained teen volunteers waiting to speak 
                 with you live 5 days a week.' ); 
               ?></p>
-							<a href='#'><button class="button">Live Chat</button></a>
+							<a href='http://www.teenhealthsource.com'><button class="button">Live Chat</button></a>
 
 						</div>
 

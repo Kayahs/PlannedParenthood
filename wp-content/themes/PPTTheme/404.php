@@ -32,7 +32,7 @@ get_header(); ?>
             </div>
             <div class="divider"></div>  
             <div class="drop-in column">
-              <h2>drop-in hours</h2>
+              <h2>drop-in times</h2>
               <div class="footer-sat-hours"> 
               <?php if ( is_active_sidebar( 'footer-sidebar-3' ) ) : ?>
               <?php dynamic_sidebar( 'footer-sidebar-3' ); ?>

@@ -447,16 +447,18 @@ Description: A WordPress theme for Planned Parenthood Toronto
     font-weight: bold;
     text-align: center;
     color: #fff; }
-  .black-div p {
-    padding-bottom: 20px; }
   .black-div button {
     border-radius: 3px;
     background-color: #fff;
     font-family: Arial, sans-serif;
     font-size: 20px;
     color: #ba0e82; }
-  .black-div .footer-sat-hours .drop-in-hours strong {
-    font-weight: normal; }
+  .black-div .footer-sat-hours .drop-in-hours,
+  .black-div .footer-sat-hours .drop-in-desc {
+    margin-bottom: 0px; }
+    .black-div .footer-sat-hours .drop-in-hours strong,
+    .black-div .footer-sat-hours .drop-in-desc strong {
+      font-weight: normal; }
 
 .grid-container {
   display: grid !important;
@@ -2511,8 +2513,11 @@ Description: A WordPress theme for Planned Parenthood Toronto
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; }
+          .fourohfour .not-found .page-content .suggestions .column a {
+            text-decoration: none;
+            color: white; }
           .fourohfour .not-found .page-content .suggestions .column p {
-            margin: 0;
+            margin: 0 auto;
             width: 66%; }
           .fourohfour .not-found .page-content .suggestions .column h2 {
             margin: 0;

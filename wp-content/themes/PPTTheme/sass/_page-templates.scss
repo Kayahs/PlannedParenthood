@@ -455,10 +455,6 @@
     color: $color__background-body;
   }
 
-  p {
-    padding-bottom: 20px;
-  }
-
   button {
     border-radius: 3px;
     background-color: $color__background-body;
@@ -467,7 +463,9 @@
     color: $purple;
   }
   .footer-sat-hours {
-    .drop-in-hours {
+    .drop-in-hours,
+    .drop-in-desc {
+      margin-bottom: 0px;
       strong {
         font-weight: normal;
       }
@@ -2566,8 +2564,12 @@
           flex-direction: column;
           width: 33%;
           align-items: center;
+          a {
+            text-decoration: none;
+            color: white;
+          }
           p {
-            margin: 0;
+            margin: 0 auto;
             width: 66%;
           }
           h2 {

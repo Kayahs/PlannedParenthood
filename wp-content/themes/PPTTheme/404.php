@@ -27,41 +27,24 @@ get_header(); ?>
 
 					<div class="suggestions">
 						<div class="appointment column">
-							<h2><?php echo esc_html( 'make an appointment' ); ?></h2>
-							<p><?php echo esc_html( 
-                'Our doctors and nurse practitioners can help you find the answers to all of your questions 
-                about your sexual, mental and physical health.' ); 
-              ?></p>
-							<br>
-							<p><?php echo esc_html( 
-                'Appointments are available Monday - Friday. See our contatct page for more details.' ); 
-              ?></p>
-							<a href='/contact'><button class="button">Contact</button></a>
-						</div>
+              <a href="/contact"><h2>make an appointment</h2></a>
+              <p>Our team can help you find all the answers to your questions about your sexual, mental and physical health needs. Appointments are available Monday - Friday. See our contact page for more details.</p>
+            </div>
+            <div class="divider"></div>  
+            <div class="drop-in column">
+              <h2>drop-in hours</h2>
+              <div class="footer-sat-hours"> 
+              <?php if ( is_active_sidebar( 'footer-sidebar-3' ) ) : ?>
+              <?php dynamic_sidebar( 'footer-sidebar-3' ); ?>
+              <?php endif; ?>
+              </div>
+            </div>
+            <div class="divider"></div>
 
-						<div class="divider"></div>
-
-						<div class="drop-in column">
-							<h2><?php echo esc_html( 'drop-in times' ); ?></h2>
-              <p><?php echo esc_html( 'Drop-in is for sexual health only' ); ?></p>
-							<br>
-              <p><?php echo esc_html( 'Saturdays:' ); ?></p>
-              <p><?php echo esc_html( '10am - 2pm' ); ?></p>
-						</div>
-
-						<div class="divider"></div>
-
-						<div class="teen-health column">
-							<h2><?php echo esc_html( 'Teen Health Source' ); ?></h2>
-              <p><?php echo esc_html( 
-                'THS is a sexual health information service run for and by youth - 
-                brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question 
-                or concern you have about your sexual health? We have trained teen volunteers waiting to speak 
-                with you live 5 days a week.' ); 
-              ?></p>
-							<a href='http://www.teenhealthsource.com'><button class="button">Live Chat</button></a>
-
-						</div>
+            <div class="teen-health column">
+              <a href="http://www.teenhealthsource.com"><h2>teen health source</h2></a>
+              <p>THS is a sexual health information  service run for and by youth - brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question or concern you have about your sexual health? We have trained teen volunteers waiting to speak with you live 5 times a week.</p>
+            </div>
 
 					</div>
 

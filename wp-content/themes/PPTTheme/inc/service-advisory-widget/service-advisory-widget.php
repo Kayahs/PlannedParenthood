@@ -67,7 +67,7 @@ class Service_Advisory extends WP_Widget {
 		// Manipulate the widget's values based on their input fields
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 
-		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_title', $instance['note'] );
+		$note = empty( $instance['note'] ) ? '' : apply_filters( 'widget_note', $instance['note'] );
 
 		ob_start();
 

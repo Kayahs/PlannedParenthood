@@ -2528,6 +2528,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
             background: white;
             padding: 0.25rem 4rem;
             margin-top: 1.5rem; }
+          .fourohfour .not-found .page-content .suggestions .column .footer-sat-hours p {
+            width: 100%; }
         .fourohfour .not-found .page-content .suggestions .divider {
           border-left: 1px solid white;
           height: 230px; }
@@ -2553,6 +2555,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
       margin: 0;
       margin-bottom: 1.5rem;
       font-size: 14px; }
+
+#bitnami-banner {
+  display: none; }
 
 html {
   font-family: sans-serif;

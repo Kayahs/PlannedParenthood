@@ -2583,6 +2583,11 @@
             padding: 0.25rem 4rem;
             margin-top: 1.5rem;
           }
+          .footer-sat-hours {
+            p {
+              width: 100%;
+            }
+          }
         }
         .divider {
           border-left: 1px solid white;
@@ -2615,4 +2620,8 @@
       font-size: 14px;
     }
   }
+}
+
+#bitnami-banner {
+  display: none;
 }

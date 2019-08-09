@@ -302,6 +302,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
   z-index: 205;
   width: 88px;
   height: 88px; }
+  @media screen and (max-width: 480px) {
+    .escape-button {
+      display: none; } }
 
 .top-button {
   position: fixed;
@@ -568,7 +571,7 @@ Description: A WordPress theme for Planned Parenthood Toronto
 
 .dcta-title {
   color: #fff;
-  width: 670.1px;
+  max-width: 671px;
   font-family: Arial, sans-serif;
   font-size: 54px;
   font-weight: 900;
@@ -576,14 +579,21 @@ Description: A WordPress theme for Planned Parenthood Toronto
   text-align: center;
   margin: 0;
   padding-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .dcta-title {
+      font-size: 40px; } }
 
 .dcta-content {
   color: #fff;
-  width: 654.1px;
+  max-width: 654px;
   font-family: Arial, sans-serif;
   font-size: 25px;
   line-height: 1.12;
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .dcta-content {
+      font-size: 22px;
+      line-height: 1.5; } }
 
 .dcta-button {
   border-radius: 3px;
@@ -600,6 +610,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
   bottom: 45px;
   right: 70px;
   max-width: 150px; }
+  @media screen and (max-width: 480px) {
+    .dcta-logo {
+      display: none; } }
 
 /* About Us Page */
 .top-hero-green img {
@@ -856,6 +869,12 @@ Description: A WordPress theme for Planned Parenthood Toronto
           align-items: center; }
   .black-footer p {
     margin: 0; }
+  @media screen and (max-width: 480px) {
+    .black-footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .footer-location {
   font-family: Arial, sans-serif;
@@ -1147,6 +1166,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
     font-weight: 900;
     line-height: 1.5;
     margin: 0; }
+    @media screen and (max-width: 480px) {
+      .donate .banner h1 {
+        font-size: 40px; } }
   .donate .banner p {
     max-width: 100%;
     line-height: 1;
@@ -1154,6 +1176,11 @@ Description: A WordPress theme for Planned Parenthood Toronto
     font-size: 32px;
     font-weight: bold;
     margin: 0; }
+    @media screen and (max-width: 480px) {
+      .donate .banner p {
+        line-height: 1.5;
+        font-size: 22px;
+        font-weight: normal; } }
   .donate .banner .white-btn {
     margin-top: 25px;
     border-radius: 3px;
@@ -1165,6 +1192,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
     letter-spacing: -0.2px;
     width: 306px;
     height: 68.3px; }
+  @media screen and (max-width: 480px) {
+    .donate .banner {
+      padding: 30px 10px; } }
 
 .donate .banner-text-block {
   display: -webkit-box;
@@ -1180,10 +1210,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-left: 45px; }
+  margin: 0 40px; }
   .donate .banner-text-block section {
-    width: 415px;
-    margin-right: 25px; }
+    max-width: 415px; }
     .donate .banner-text-block section h3 {
       text-align: center;
       font-size: 20px;
@@ -1197,21 +1226,34 @@ Description: A WordPress theme for Planned Parenthood Toronto
       margin-top: 20px; }
       .donate .banner-text-block section:last-child section .location-widget .location:first-child {
         font-weight: bold; }
+  @media screen and (max-width: 480px) {
+    .donate .banner-text-block {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .donate .impactu h1 {
   text-align: center;
   font-size: 76px;
   font-weight: bold; }
+  @media screen and (max-width: 480px) {
+    .donate .impactu h1 {
+      font-size: 45px; } }
 
 .donate .top-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-left: 45px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 30px; }
   .donate .top-grid .donate-item {
-    padding-right: 45px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin: 0 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1229,6 +1271,15 @@ Description: A WordPress theme for Planned Parenthood Toronto
     .donate .top-grid .donate-item h3 {
       font-size: 19px;
       text-align: center; }
+    @media screen and (max-width: 480px) {
+      .donate .top-grid .donate-item {
+        margin: 0; } }
+  @media screen and (max-width: 480px) {
+    .donate .top-grid {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .donate .donate-image img {
   display: block;
@@ -1237,8 +1288,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
 .donate .donate-img-banner {
   font-size: 32px;
   font-weight: bold;
-  height: 215px;
   width: 100%;
+  padding: 10px 0;
   background-color: #d8d8d8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1252,14 +1303,22 @@ Description: A WordPress theme for Planned Parenthood Toronto
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-align: center; }
   .donate .donate-img-banner p {
-    margin: 0; }
+    margin: 0 20px;
+    max-width: 550px;
+    padding: 10px 0; }
+  @media screen and (max-width: 480px) {
+    .donate .donate-img-banner {
+      font-size: 25px; } }
 
 .donate .low-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding-left: 45px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .donate .low-grid .grid-center {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1283,6 +1342,15 @@ Description: A WordPress theme for Planned Parenthood Toronto
       .donate .low-grid .grid-center a p {
         margin: 0;
         text-align: center; }
+    @media screen and (max-width: 480px) {
+      .donate .low-grid .grid-center {
+        margin: 25px 0; } }
+  @media screen and (max-width: 480px) {
+    .donate .low-grid {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 /*
  * Education Page Styles
@@ -1332,6 +1400,11 @@ Description: A WordPress theme for Planned Parenthood Toronto
     width: 375px;
     height: 73px;
     border-width: 0px; }
+    @media screen and (max-width: 480px) {
+      .banner .coloured-button {
+        font-size: 20px;
+        width: 120px;
+        height: 50px; } }
 
 .page-template-three-icons-template .entry-content {
   margin: 0 8%; }

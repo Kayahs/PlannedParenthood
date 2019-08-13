@@ -16,7 +16,7 @@ get_header(); ?>
 
       <section>
         <h3>current edition</h3>
-        <iframe style="border:none;width:100%;height:500px;" src="//e.issuu.com/embed.html#28573712/62553054" allowfullscreen></iframe>
+        <iframe class='iframe' src="//e.issuu.com/embed.html#28573712/62553054" allowfullscreen></iframe>
         
         <h4>download</h4>
         <a href="<?php bloginfo('template_directory');?>/assets/PDF/annual-report/PPT_ANNUALREPORT_2018_WEB.pdf" target="_blank">
@@ -60,7 +60,7 @@ get_header(); ?>
         <h4>download</h4>
         <a href="<?php bloginfo('template_directory');?>/assets/PDF/strategic-plan/Strategy_Map_Updated_2018_Final.pdf" target="_blank">
           <img src="<?php bloginfo('template_directory');?>/assets/icons/green-pdf.svg">
-          <p>Planned Parenthood Toronto 2015-2020 Strategic Plan</p>
+          <p class="strategic-text">Planned Parenthood Toronto 2015-2020 Strategic Plan</p>
         </a>
       </section>
 

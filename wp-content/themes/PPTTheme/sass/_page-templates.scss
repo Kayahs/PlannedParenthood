@@ -2117,8 +2117,8 @@
       margin-top: 20px;
       margin-bottom: 40px;
       border:none;
-      width:100%;
-      height:500px;
+      width: 100%;
+      height: 500px;
     }
     .strategic-h3 {
       margin-top: 30px;
@@ -2168,7 +2168,7 @@
     section {
       margin-left: 0;
       margin-right: 0;
-      align-items: start;
+      align-items: flex-start;
       width: 100%;
       h3 {
         margin: 40px;
@@ -2258,8 +2258,15 @@
     iframe {
       margin-top: 20px;
       margin-bottom: 40px;
+      border:none;
+      width: 100%;
+      height: 500px;
     }
-    .strategic-h3 {
+    .sign-up-h3 {
+      margin-top: 30px;
+      margin-bottom: 18px;
+    }
+    .download-h3 {
       margin-top: 30px;
       margin-bottom: 18px;
     }
@@ -2288,6 +2295,72 @@
       }
     }
   }
+}
+
+// 480px MEDIA QUERY ---------------------------------------------------------
+@media (max-width: 480px){
+  .newsletter {  
+    .wpcf7 {
+      margin: 0 20px;
+      p:first-child {
+        margin: 0;
+      }
+      input[type='text'] {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        height: 60px;
+      }
+      input[type='submit'] {
+        margin: 0 auto;
+        display: block;
+        width: 140px;
+        border-radius: 5px;
+        color: $purple;
+        font-weight: bold;
+        font-size: 18px;
+      }
+    }
+    .banner {
+      height: 180px;
+      justify-content: flex-start;
+      h1 {
+        font-size: 38px;
+      }
+    }
+    section {
+      margin-left: 0;
+      margin-right: 0;
+      align-items: flex-start;
+      width: 100%;
+      h3 {
+        margin-bottom: 0px;
+        margin-left: 20px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .sign-up-h3 {
+        margin-bottom: 12px;
+      }
+      .download-h3 {
+        margin-top: 0;
+        margin-bottom: 40px;
+      }
+      a {
+        margin-left: 20px;
+        img {
+          height: 36px;
+        }
+        p {
+          margin-left: 12px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          width: 260px;
+          font-size: 18px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }  
 }
 
 //Press Releases

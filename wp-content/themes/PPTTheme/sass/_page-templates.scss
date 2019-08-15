@@ -1821,6 +1821,9 @@
             line-height: 1.25;
             margin-bottom: 5px;
           }
+          .plus-minus {
+            display: none;
+          }
           .card-excerpt {
             font-size: 12px;
             padding-bottom: 10px;
@@ -1847,6 +1850,99 @@
       font-size: 30px;
       border: none;
       font-weight: bold;
+    }
+  }
+}
+
+// Facts Archive 480px
+@media (max-width: 480px){
+  .post-type-archive-fact {
+    .page-header {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: space-between;
+      height: 270px;
+      .page-title {
+        font-size: 38px;
+        height: auto;
+      }
+      .page-description {
+        width: 320px;
+        padding-bottom: 42px;
+      }
+    }
+    .main-container {
+      .order-container {
+        margin-top: 25px;
+      }
+      .factsheet-container {
+        flex-direction: column;
+        align-items: center;
+        .left-container {
+          width: 100%;
+          margin-bottom: 25px;
+          .tag-organizer {
+            background-color: $orange;
+            padding: 10px 25px;
+            color: white;
+            .tag-list {
+              background-color: $color__background-hr;
+            }
+          }
+          .clear-filter {
+            background-color: $color__background-pre;
+          }
+          .disclaimer {
+            font-size: 14px;
+          }
+        }
+        .right-container {
+          margin-left: 0;
+          width: 100%;
+          margin-bottom: 22px;
+          .card-container {
+            width: 100%;
+            height: 75px;
+            padding: 10px 25px;
+            margin-bottom: 18px;
+            position: relative;
+            .plus-minus {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              border-radius: 15px;
+              right: 25px;
+              height: 16px;
+              width: 16px;
+              color: $orange;
+              background-color: white;
+              top: 0;
+              font-size: 18px;
+              margin-top: 15px;
+            }
+            .card-excerpt {
+              display: none;
+            }
+            .card-tags {
+              border-top: 1px solid #fff;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .load-more {
+      .load-button {
+        border: 1px solid $orange;
+        border-radius: 2px;
+        font-size: 16px;
+        padding: 8px;
+        padding-bottom: 6px;
+        width: 120px;
+      }
     }
   }
 }
@@ -2152,7 +2248,7 @@
   }
 }
 
-// 480px MEDIA QUERY ---------------------------------------------------------
+// Annual Reports 480px
 @media (max-width: 480px){
   .annual-reports {
     .banner {
@@ -2297,7 +2393,7 @@
   }
 }
 
-// 480px MEDIA QUERY ---------------------------------------------------------
+// Newsletter 480px
 @media (max-width: 480px){
   .newsletter {  
     .wpcf7 {

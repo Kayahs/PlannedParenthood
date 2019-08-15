@@ -66,6 +66,7 @@ get_header(); ?>
                 $trimmedExcerpt = mb_strimwidth($excerpt, 0, 125, '...');
                 ?>
                 </a>
+                <p class="plus-minus">+</p>
                 <div class="card-excerpt"><?php echo $trimmedExcerpt ?></div>
                 <div class="card-tags">
                   <div class="pre-tag">Tags: </div>

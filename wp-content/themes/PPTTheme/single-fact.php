@@ -46,6 +46,21 @@ get_header(); ?>
               </a>
             </div>
             <?php the_content(); ?>
+            <a class="download-button-mobile" href="<?php echo $pdfurl ?>">
+              Download
+            </a>
+          </div>
+          <div class="tags-list">
+            <h3>Tags</h3>
+            <div class="tags-box">
+              <?php
+                $fact_tags = get_the_terms(get_the_ID(), 'facttag');
+                $taglist = [];
+                foreach ($fact_tags as $tag) { 
+                  echo '<p>' . $tag->name . '</p>';
+                }
+              ?>
+            </div>
           </div>
         </div><!-- .entry-content -->
         <?php require get_template_directory() . '/template-parts/donate-cta.php'; ?>

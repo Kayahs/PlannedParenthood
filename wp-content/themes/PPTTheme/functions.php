@@ -167,7 +167,6 @@ function ppt_starter_scripts() {
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
   wp_enqueue_script( 'ppt-section-builder', get_template_directory_uri() . '/build/js/section-builder.min.js', array(), '1.0', true);
   wp_enqueue_script( 'top', get_template_directory_uri() . '/build/js/top.min.js', array(), '1.0', true);
-	wp_enqueue_script( 'factsheet-accordian', get_template_directory_uri() . '/build/js/factsheet-accordian.min.js', array(), '1.0', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

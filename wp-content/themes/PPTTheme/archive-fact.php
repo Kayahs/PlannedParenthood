@@ -26,7 +26,7 @@ get_header(); ?>
         <div class="factsheet-container">
           <div class="left-container">
             <div class="tag-organizer">
-              <strong>Tags</strong>
+              <p>Tags</p>
               <ul class="tag-list">
                 <?php 
                 $tags = get_terms( array(

@@ -10,7 +10,7 @@ get_header(); ?>
     <main id="main" class="site-main newsletter" role="main">
 
       <header class="banner">
-        <h1>newsletter</h1>
+        <?php the_title( '<h1>', '</h1>' ); ?>
       </header>
 
       <section>

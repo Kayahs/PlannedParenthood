@@ -807,7 +807,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
     .appointment-sidebar {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
-              order: 2; } }
+              order: 2;
+      margin: 0 0 40px 0; } }
 
 .sidebar-contact {
   margin: 40px 40px 0; }
@@ -2359,6 +2360,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
     margin-bottom: 80px; }
     .annual-reports .top-hero h1 {
       max-width: 50%; }
+    .annual-reports .top-hero img {
+      display: none; }
   .annual-reports section {
     margin-left: 25%;
     margin-right: 25%;

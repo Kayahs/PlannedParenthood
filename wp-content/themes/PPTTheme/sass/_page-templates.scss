@@ -1961,6 +1961,10 @@
           background-color: #e6e6e6;
           border-radius: 8px 8px 0 0;
           padding: 25px 25px 10px 25px;
+          p {
+            margin: 0;
+            font-weight: bold;
+          }
           .tag-list {
             list-style: none;
             margin-left: 0;
@@ -2071,7 +2075,9 @@
       }
     }
     .main-container {
-      margin: 20px 0;
+      width: 375px;
+      display: block;
+      margin: 0 auto;
       .order-container {
         margin-top: 25px;
       }
@@ -2083,14 +2089,23 @@
           margin-bottom: 25px;
           .tag-organizer {
             background-color: $orange;
-            padding: 10px 25px;
             color: white;
+            padding: 0;
+            p {
+              font-weight: normal;
+              padding: 10px 25px;
+            }
             .tag-list {
               background-color: $color__background-hr;
+              padding: 25px;
+              li:first-child {
+                margin-top: 0;
+              }
             }
           }
           .clear-filter {
             background-color: $color__background-pre;
+            padding: 10px 25px;
           }
           .disclaimer {
             font-size: 14px;

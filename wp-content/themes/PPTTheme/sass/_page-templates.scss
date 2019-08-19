@@ -1023,9 +1023,11 @@
     background-color: #4a4a4a;
     display: flex;
     color: white;
-    justify-content: space-around;
-    padding: 0 130px;
+    justify-content: center;
     font-size: 25px;
+  }
+  img {
+    padding-right: 20px;
   }
 }
 
@@ -2239,6 +2241,7 @@
 
       img {
         height: 24px;
+        margin-right: 20px;
       }
       p {
         margin-left: 24px;

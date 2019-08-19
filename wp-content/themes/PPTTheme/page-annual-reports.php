@@ -12,6 +12,9 @@ get_header(); ?>
 
       <header class="banner">
         <?php the_title( '<h1>', '</h1>' ); ?>
+        <!-- <div class="hero-img-container"> -->
+          <img src="<?php bloginfo('template_directory');?>/assets/hero-images/Volunteer-hero.png">
+        <!-- </div> -->
       </header>
 
       <section>

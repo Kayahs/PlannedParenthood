@@ -329,6 +329,9 @@
   }
   &.show {
     display: flex;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
   }
 }
 
@@ -869,12 +872,13 @@
 .black-footer {
   background-color: #2c2c2c;
   width: 100%;
-  height: 170px;
+  min-height: 170px;
   color: $color__background-body;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 40px;
   p {
     margin: 0;
   }
@@ -896,10 +900,13 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 90px;
   p {
     height: 25%;
     margin-right: 60px;
+    @media screen and (max-width: 480px) {
+      margin-right: 0px;
+      padding: 5px 0;
+    }
   }
   .clinic-desc {
     display: none;
@@ -907,12 +914,18 @@
   .drop-in-desc {
     display: none;
   }
+  @media screen and (min-width: 481px) {
+    height: 90px;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 20px 0;
+  }
 }
 
 .footer-social-media {
   margin-right: 0;
   img {
-    margin-right: 40px;
+    margin: 0 20px;
   }
 }
 
@@ -923,8 +936,7 @@
 .footer-nav {
   display: flex;
   justify-content: flex-start;
-  margin-top: 45px;
-  margin-left: 45px;
+  margin: 20px 20px;
   padding: 0;
   font-family: $font__main;
   font-size: 18px;
@@ -937,34 +949,55 @@
     display: inline;
     border-right: 1px solid $color__background-body;
     padding: 0 1rem;
+    @media screen and (max-width: 480px) {
+      padding: 10px 1rem;
+    }
   }
 
   a {
     color: $color__text-main;
     text-decoration: none;
   }
+  @media screen and (max-width: 480px) {
+    justify-content: center;
+  }
 }
 
 #footer-menu {
   margin-left: 0;
   padding: 0;
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .white-footer-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
 
 .footer-text {
   margin-left: 45px;
-  width: 538px;
-  height: 131px;
   font-family: $font__main;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.1px;
   color: $color__text-main;
+  @media screen and (min-width: 481px) {
+    width: 538px;
+    height: 131px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 .bottom-footer-icons {
@@ -974,9 +1007,25 @@
   align-items: flex-end;
   a {
     margin-right: 45px;
+    @media screen and (max-width: 480px) {
+      margin: 0 20px;
+      width: 50%;
+    }
   }
   img {
     max-height: 79px;
+  }
+}
+
+.footer-top-button {
+  display: none;
+  @media screen and (max-width: 480px) {
+    background-color: #4a4a4a;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    padding: 0 130px;
+    font-size: 25px;
   }
 }
 
@@ -2281,6 +2330,7 @@
       color: #000000;
       img {
         height: 24px;
+        margin-right: 20px;
       }
       p {
         margin-left: 24px;

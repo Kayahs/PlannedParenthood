@@ -53,15 +53,19 @@
 				<!-- This is where I will place the text in the bottom left of the footer -->
 				</div>
 				<div class="bottom-footer-icons">
-				<a href="http://www.lhins.on.ca/">
-        <img src=<?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/LHIN.svg' ?> alt="Ontario Toronto Central Local Health Integration Network">
-				</a>
-				<a href="https://www.unitedwaygt.org/">
-        <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/UnitedWay.png' ?> alt="United Way">
-				</a>
-				<!-- This is where I will put the 3 icons with external links in the bottom right of the footer -->
+  				<a href="http://www.lhins.on.ca/">
+          <img src=<?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/LHIN.svg' ?> alt="Ontario Toronto Central Local Health Integration Network">
+  				</a>
+  				<a href="https://www.unitedwaygt.org/">
+          <img src = <?php echo get_template_directory_uri().'/assets/SVG/3-logos-in-footer/UnitedWay.png' ?> alt="United Way">
+  				</a>
+  				<!-- This is where I will put the 3 icons with external links in the bottom right of the footer -->
 				</div>
 			</div>
+      <a class="footer-top-button" id="top-button">
+        <img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/back-to-top-icon-white.svg' ?> alt="Back to top icon/image">
+        <p>Back to Top</p>
+      </a>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

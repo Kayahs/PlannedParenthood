@@ -22,17 +22,7 @@ get_header(); ?>
 </article><!-- #post-## -->
 
 			<?php endwhile; // End of the loop. ?>
-      <div class="agreement-banner">
-        <div class="agreement-text">
-          <h1>Multi-Sector Service Agreement</h1>
-          <p>You can download a copy of our service agreement with
-           the Toronto Local Health Integration Network here.</p>
-        </div>
-        <a class="agreement-icon" href="<?php bloginfo('template_directory');?>/assets/PDF/Multi-Sector-Service-Accountability-Agreement-2019-2022-signed.pdf" >            
-          <?php echo '<img src="'. get_template_directory_uri() .'/assets/icons/white-pdf.svg" alt="PDF Icon">' ?>
-          <p>Download our Multi-Sector Service Agreement</p>
-        </a>
-      </div>
+      
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

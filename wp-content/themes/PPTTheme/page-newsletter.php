@@ -10,29 +10,17 @@ get_header(); ?>
     <main id="main" class="site-main newsletter" role="main">
 
       <header class="banner">
-        <h1>newsletter</h1>
+        <?php the_title( '<h1>', '</h1>' ); ?>
       </header>
 
       <section>
-        <h3>current issue</h3>
-        <iframe class='iframe' src="//e.issuu.com/embed.html#28573712/66212691" allowfullscreen></iframe>
-
-        <h3 class="sign-up-h3">sign up for more news!</h3>
 
         <?php while ( have_posts() ) : the_post(); ?>
 
           <?php the_content(); ?>
 
         <?php endwhile; ?>
-        <h3 class="download-h3">download a history of choice</h3> 
-        <a href="<?php bloginfo('template_directory');?>/assets/PDF/newsletter/Newsletter_web_format_2018.pdf" >
-          <img src="<?php bloginfo('template_directory');?>/assets/icons/pink-pdf.png">
-          <p>Planned Parenthood Toronto Newsletter 2018</p>
-        </a>
-        <a href="<?php bloginfo('template_directory');?>/assets/PDF/newsletter/Newsletter_Issue1-2017-FINAL.pdf" >
-          <img src="<?php bloginfo('template_directory');?>/assets/icons/pink-pdf.png">
-          <p>Planned Parenthood Toronto  Newsletter 2017</p>
-        </a>
+
       </section>
 
     </main><!-- #main -->

@@ -67,7 +67,7 @@
 			</header><!-- #masthead -->
 			
 			<a class="top-button" id="top-button">
-				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/back-to-top-icon.svg' ?> alt="Back to top icon/image">
+				<img src= <?php echo get_template_directory_uri().'/assets/SVG/black-and-white-svgs/back-to-top-icon-black.svg' ?> alt="Back to top icon/image">
 				<p>Back to Top</p>
 			</a>
 			

@@ -13,8 +13,7 @@ get_header(); ?>
       <header>
         <div class="banner">
           <h1>donate today</h1>
-          <p>You don’t need to be an activist to create</p>
-          <p>change, but you can add your voice to ours.</p>
+          <p>You don’t need to be an activist to create change, but you can add your voice to ours.</p>
           <button type="button" class="dcta-button coloured-button"><a href="https://www.gifttool.com/donations/Donate?ID=1417&AID=4934" target="_blank">donate</a></button>
         </div>
       </header>
@@ -66,9 +65,7 @@ get_header(); ?>
       <?php echo '<img src="' . get_template_directory_uri() .'/assets/hero-images/donation-page-mother-daughter.png" alt="">' ?>
       </div> <!-- .donate-image -->
       <div class="donate-img-banner">
-        <p>“I have nothing but good things to say</p>
-        <p>about anyone I’ve interacted with who</p>
-        <p>works at PPT!”</p>
+        <p>“I have nothing but good things to say about anyone I’ve interacted with who works at PPT!”</p>
         <p>– Client survey, 2018</p>
       </div> <!-- .donate-img-banner -->
       </section>

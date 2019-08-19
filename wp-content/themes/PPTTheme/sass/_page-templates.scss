@@ -376,7 +376,7 @@
 
 .top-hero {
   width: 100%;
-  height: 235px;
+  min-height: 235px;
   position: relative;
 
   h1 {
@@ -759,7 +759,6 @@
 
 /* Accessibility Page */
 .access-title {
-  height: 300px;
   width: 100%;
   font-family: $font__main;
   font-size: 76px;
@@ -770,6 +769,9 @@
   align-items: center;
   h1 {
     font-size: 76px;
+    @media screen and (max-width: 480px) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -781,10 +783,15 @@
   margin-right: 160px;
   margin-top: 0;
   margin-bottom: 100px;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+  }
 }
 
 .appointment-sidebar {
-  width: 460px;
+  max-width: 460px;
   background-color: $green;
   font-family: $font__main;
   font-size: 20px;
@@ -796,11 +803,18 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+  p {
+    @media screen and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    order: 2;
+  }
 }
 
 .sidebar-contact {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin: 40px 40px 0;
   .acc-contact-button {
     margin-top: 25px;
     border-radius: 3px;
@@ -821,8 +835,7 @@
 }
 
 .sidebar-edgewest {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin: 40px 40px 0;
   .acc-edgewest-button {
     margin-top: 25px;
     border-radius: 3px;
@@ -843,7 +856,7 @@
 }
 
 .acc-content {
-  width: 655px;
+  max-width: 655px;
 }
 /* Privacy Page */
 
@@ -899,7 +912,6 @@
 .footer-hours {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   p {
     height: 25%;
     margin-right: 60px;
@@ -916,6 +928,7 @@
   }
   @media screen and (min-width: 481px) {
     height: 90px;
+    flex-wrap: wrap;
   }
   @media screen and (max-width: 480px) {
     padding: 20px 0;
@@ -1680,7 +1693,7 @@
 }
 
 // Single Fact Archive 480px
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .single-fact {
     .entry-header {
       display: flex;
@@ -1730,7 +1743,7 @@
           padding: 8px;
           padding-bottom: 6px;
           width: 130px;
-          margin: 0 auto;   
+          margin: 0 auto;
           text-decoration: none;
           text-align: center;
           font-weight: bold;
@@ -1742,7 +1755,7 @@
         }
       }
       .tags-list {
-        background-color: rgba(0,163,215, 0.15);
+        background-color: rgba(0, 163, 215, 0.15);
         padding: 45px 20px;
         display: flex;
         flex-direction: column;
@@ -1757,7 +1770,7 @@
           p {
             width: 190px;
             margin-top: 0;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
           }
         }
       }
@@ -2052,13 +2065,13 @@
 }
 
 // Facts Archive 480px
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .post-type-archive-fact {
     .page-header {
       padding: 0;
       display: flex;
       flex-direction: column;
-      align-items: center; 
+      align-items: center;
       justify-content: space-between;
       height: 270px;
       .page-title {
@@ -2378,23 +2391,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  .banner {
-    height: 200px;
-    width: 100%;
-    background-color: $green;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    h1 {
-      font-size: 76px;
-      font-weight: 700;
-      line-height: 0.91;
-      margin: 0;
-    }
+  .top-hero {
+    margin-bottom: 80px;
   }
   section {
     margin-left: 25%;
@@ -2410,7 +2408,7 @@
     iframe {
       margin-top: 20px;
       margin-bottom: 40px;
-      border:none;
+      border: none;
       width: 100%;
       height: 500px;
     }
@@ -2448,7 +2446,7 @@
 }
 
 // Annual Reports 480px
-@media (max-width: 480px){
+@media (max-width: 480px) {
   .annual-reports {
     .banner {
       height: 220px;
@@ -2553,7 +2551,7 @@
     iframe {
       margin-top: 20px;
       margin-bottom: 40px;
-      border:none;
+      border: none;
       width: 100%;
       height: 500px;
     }
@@ -2594,8 +2592,8 @@
 }
 
 // Newsletter 480px
-@media (max-width: 480px){
-  .newsletter {  
+@media (max-width: 480px) {
+  .newsletter {
     .wpcf7 {
       margin: 0 20px;
       p:first-child {
@@ -2656,7 +2654,7 @@
         }
       }
     }
-  }  
+  }
 }
 
 //Press Releases

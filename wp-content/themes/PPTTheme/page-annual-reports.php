@@ -10,12 +10,12 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main annual-reports" role="main">
 
-      <header class="banner">
+      <div class="wrapper top-hero green">
         <?php the_title( '<h1>', '</h1>' ); ?>
         <!-- <div class="hero-img-container"> -->
           <img src="<?php bloginfo('template_directory');?>/assets/hero-images/Volunteer-hero.png">
         <!-- </div> -->
-      </header>
+      </div>
 
       <section>
         <?php while ( have_posts() ) : the_post(); ?>

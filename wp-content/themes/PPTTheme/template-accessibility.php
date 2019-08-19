@@ -11,6 +11,11 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+      
+      <header class="banner access-title">
+        <?php the_title( '<h1>', '</h1>' ); ?>
+      </header>
+      
       <?php while ( have_posts() ) : the_post(); ?>
 
        <div class="entry-content">

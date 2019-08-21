@@ -19,8 +19,14 @@ get_header(); ?>
 
      <div class="wrapper top-hero">
       <?php the_title( '<h1 class="page-title">' , '</h1>' ); ?>
-      <?php if (is_page('services')) { echo '<img src="'. get_template_directory_uri() .'/assets/hero-images/Services-hero.png" alt="Services hero image">'; }
-      if (is_page('education')) { echo '<img src="' . get_template_directory_uri() .'/assets/hero-images/Education-hero.png" alt="Education hero image">'; } ?>
+      <?php if (is_page('services')) { 
+        echo '<img class="three-icons-hero-desktop" src="'. get_template_directory_uri() .'/assets/hero-images/Services-hero.png" alt="Services hero image">';
+        echo '<img class="three-icons-hero-mobile" src="'. get_template_directory_uri() .'/assets/hero-images/Home-page-hero.png" alt="Services hero image">'; 
+      }
+      if (is_page('education')) { 
+        echo '<img class="three-icons-hero-desktop" src="' . get_template_directory_uri() .'/assets/hero-images/Education-hero.png" alt="Education hero image">'; 
+        echo '<img class="three-icons-hero-mobile" src="'. get_template_directory_uri() .'/assets/hero-images/Home-page-hero.png" alt="Services hero image">';  
+      } ?>
      </div><!-- .top-hero-blue -->
 
      <div class='column-container'>

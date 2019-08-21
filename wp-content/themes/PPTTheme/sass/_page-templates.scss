@@ -431,6 +431,10 @@
   }
 }
 
+.three-icons-hero-mobile {
+  display: none;
+}
+
 .bottom-hero-black {
   width: 100%;
   height: 360px;
@@ -1567,6 +1571,64 @@
         padding-bottom: 10px;
         max-width: 500px;
       }
+    }
+  }
+}
+
+// Services & Education 480px
+@media (max-width: 480px) {
+  .page-template-three-icons-template {
+    .top-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      min-height: auto;
+      .three-icons-hero-desktop {
+        display: none;
+      }
+      .three-icons-hero-mobile {
+        display: block;
+      }
+      .page-title {
+        font-size: 38px;
+        height: auto;
+        top: 0;
+        position: relative;
+        margin-bottom: 60px;
+      }
+      img {
+        position: relative;
+        min-width: 100%;
+      }
+    }
+    .column-container {
+      flex-direction: column;
+      margin: 0;
+      .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        margin-top: 50px;
+        img { 
+          width: 120px;
+        }
+        h3 {
+          margin: 0;
+          margin-top: 40px;
+        }
+        p {
+          max-width: 345px;
+          text-align: center;
+          margin: 0;
+        }
+        &:last-child {
+          margin-bottom: 50px;
+        }
+      }
+
     }
   }
 }

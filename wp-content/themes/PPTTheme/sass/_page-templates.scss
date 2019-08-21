@@ -2474,6 +2474,8 @@
   align-items: center;
   .top-hero {
     margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
     h1 {
       max-width: 50%;
     }
@@ -2535,14 +2537,23 @@
 // Annual Reports 480px
 @media (max-width: 480px) {
   .annual-reports {
-    .banner {
-      height: 220px;
-      justify-content: space-between;
+    .top-hero {
+      min-height: auto;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
       h1 {
         font-size: 38px;
+        min-width: 100%;
+        text-align: center;
+        margin-bottom: 70px;
+        position: relative;
       }
       img {
-        height: 140px;
+        display: block;
+        position: relative;
+        min-width: 100%;
       }
     }
     section {
@@ -2557,6 +2568,10 @@
       }
       h4 {
         margin-left: 20px;
+      }
+      p {
+        margin: 0;
+        width: 100%;
       }
       a {
         margin-left: 20px;

@@ -76,6 +76,12 @@
     }
   }
 }
+.nav-icon-in-frame-mobile {
+  display: none;
+}
+.framed-button-mobile {
+  display: none;
+}
 
 .green {
   .site-header {
@@ -1204,6 +1210,137 @@
 
     .content {
       width: 40vw;
+    }
+  }
+}
+
+// Mental Health & Sexual Health 480px
+@media (max-width: 480px) {
+  .icon-in-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      min-height: auto;
+      .entry-title {
+        font-size: 38px;
+        height: auto;
+        top: 0;
+        position: relative;
+        margin-bottom: 40px;
+      }
+      img {
+        position: relative;
+        min-width: 100%;
+      }
+    }
+    
+    .nav-icon-in-frame {
+      display: none;
+    }
+    .purple {
+      background-color: $purple;
+    }
+    .blue {
+      background-color: $blue;
+    }
+    .nav-icon-in-frame-mobile {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin: 10px 0px;
+        li {
+          margin: 20px;
+          a {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            &:visited { 
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .icon-in-frame article:not(:first-child) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .entry-content {
+      max-width: 375px;
+      margin-left: 20px;
+      margin-right: 20px;
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+  #component1, #component2, #component3 {
+    max-width: 375px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 45px;
+    .framed {
+      border: none;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 120px;
+      }
+      h3 {
+        font-size: 26px !important;
+        margin-top: 45px;
+        margin-bottom: 0px;
+      }
+      .framed-description {
+        display: none;
+      }
+      .framed-button-desktop {
+        display: none;
+      }
+    }
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        margin: 10px 0; 
+      }
+      p {
+        margin-top: 0;
+      }
+      .columns {
+        margin: 0;
+        margin-left: 20px;
+        padding: 0;
+      }
+      .framed-button-mobile {
+        display: block;
+        align-self: center;
+        width: 140px;
+        border: 2px solid $blue;
+        border-radius: 5px;
+        color: $blue;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        padding: 6px;
+      }
     }
   }
 }

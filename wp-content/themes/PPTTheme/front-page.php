@@ -10,17 +10,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
       <div class="wrapper top-hero purple">
-      <h1><p>boldly</p><p>empowering</p><p>toronto's youth</p></h1>
-      <img src = <?php echo get_template_directory_uri() . '/assets/hero-images/Home-page-hero.png' ?> alt="Homepage hero image">
-      <!-- Inside this div will be placed the purple background, the text as well as the hero image -->
+        <h1>boldly empowering toronto's youth</h1>
+        <img src = <?php echo get_template_directory_uri() . '/assets/hero-images/Home-page-hero.png' ?> alt="Homepage hero image">
+        <!-- Inside this div will be placed the purple background, the text as well as the hero image -->
       </div><!-- .top-hero-purple -->
       <div class="bottom-hero-black grid-container">
-        <div class="make-appointment black-div grid-item1">
+        <div class="make-appointment black-div grid-item">
           <a href="/contact"><h2>make an appointment</h2></a>
           <p>Our team can help you find all the answers to your questions about your sexual, mental and physical health needs. Appointments are available Monday - Friday. See our contact page for more details.</p>
         </div>
 				  
-        <div class="drop-in-widget black-div grid-item3">
+        <div class="drop-in-widget black-div grid-item">
           <h2>drop-in times</h2>
           <div class="footer-sat-hours"> 
   				<?php if ( is_active_sidebar( 'footer-sidebar-3' ) ) : ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 				  </div>
         </div>
 
-        <div class="teen-health black-div grid-item4">
+        <div class="teen-health black-div grid-item">
           <a href="http://www.teenhealthsource.com"><h2>teen health source</h2></a>
           <p>THS is a sexual health information  service run for and by youth - brought to you by Planned Parenthood Toronto. Want to chat with a volunteer about a question or concern you have about your sexual health? We have trained teen volunteers waiting to speak with you live 5 times a week.</p>
         </div>

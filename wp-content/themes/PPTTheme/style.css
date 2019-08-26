@@ -373,14 +373,13 @@ Description: A WordPress theme for Planned Parenthood Toronto
 
 .top-hero {
   width: 100%;
-  min-height: 235px;
   position: relative; }
   .top-hero h1 {
     margin: 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    /* height: 207px; */
+    max-width: 750px;
     font-family: Arial, sans-serif;
     font-size: 76px;
     font-weight: 900;
@@ -393,6 +392,13 @@ Description: A WordPress theme for Planned Parenthood Toronto
       margin-top: 0;
       vertical-align: top;
       line-height: 0.6; }
+    @media screen and (max-width: 480px) {
+      .top-hero h1 {
+        font-size: 38px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        padding-bottom: 15px; } }
   .top-hero a img {
     position: absolute;
     top: 77%;
@@ -418,10 +424,26 @@ Description: A WordPress theme for Planned Parenthood Toronto
     position: absolute;
     top: 0px;
     right: 0px; }
+    @media screen and (max-width: 480px) {
+      .top-hero img {
+        position: relative;
+        max-width: 100%; } }
+  @media screen and (min-width: 481px) {
+    .top-hero {
+      min-height: 235px; } }
+  @media screen and (max-width: 480px) {
+    .top-hero {
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .bottom-hero-black {
   width: 100%;
-  height: 360px;
   background-color: #4a4a4a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,10 +457,13 @@ Description: A WordPress theme for Planned Parenthood Toronto
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
+  @media screen and (min-width: 481px) {
+    .bottom-hero-black {
+      max-height: 360px; } }
 
 .black-div {
   height: 100%;
-  width: 319px;
+  max-width: 319px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   text-align: center;
@@ -467,91 +492,80 @@ Description: A WordPress theme for Planned Parenthood Toronto
       font-weight: normal; }
 
 .grid-container {
-  display: grid !important;
-  grid-template-columns: auto auto auto;
-  grid-gap: 0;
-  height: 30%;
-  padding: 7% 0 3%; }
-  .grid-container .grid-item1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .grid-container .grid-item2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: #ba0e82;
-    border-radius: 8px;
-    background: white; }
-  .grid-container .grid-item3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-  .grid-container .grid-item4 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    height: 50px; }
-  .grid-container .grid-item5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: #ba0e82;
-    border-radius: 8px;
-    background: white; }
-
-.white-icon-container {
-  padding: 150px 150px 150px 150px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto; }
-  .white-icon-container h2 {
-    font-family: Arial, sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 0.91;
-    text-align: center;
-    color: #ba0e82;
-    text-decoration: none !important;
-    margin: 0; }
-  .white-icon-container p {
-    height: 29px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.61;
-    color: #000000;
-    text-align: center;
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-top: 0; }
-  .white-icon-container img {
-    -ms-flex-item-align: center;
-        align-self: center; }
-  .white-icon-container a {
-    -ms-flex-item-align: center;
-        align-self: center;
-    text-decoration: none !important; }
-
-.fp-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none; }
-  .fp-item img {
-    -ms-flex-item-align: center;
-        align-self: center; }
+  padding: 7% 0 3%; }
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.white-icon-container {
+  padding: 150px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .white-icon-container .fp-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none;
+    width: 30%; }
+    .white-icon-container .fp-item img {
+      -ms-flex-item-align: center;
+          align-self: center; }
+    .white-icon-container .fp-item h2 {
+      font-family: Arial, sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 0.91;
+      text-align: center;
+      color: #ba0e82;
+      text-decoration: none !important;
+      margin: 0; }
+      @media screen and (max-width: 480px) {
+        .white-icon-container .fp-item h2 {
+          font-size: 20px; } }
+    .white-icon-container .fp-item p {
+      height: 29px;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.61;
+      color: #000000;
+      text-align: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+      margin-top: 0; }
+    .white-icon-container .fp-item a {
+      -ms-flex-item-align: center;
+          align-self: center;
+      text-decoration: none !important; }
+    @media screen and (max-width: 480px) {
+      .white-icon-container .fp-item {
+        width: 40%;
+        padding-bottom: 20px; } }
+  @media screen and (max-width: 480px) {
+    .white-icon-container {
+      padding: 50px 5%; } }
 
 .dcta-container {
   padding-top: 30px;
@@ -897,7 +911,8 @@ Description: A WordPress theme for Planned Parenthood Toronto
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column;
+      text-align: center; } }
 
 .footer-location {
   font-family: Arial, sans-serif;
@@ -905,6 +920,11 @@ Description: A WordPress theme for Planned Parenthood Toronto
   .footer-location h2 {
     margin: 0;
     font-size: 18px; }
+  @media screen and (max-width: 480px) {
+    .footer-location {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; } }
 
 .footer-hours {
   display: -webkit-box;
@@ -932,12 +952,21 @@ Description: A WordPress theme for Planned Parenthood Toronto
           flex-wrap: wrap; } }
   @media screen and (max-width: 480px) {
     .footer-hours {
-      padding: 20px 0; } }
+      padding: 20px 0;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; } }
 
 .footer-social-media {
   margin-right: 0; }
   .footer-social-media img {
     margin: 0 20px; }
+  @media screen and (max-width: 480px) {
+    .footer-social-media {
+      -webkit-box-ordinal-group: 1;
+          -ms-flex-order: 0;
+              order: 0;
+      padding-bottom: 30px; } }
 
 .white-footer-top {
   position: relative; }
@@ -1489,6 +1518,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
         font-size: 20px;
         width: 120px;
         height: 50px; } }
+  @media screen and (max-width: 480px) {
+    .banner {
+      padding: 9%; } }
 
 .page-template-three-icons-template .entry-content {
   margin: 0 8%; }
@@ -1955,6 +1987,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
         background-color: #e6e6e6;
         border-radius: 8px 8px 0 0;
         padding: 25px 25px 10px 25px; }
+        .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer p {
+          margin: 0;
+          font-weight: bold; }
         .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer .tag-list {
           list-style: none;
           margin-left: 0;
@@ -2054,7 +2089,9 @@ Description: A WordPress theme for Planned Parenthood Toronto
       width: 320px;
       padding-bottom: 42px; }
   .post-type-archive-fact .main-container {
-    margin: 20px 0; }
+    width: 375px;
+    display: block;
+    margin: 0 auto; }
     .post-type-archive-fact .main-container .order-container {
       margin-top: 25px; }
     .post-type-archive-fact .main-container .factsheet-container {
@@ -2070,12 +2107,19 @@ Description: A WordPress theme for Planned Parenthood Toronto
         margin-bottom: 25px; }
         .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer {
           background-color: #f7911d;
-          padding: 10px 25px;
-          color: white; }
+          color: white;
+          padding: 0; }
+          .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer p {
+            font-weight: normal;
+            padding: 10px 25px; }
           .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer .tag-list {
-            background-color: #ccc; }
+            background-color: #ccc;
+            padding: 25px; }
+            .post-type-archive-fact .main-container .factsheet-container .left-container .tag-organizer .tag-list li:first-child {
+              margin-top: 0; }
         .post-type-archive-fact .main-container .factsheet-container .left-container .clear-filter {
-          background-color: #eee; }
+          background-color: #eee;
+          padding: 10px 25px; }
         .post-type-archive-fact .main-container .factsheet-container .left-container .disclaimer {
           font-size: 14px; }
       .post-type-archive-fact .main-container .factsheet-container .right-container {

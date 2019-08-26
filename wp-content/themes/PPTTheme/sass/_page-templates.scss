@@ -382,7 +382,7 @@
   h1 {
     margin: 0;
     width: fit-content;
-    /* height: 207px; */
+    max-width: 750px;
     font-family: $font__main;
     font-size: 76px;
     font-weight: 900;
@@ -395,6 +395,11 @@
       margin-top: 0;
       vertical-align: top;
       line-height: 0.6;
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 42px;
+      text-align: center;
+      position: relative;
     }
   }
 
@@ -428,6 +433,9 @@
     position: absolute;
     top: 0px;
     right: 0px;
+    @media screen and (max-width: 480px) {
+      position: relative;
+    }
   }
 }
 
@@ -443,7 +451,7 @@
 
 .black-div {
   height: 100%;
-  width: 319px;
+  max-width: 319px;
   font-family: $font__main;
   font-size: 14px;
   text-align: center;
@@ -480,57 +488,17 @@
 }
 
 .grid-container {
-  display: grid !important;
-  grid-template-columns: auto auto auto;
-  grid-gap: 0;
+  display: flex;
   height: 30%;
   padding: 7% 0 3%;
-
-  .grid-item1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .grid-item2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: $purple;
-    border-radius: 8px;
-    background: white;
-  }
-  .grid-item3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .grid-item4 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    height: 50px;
-  }
-  .grid-item5 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    color: $purple;
-    border-radius: 8px;
-    background: white;
-  }
 }
 
 .white-icon-container {
-  padding: 150px 150px 150px 150px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-
+  padding: 150px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
   h2 {
     font-family: $font__main;
     font-size: 32px;
@@ -568,6 +536,7 @@
   flex-direction: column;
   justify-content: center;
   text-decoration: none;
+  width: 30%;
   img {
     align-self: center;
   }
